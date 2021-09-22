@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Anya Kozyreva](https://up.htmlacademy.ru/htmlcss/32/user/640419).
-* Наставник: `Неизвестно`.
+* Студент: [Anya 🐿️ Kozyreva](https://up.htmlacademy.ru/htmlcss/32/user/640419).
+* Наставник: [Виктор 🐟 Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
