@@ -25,8 +25,8 @@
                     <ul class="user-list">
                         <li class="user-item"><a class="user-icon icon-search" href=""></a><span
                                 class="visually-hidden">Поиск</span></li>
-                        <li class="user-item"><a class="user-icon icon-heart" href=""></a><span
-                                class="visually-hidden">Нравится</span></li>
+                        <li class="user-item"><a class="user-icon icon-heart" href=""></a><button
+                                class="circus-green"></button><span class="visually-hidden">Нравится</span></li>
                         <li class="brown-btn header-btn"><a href=""></a><span class="visually-hidden">Хочу
                                 сюда!</span>Хочу сюда!</li>
                     </ul>
@@ -47,7 +47,7 @@
 
                     <form class="catalog-filter-form" method="post" action="https://echo.htmlacademy.ru">
                         <fieldset class="catalog-filter-group">
-                            <legent class="catalog-filter-title">Инфраструктура:</legent>
+                            <legend class="catalog-filter-title">Инфраструктура:</legend>
                             <ul class="catalog-filter-list">
                                 <li class="catalog-filter-item">
                                     <label class="control">
@@ -76,7 +76,7 @@
                         </fieldset>
 
                         <fieldset class="catalog-filter-group">
-                            <legent class="catalog-filter-title">Тип жилья:</legent>
+                            <legend class="catalog-filter-title">Тип жилья:</legend>
                             <ul class="catalog-filter-list">
                                 <li class="catalog-filter-item">
                                     <label class="control">
@@ -112,13 +112,14 @@
                                         <input class="input-min" type="number" name="min-price" value="0">от</label>
                                     <label class="catalog-price-max">
                                         <input class="input-max" type="number" name="max-price" value="9000">до</label>
-                                    <!--  контейнер для ползунка  -->
-                                    <button class="range-toggle toggle-min" type="button">
-                                        <span class="visually-hidden">Изменить минимальную цену</span>
-                                    </button>
-                                    <button class="range-toggle toggle-max" type="button">
-                                        <span class="visually-hidden">Изменить максимальную цену</span>
-                                    </button>
+                                </div>
+                                <!--  контейнер для ползунка  -->
+                                <button class="range-toggle toggle-min" type="button">
+                                    <span class="visually-hidden">Изменить минимальную цену</span>
+                                </button>
+                                <button class="range-toggle toggle-max" type="button">
+                                    <span class="visually-hidden">Изменить максимальную цену</span>
+                                </button>
                             </fieldset>
                         </div>
                         <div class="filter-button">
@@ -129,6 +130,7 @@
                 </div>
             </header>
             <section>
+                <h2 class="visually-hidden">Фильтр цен и рейтинга гостиниц</h2>
                 <form class="sorting-type" action="https://echo.htmlacademy.ru">
                     <label class="sorting-title" for="sorting">Найдено гостиниц: 38</label>
                     <select class="id-control" name="sorting" id="sorting">
@@ -138,57 +140,57 @@
                     <button class="visually-hidden" type="submit">Отсортировать</button>
                 </form>
                 <a href="" class="btn btn-1">
-                    <span clss="visually-hidden">режим просмотра-1</span>
+                    <span class="visually-hidden">режим просмотра-1</span>
                 </a>
                 <a href="" class="btn btn-1">
-                    <span clss="visually-hidden">режим просмотра-2</span>
+                    <span class="visually-hidden">режим просмотра-2</span>
                 </a>
                 <a href="" class="btn btn-1">
-                    <span clss="visually-hidden">режим просмотра-3</span>
+                    <span class="visually-hidden">режим просмотра-3</span>
                 </a>
             </section>
 
 
             <section>
-                <h2="visually-hidden">Каталог гостиниц</h2>
-                    <div class="catalog-box">
-                        <div class="left-col">
-                            <div class="amara-img"></div>
-                            <b class="catalog-title">Amara Resort & Spa</b>
-                            <p class="catalog-subtitle">Гостиница</p>
-                            <p class="catalog-description">От 4000 ₽</p>
-                        </div>
-                        <div class="right-col">
-                            <ul class="stars-list">
-                                <li class="star-item-icon"></li>
-                                <li class="star-item-icon"></li>
-                                <li class="star-item-icon"></li>
-                                <li class="star-item-icon"></li>
-                            </ul>
-                        </div>
-                        <a class="catalog-btn brown-btn" href="">Подробнее</a>
-                        <button class="catalog-btn blue-btn" href="">В Избранное</button>
-                        <button class="catalog-btn grey-btn" href="">Рейтинг 8,5</button>
+                <h2 class="visually-hidden">Каталог гостиниц</h2>
+                <div class="catalog-box">
+                    <div class="left-col">
+                        <div class="amara-img"></div>
+                        <b class="catalog-title">Amara Resort & Spa</b>
+                        <p class="catalog-subtitle">Гостиница</p>
+                        <p class="catalog-description">От 4000 ₽</p>
                     </div>
-                    <div class="catalog-box">
-                        <div class="left-col">
-                            <div class="desert-img"></div>
-                            <b class="catalog-title">Desert Quail Inn</b>
-                            <p class="catalog-subtitle">Мотель</p>
-                            <p class="catalog-description">От 3000 ₽</p>
-                        </div>
-                        <div class="right-col">
-                            <ul class="stars-list">
-                                <li class="star-item-icon"></li>
-                                <li class="star-item-icon"></li>
-                                <li class="star-item-icon"></li>
-                            </ul>
-                        </div>
-                        <a class="catalog-btn brown-btn" href="">Подробнее</a>
-                        <button class="catalog-btn blue-btn" href="">В Избранное</button>
-                        <button class="catalog-btn grey-btn" href="">Рейтинг 8,9</button>
+                    <div class="right-col">
+                        <ul class="stars-list">
+                            <li class="star-item-icon"></li>
+                            <li class="star-item-icon"></li>
+                            <li class="star-item-icon"></li>
+                            <li class="star-item-icon"></li>
+                        </ul>
                     </div>
-                    <!-- добавлю остальные 2 бокса после проверки секции каталога -->
+                    <a class="catalog-btn brown-btn" href="">Подробнее</a>
+                    <button class="catalog-btn blue-btn">В Избранное</button>
+                    <button class="catalog-btn grey-btn">Рейтинг 8,5</button>
+                </div>
+                <div class="catalog-box">
+                    <div class="left-col">
+                        <div class="desert-img"></div>
+                        <b class="catalog-title">Desert Quail Inn</b>
+                        <p class="catalog-subtitle">Мотель</p>
+                        <p class="catalog-description">От 3000 ₽</p>
+                    </div>
+                    <div class="right-col">
+                        <ul class="stars-list">
+                            <li class="star-item-icon"></li>
+                            <li class="star-item-icon"></li>
+                            <li class="star-item-icon"></li>
+                        </ul>
+                    </div>
+                    <a class="catalog-btn brown-btn" href="">Подробнее</a>
+                    <button class="catalog-btn blue-btn">В Избранное</button>
+                    <button class="catalog-btn grey-btn">Рейтинг 8,9</button>
+                </div>
+                <!-- добавлю остальные 2 бокса после проверки секции каталога -->
             </section>
             <button class="btn blue-btn download-btn">Загрузить</button>
             <ul class="catalog-breadcrumbs">
