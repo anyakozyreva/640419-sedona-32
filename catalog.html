@@ -27,8 +27,8 @@
                 class="visually-hidden">Поиск</span></li>
             <li class="user-item"><a class="user-icon icon-heart" href=""></a><button
                 class="circus-green"></button><span class="visually-hidden">Нравится</span></li>
-            <li class="brown-btn header-btn"><a href=""></a><span class="visually-hidden">Хочу
-                сюда!</span>Хочу сюда!</li>
+            <li class="brown-btn header-btn"><a href="#">Хочу сюда!</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -37,7 +37,7 @@
       <header class="inner-header-img">
         <h1 class="inner-header-title">Каталог жилья в Седоне</h1>
         <div class="main-box">
-          <h2 class="visually-hidden">Фильтры для поиска жилья</h2>
+          <h2 class="visually-hidden">Фильтры поиска жилья</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item"><a class="breadcrumbs-icon" href="blank.html"></a><span
                 class="visually-hidden">Домой</span></li>
@@ -126,36 +126,31 @@
           </form>
         </div>
       </header>
-      <section>
-        <h2 class="visually-hidden">Фильтр цен и рейтинга гостиниц</h2>
-        <form class="sorting-type" action="https://echo.htmlacademy.ru">
-          <label class="sorting-title" for="sorting">Найдено гостиниц: 38</label>
-          <select class="id-control" name="sorting" id="sorting">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Потом недешевые</option>
+      <section class="hotel-cost">
+        <h2 class="visually-hidden">Фильтр стоимости гостиниц</h2>
+        <form class="cost-form" action="https://echo.htmlacademy.ru">
+          <label class="coast-caption" for="cost-filter">Найдено гостиниц: 38</label>
+          <select class="cost-select" name="cost-filter" id="cost-filter">
+            <option value="select-cheap">Сначала дешевые</option>
+            <option value="select-expensive">Потом недешевые</option>
           </select>
           <button class="visually-hidden" type="submit">Отсортировать</button>
         </form>
-        <a href="" class="btn btn-1">
-          <span class="visually-hidden">режим просмотра-1</span>
-        </a>
-        <a href="" class="btn btn-1">
-          <span class="visually-hidden">режим просмотра-2</span>
-        </a>
-        <a href="" class="btn btn-1">
-          <span class="visually-hidden">режим просмотра-3</span>
-        </a>
+
+        <button class="btn view-mode-1"><svg></svg></button>
+        <button class="btn view-mode-2"><svg></svg></button>
+        <button class="btn view-mode-3"><svg></svg></button>
       </section>
 
 
-      <section>
+      <section class="hotel-catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <div class="catalog-box">
           <div class="left-col">
             <div class="amara-img"></div>
-            <b class="catalog-title">Amara Resort & Spa</b>
-            <p class="catalog-subtitle">Гостиница</p>
-            <p class="catalog-description">От 4000 ₽</p>
+            <b class="hotel-title">Amara Resort & Spa</b>
+            <p class="hotel-subtitle">Гостиница</p>
+            <p class="hotel-description">От 4000 ₽</p>
           </div>
           <div class="right-col">
             <ul class="stars-list">
@@ -165,16 +160,16 @@
               <li class="star-item-icon"></li>
             </ul>
           </div>
-          <a class="catalog-btn brown-btn" href="">Подробнее</a>
-          <button class="catalog-btn blue-btn">В Избранное</button>
-          <button class="catalog-btn grey-btn">Рейтинг 8,5</button>
+          <a class="btn brown-btn hotel-btn" href="">Подробнее</a>
+          <button class="btn blue-btn hotel-btn">В Избранное</button>
+          <button class="btn grey-btn hotel-btn">Рейтинг 8,5</button>
         </div>
         <div class="catalog-box">
           <div class="left-col">
             <div class="desert-img"></div>
-            <b class="catalog-title">Desert Quail Inn</b>
-            <p class="catalog-subtitle">Мотель</p>
-            <p class="catalog-description">От 3000 ₽</p>
+            <b class="hotel-title">Desert Quail Inn</b>
+            <p class="hotel-subtitle">Мотель</p>
+            <p class="hotel-description">От 3000 ₽</p>
           </div>
           <div class="right-col">
             <ul class="stars-list">
@@ -183,11 +178,11 @@
               <li class="star-item-icon"></li>
             </ul>
           </div>
-          <a class="catalog-btn brown-btn" href="">Подробнее</a>
-          <button class="catalog-btn blue-btn">В Избранное</button>
-          <button class="catalog-btn grey-btn">Рейтинг 8,9</button>
+          <a class="btn brown-btn hotel-btn" href="">Подробнее</a>
+          <button class="btn blue-btn hotel-btn">В Избранное</button>
+          <button class="btn grey-btn hotel-btn">Рейтинг 8,9</button>
         </div>
-        <!-- добавлю остальные 2 бокса после проверки секции каталога -->
+        <!-- добавлю остальные 2 бокса после проверки -->
       </section>
       <button class="btn blue-btn download-btn">Загрузить</button>
       <ul class="catalog-breadcrumbs">
@@ -233,8 +228,7 @@
           <li class="social-item facebook-icon"><a class="facebook-link" href="https://facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span></a>
           </li>
-          <li class="social-item youtube-icon"><a class="youtube-link"
-              href=" https://www.youtube.com/c/HTMLAcademyRUS">
+          <li class="social-item youtube-icon"><a class="youtube-link" href=" https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
@@ -242,7 +236,7 @@
           <h2 class="visually-hidden">Наши контакты:</h2>
           <a class="contact-phone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
         </section>
-        <a class="footer-icon" href="https://htmlacademy.ru/"></a>
+        <a class="footer-icon" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
       </section>
     </footer>
   </div>
