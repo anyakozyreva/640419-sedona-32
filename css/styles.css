@@ -112,8 +112,6 @@
 }
 
 
-/*   Main Page    */
-
 /*   Catalog Btn, Form & Input    */
 
 
@@ -188,6 +186,10 @@ body {
   font-family: PT Sans, sans-serif;
   color: var(--black);
   background-color: var(--white);
+  font-size: 18px;
+  line-height: 21px;
+
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
