@@ -129,14 +129,14 @@
                 </button>
               </fieldset>
             </div>
-            <div class="filter-button">
-              <button class="btn blue-btn filter-btn" type="submit">Применить</button>
-              <button class="btn transparent-btn filter-btn" type="reset">Сбросить</button>
+            <div class="filter-button-container">
+              <button class="btn btn--filter-btn" type="submit">Применить</button>
+              <button class="btn btn--transparent-btn" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
       </header>
-      <section class="sorting-price-section">
+      <section class="sorting-price">
         <h2 class="visually-hidden">Фильтр стоимости гостиниц</h2>
         <form class="sorting-price-form" method="post" action="https://echo.htmlacademy.ru">
           <!--<label for="sorting-price">
@@ -170,102 +170,105 @@
                 fill="#000" /></svg></button>
         </p>
       </section>
-      <section class="hotel-catalog-section">
+      <section class="hotel-catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <ul class="hotel-catalog-list">
           <li class="hotel-catalog-item">
             <article class="amara-header">
-              <div class="left-col">
-                <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/amara-hotel.jpg" width="180" height="120"
-                    alt="Гостиница Amara">
-                </a>
+              <a class="hotel-link hotel-link--img-with-link" href="blank.html">
+                <img class="hotel-img" src="images/catalog/amara-hotel.jpg" width="180" height="120"
+                  alt="Гостиница Amara">
+              </a>
+              <div class="catalog-container--left-col">
                 <h3 class="hotel-title">Amara Resort & Spa</h3>
-              </div>
-              <div class="middle-col">
-                <span class="hotel-type">Гостиница</span><span class="hotel-cost">От 4000<span>&#8381;</span></span>
-                <p class="hotel-btn-box">
+                <div class="hotel-container">
+                  <span class="hotel-type">Гостиница</span>
                   <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                </div>
+                <div class="hotel-container">
+                  <span class="hotel-cost">От 4000<span>&#8381;</span></span>
                   <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
-                </p>
+                </div>
               </div>
               <!--  рейтинг ( с помощью bg прописать звезды) или с помощью svg?-->
-              <div class="right-col">
-                <p class="star-box"></p>
+              <div class="catalog-container--right-col">
+                <p class="stars-container--stars-four"></p>
                 <p class="btn btn--hotel-rating-btn">Рейтинг 8,5</p>
               </div>
             </article>
           </li>
           <li class="hotel-catalog-item">
             <article class="desert-header">
-              <div class="left-col">
-                <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/desert-hotel.jpg" width="180" height="120"
-                    alt="Мотель Desert Quail Inn">
-
-                  <h3 class="hotel-title">Desert Quail Inn</h3>
-                </a>
-              </div>
-              <div class="middle-col">
-                <span class="hotel-subtitle">Мотель</span><span class="hotel-cost">От 3000<span>&#8381;</span></span>
-                <p class="hotel-btn-box">
+              <a class="hotel-link hotel-link--img-with-link" href="blank.html">
+                <img class="hotel-img" src="images/catalog/desert-hotel.jpg" width="180" height="120"
+                  alt="Мотель Desert Quail Inn">
+              </a>
+              <div class="catalog-container--left-col">
+                <h3 class="hotel-title">Desert Quail Inn</h3>
+                <div class="hotel-container">
+                  <span class="hotel-subtitle">Мотель</span>
                   <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                </div>
+                <div class="hotel-container">
+                  <span class="hotel-cost">От 3000<span>&#8381;</span></span>
                   <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
-                </p>
-              </div>
-              <div class="right-col">
-                <p class="star-box"></p>
-                <p class="btn btn--hotel-rating-btn">Рейтинг 8,9</p>
+                </div>
+                <div class="catalog-container--right-col">
+                  <p class="stars-container--stars-three"></p>
+                  <p class="btn btn--hotel-rating-btn">Рейтинг 8,9</p>
+                </div>
               </div>
             </article>
           </li>
           <li class="hotel-catalog-item">
             <article class="villas-header">
-              <div class="left-col">
-                <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/villas-hotel.jpg" width="180" height="120"
-                    alt="Апартаменты Villas at Poco Diablo">
-                  <h3 class="hotel-name">Villas at Poco Diablo</h3>
-                </a>
-              </div>
-              <div class="middle-col">
-                <span class="hotel-type">Апартаменты</span><span class="hotel-cost">От 2000<span>&#8381;</span></span>
-                <p class="hotel-btn-box">
+              <a class="hotel-link hotel-link--img-with-link" href="blank.html">
+                <img class="hotel-img" src="images/catalog/villas-hotel.jpg" width="180" height="120"
+                  alt="Апартаменты Villas at Poco Diablo">
+              </a>
+              <div class="catalog-container--left-col">
+                <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                <div class="hotel-container">
+                  <span class="hotel-type">Апартаменты</span>
                   <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                </div>
+                <div class="hotel-container">
+                  <span class="hotel-cost">От 2000<span>&#8381;</span></span>
                   <button class="btn btn--fav-hotel-btn" type="button">В Избранном</button>
-                </p>
+                </div>
               </div>
-              <div class="right-col">
-                <p class="star-box"></p>
+              <div class="catalog-container--right-col">
+                <p class="stars-container--stars-two"></p>
                 <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
           <li class="hotel-catalog-item">
             <article class="greentree-header">
-              <div class="left-col">
-                <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/green-hotel.jpg" width="180" height="120"
-                    alt="Гостиница GreenTree Inn">
-                </a>
+              <a class="hotel-link hotel-link--img-with-link" href="blank.html">
+                <img class="hotel-img" src="images/catalog/green-hotel.jpg" width="180" height="120"
+                  alt="Гостиница GreenTree Inn">
+              </a>
+              <div class="catalog-container--left-col">
                 <h3 class="hotel-name">GreenTree Inn</h3>
-              </div>
-              <div class="middle-col">
-                <span class="hotel-type">Гостиница</span><span class="hotel-cost">От 3000<span>&#8381;</span></span>
-                <p class="hotel-btn-box">
+                <div class="hotel-container">
+                  <span class="hotel-type">Гостиница</span>
                   <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                </div>
+                <div class="hotel-container">
+                  <span class="hotel-cost">От 3000<span>&#8381;</span></span>
                   <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
-                </p>
+                </div>
               </div>
-              <div class="right-col">
-                <p class="star-box"></p>
+              <div class="catalog-container--right-col">
+                <p class="stars-container--stars-two"></p>
                 <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
         </ul>
       </section>
-      <button class="btn blue-btn download-btn" type="button">Загрузить</button>
+      <button class="btn btn--download-btn" type="button">Загрузить</button>
       <ul class="pagination-list">
         <li class="pagination-btn blue-btn">
           <a class="pagination-link pagination-current">1</a>
@@ -298,40 +301,41 @@
         <button class="visually-hidden" type="submit">Отсортировать</button>
       </form>
     </main>
-    <section class="subscription-inner">
-      <h2 class="visually-hidden">Следите за новостями!</h2>
-      <div class="subscription-box">
-        <p class="sub-inner-title">Подпишитесь на рассылку</p>
-        <p class="sub-inner-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+    <footer>
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-form" action="https://htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="input-email"></label>
           <input class="subscription-input" type="text" name="e-mail" id="input-email" placeholder="Ваш e-mail"
             required>
-          <button class="btn blue-btn subscription-btn" type="submit">Подписаться</button>
+          <button class="btn btn--subscription-btn" type="submit">Подписаться</button>
         </form>
-      </div>
-    </section>
-    <footer class="footer-catalog">
-      <h2 class="visually-hidden">Наши контакты:</h2>
-      <ul class="social-list">
-        <li class="social-item twitter-icon">
-          <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="social-item facebook-icon">
-          <a class="facebook-link" href="https://facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social-item youtube-icon">
-          <a class="youtube-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <a class="contact-phone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
-      <a class="footer-icon" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+      </section>
+      <section class="footer-contact">
+        <h2 class="visually-hidden">Наши контакты:</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link--facebook" href="https://facebook.com/htmlacademy">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="htmlacademy-icon" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </section>
     </footer>
   </div>
 </body>
