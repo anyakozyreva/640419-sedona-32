@@ -14,13 +14,13 @@
       <nav class="main-navigation">
         <ul class="main-navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link--current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="blank.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link--current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <a class="logo-link">
@@ -36,7 +36,7 @@
                 class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
-            <a class="btn header-btn" href="blank.html">Хочу сюда!</a>
+            <a class="btn btn--header-btn" href="blank.html">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -152,9 +152,22 @@
         </form>
         <!--предполагаемый список режимов просмотра карточек гостиниц с будущими svg иконками Вариант 1-->
         <p class="sorting-price-btn">
-          <button class="btn view-mode-1" type="button"><svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg></button>
-          <button class="btn view-mode-2" type="button"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 15H2v2h16v-2ZM16 5v6H4V5h12Zm2-2H2v10h16V3Z" fill="#000"/></svg></button>
-          <button class="btn view-mode-3" type="button"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" fill="#000"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="#000"/></svg></button>
+          <button class="btn view-mode-1" type="button"><svg width="16" height="14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                fill="#000" /></svg></button>
+          <button class="btn view-mode-2" type="button"><svg width="20" height="20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15H2v2h16v-2ZM16 5v6H4V5h12Zm2-2H2v10h16V3Z" fill="#000" /></svg></button>
+          <button class="btn view-mode-3" type="button"><svg width="20" height="20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="#000" />
+              <path
+                d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"
+                fill="#000" />
+              <path
+                d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"
+                fill="#000" /></svg></button>
         </p>
       </section>
       <section class="hotel-catalog-section">
@@ -164,21 +177,22 @@
             <article class="amara-header">
               <div class="left-col">
                 <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/amara-hotel.jpg" width="180" height="120" alt="Гостиница Amara">
+                  <img class="hotel-img" src="images/catalog/amara-hotel.jpg" width="180" height="120"
+                    alt="Гостиница Amara">
                 </a>
                 <h3 class="hotel-title">Amara Resort & Spa</h3>
               </div>
               <div class="middle-col">
                 <span class="hotel-type">Гостиница</span><span class="hotel-cost">От 4000<span>&#8381;</span></span>
                 <p class="hotel-btn-box">
-                  <a class="btn brown-btn hotel-info-btn" href="blank.html">Подробнее</a>
-                  <button class="btn blue-btn fav-hotel-btn" type="button">В Избранное</button>
+                  <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                  <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
                 </p>
               </div>
               <!--  рейтинг ( с помощью bg прописать звезды) или с помощью svg?-->
               <div class="right-col">
                 <p class="star-box"></p>
-                <p class="btn hotel-rating-btn">Рейтинг 8,5</p>
+                <p class="btn btn--hotel-rating-btn">Рейтинг 8,5</p>
               </div>
             </article>
           </li>
@@ -186,21 +200,22 @@
             <article class="desert-header">
               <div class="left-col">
                 <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/desert-hotel.jpg" width="180" height="120" alt="Мотель Desert Quail Inn">
+                  <img class="hotel-img" src="images/catalog/desert-hotel.jpg" width="180" height="120"
+                    alt="Мотель Desert Quail Inn">
 
-                <h3 class="hotel-title">Desert Quail Inn</h3>
-              </a>
+                  <h3 class="hotel-title">Desert Quail Inn</h3>
+                </a>
               </div>
               <div class="middle-col">
                 <span class="hotel-subtitle">Мотель</span><span class="hotel-cost">От 3000<span>&#8381;</span></span>
                 <p class="hotel-btn-box">
-                  <a class="btn brown-btn hotel-info-btn" href="blank.html">Подробнее</a>
-                  <button class="btn blue-btn fav-hotel-btn" type="button">В Избранное</button>
+                  <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                  <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
                 </p>
               </div>
               <div class="right-col">
                 <p class="star-box"></p>
-                <p class="btn hotel-rating-btn">Рейтинг 8,9</p>
+                <p class="btn btn--hotel-rating-btn">Рейтинг 8,9</p>
               </div>
             </article>
           </li>
@@ -208,20 +223,21 @@
             <article class="villas-header">
               <div class="left-col">
                 <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/villas-hotel.jpg" width="180" height="120" alt="Апартаменты Villas at Poco Diablo">
-                <h3 class="hotel-name">Villas at Poco Diablo</h3>
-              </a>
+                  <img class="hotel-img" src="images/catalog/villas-hotel.jpg" width="180" height="120"
+                    alt="Апартаменты Villas at Poco Diablo">
+                  <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                </a>
               </div>
               <div class="middle-col">
                 <span class="hotel-type">Апартаменты</span><span class="hotel-cost">От 2000<span>&#8381;</span></span>
                 <p class="hotel-btn-box">
-                  <a class="btn brown-btn hotel-info-btn" href="blank.html">Подробнее</a>
-                  <button class="btn green-btn fav-hotel-btn" type="button">В Избранном</button>
+                  <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                  <button class="btn btn--fav-hotel-btn" type="button">В Избранном</button>
                 </p>
               </div>
               <div class="right-col">
                 <p class="star-box"></p>
-                <p class="btn hotel-rating-btn">Рейтинг 9,2</p>
+                <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
@@ -229,20 +245,21 @@
             <article class="greentree-header">
               <div class="left-col">
                 <a class="hotel-link" href="blank.html">
-                  <img class="hotel-img" src="images/catalog/green-hotel.jpg" width="180" height="120" alt="Гостиница GreenTree Inn">
+                  <img class="hotel-img" src="images/catalog/green-hotel.jpg" width="180" height="120"
+                    alt="Гостиница GreenTree Inn">
                 </a>
                 <h3 class="hotel-name">GreenTree Inn</h3>
               </div>
               <div class="middle-col">
                 <span class="hotel-type">Гостиница</span><span class="hotel-cost">От 3000<span>&#8381;</span></span>
                 <p class="hotel-btn-box">
-                  <a class="btn brown-btn hotel-info-btn" href="blank.html">Подробнее</a>
-                  <button class="btn blue-btn fav-hotel-btn" type="button">В Избранное</button>
+                  <a class="btn btn--hotel-info-btn" href="blank.html">Подробнее</a>
+                  <button class="btn btn--fav-hotel-btn" type="button">В Избранное</button>
                 </p>
               </div>
               <div class="right-col">
                 <p class="star-box"></p>
-                <p class="btn hotel-rating-btn">Рейтинг 9,2</p>
+                <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
@@ -288,7 +305,8 @@
         <p class="sub-inner-subtitle">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-form" action="https://htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="input-email"></label>
-          <input class="subscription-input" type="text" name="e-mail" id="input-email" placeholder="Ваш e-mail" required>
+          <input class="subscription-input" type="text" name="e-mail" id="input-email" placeholder="Ваш e-mail"
+            required>
           <button class="btn blue-btn subscription-btn" type="submit">Подписаться</button>
         </form>
       </div>
