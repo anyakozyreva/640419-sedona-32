@@ -16,7 +16,7 @@
   font-display: swap;
 }
 
-/*    Colors    */
+/*////////////////////////    Colors    ////////////////////////*/
 
 :root {
   --black: #000000;
@@ -35,32 +35,35 @@
   --dark-blue: #83B3D3;
   --special-warm-blue: #F0F6FA;
 
-  /* Status */
+  /*//////////////////////// Status ////////////////////////*/
   --error: #FF5757;
   --warning: #FD922E;
   --success: #7DB550;
 }
 
 
-/*    Btn   */
+/*////////////////////////    Btn   ////////////////////////*/
 
 .btn {
   display: inline-block;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   font-style: 400;
   font-weight: 700;
   border-radius: 4px;
-  text-align: center;
   border-color: transparent;
+  padding: 10px;
 }
 
 .btn:active {
   color: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  margin: 0;
 }
 
-/*  Состояние цветных кнопок   */
-/*  Brown Btn   */
+/*////////////////////////  Состояние цветных кнопок   ////////////////////////*/
+/*////////////////////////  Brown Btn   ////////////////////////*/
 
 .brown-btn {
   background-color: #756257;
@@ -77,9 +80,10 @@
 
 .brown-btn:active {
   background-color: #615048;
+
 }
 
-/*  Blue Btn   */
+/*////////////////////////  Blue Btn   ////////////////////////*/
 
 .blue-btn {
   background-color: #83B3D3;
@@ -99,7 +103,7 @@
   background-color: #68A2CA;
 }
 
-/*  Green Btn   */
+/*////////////////////////  Green Btn   ////////////////////////*/
 
 .green-btn {
   background-color: #7DB54F;
@@ -118,46 +122,85 @@
   background-color: #6C9E42;
 }
 
-/*    Transparent Btn   */
+/*////////////////////////    Transparent Btn   ////////////////////////*/
 
 .transparent-btn {
   background-color: transparent;
 }
 
-/*    Header Btn   */
+/*////////////////////////    Header Btn   ////////////////////////*/
 
 .btn--header-btn {
   width: 160px;
   height: 37px;
   font-size: 16px;
-  line-height: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-/*    Search Btn   */
+/*////////////////////////    Search Btn   ////////////////////////*/
 
 .btn--hotel-search-btn {
   width: 575px;
   height: 60px;
   font-size: 20px;
-  line-height: 36px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   border-radius: 10px;
 }
 
-/*    Subscription Btn   */
+/*////////////////////////    Subscription Btn   ////////////////////////*/
 
 .btn--subscription-btn {
   width: 200px;
   height: 60px;
   font-size: 20px;
-  line-height: 26px;
+
   border-radius: 0px 10px 10px 0px;
 }
 
-/*      Catalog-Btn    */
+.subscription-input {
+  display: inline-block;
+  position: relative;
+  padding-top: 2px;
+  margin-right: -5px;
+  width: 600px;
+  height: 60px;
+  border-color: transparent;
+  background-color: #FFFFFF;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.subscription-input[placeholder] {
+  padding-left: 22px;
+}
+
+.subscription-input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.subscription-input:hover {
+  background: #E6E6E6;
+}
+
+.subscription-input:active {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+}
+
+.subscription-input:invalid {
+  border: 2px solid #FF5757;
+}
+
+
+/*////////////////////////   Catalog Btn, Form & Input    ////////////////////////*/
+
+/*////////////////////////  Input ////////////////////////*/
+
+/* Form  */
+
+.subscription-form {
+  position: relative;
+}
+
+/*////////////////////////      Catalog-Btn    ////////////////////////*/
 
 .btn--filter-btn {
   width: 160px;
@@ -179,7 +222,7 @@
   background-color: #68A2CA;
 }
 
-/*    Reset Btn    */
+/*////////////////////////    Reset Btn    ////////////////////////*/
 
 .btn--reset-btn {
   width: 160px;
@@ -187,8 +230,6 @@
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-transform: capitalize;
 }
 
@@ -209,21 +250,21 @@
   height: 37px;
 }
 
+/*////////////////////////    Hotel-Info-Btn    ////////////////////////*/
 
 .btn--hotel-info-btn {
   width: 151px;
   height: 37px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
+/*////////////////////////    Fav-Hotel-Btn    ////////////////////////*/
 
 .btn--fav-hotel-btn {
   width: 160px;
   height: 37px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
+
+/*////////////////////////    Fav-Raiting-Btn    ////////////////////////*/
 
 .btn--hotel-rating-btn {
   width: 160px;
@@ -239,12 +280,17 @@
   padding: 10px;
 }
 
+/*////////////////////////    Download-Btn    ////////////////////////*/
+
 .btn--download-btn {
   width: 625px;
   height: 55px;
   font-size: 20px;
   line-height: 26px;
 }
+
+/*////////////////////////    Pagination-Btn    ////////////////////////*/
+
 
 .pagination-btn {
   color: #FFFFFF;
@@ -269,8 +315,10 @@
 }
 
 
-/*      Icons    */
-/*      Header Icons    */
+
+
+/*////////////////////////      Icons    ////////////////////////*/
+/*////////////////////////      Header Icons    ////////////////////////*/
 .user-link--search-icon {
   background-image: url(../images/index-icons/search.svg);
   background-color: transparent;
@@ -337,37 +385,9 @@
   background-repeat: no-repeat;
 }
 
-/*   Catalog Btn, Form & Input    */
-
-
-/*  Input */
-
-.subscription-input {
-  position: relative;
-  padding-top: 2px;
-  display: inline-block;
-  margin-right: -5px;
-  width: 600px;
-  height: 60px;
-  border-color: transparent;
-  background: var(--basic-white);
-  border-radius: 10px 0px 0px 10px;
-}
-
-.subscription-input[placeholder] {
-  padding-left: 22px;
-}
-
-/* Form  */
-
-.subscription-form {
-  position: relative;
-}
-
-
 /*    Footer Icons */
 
-.twitter-icon {
+.social-link--twitter {
   background-image: url(../images/index-icons/tw-icon.svg);
   background-color: transparent;
   background-repeat: no-repeat;
@@ -377,7 +397,7 @@
   width: 18px;
 }
 
-.facebook-icon {
+.social-link--facebook {
   height: 18px;
   width: 10px;
   background-image: url(../images/index-icons/fb-icon.svg);
@@ -388,7 +408,7 @@
 
 }
 
-.youtube-icon {
+.social-link--youtube {
   height: 16px;
   width: 20px;
   background-image: url(../images/index-icons/youtube-icon.svg);
@@ -474,9 +494,9 @@ body {
   color: var(--black);
   background-color: var(--white);
   font-size: 18px;
-  line-height: 21px;
   font-style: 400;
   font-weight: 400;
+  margin: 0;
 }
 
 .container {
@@ -495,6 +515,7 @@ left: 45%;
     left: calc(50% - 150px/2);*/
 
 .main-header {
+  display: block;
   width: 1200px;
   margin: 0 auto;
 }
@@ -556,24 +577,18 @@ left: 45%;
   border-bottom: 2px solid #756257;
 }
 
-.menu-list {
+.navigation-user {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.menu-item {
+.navigation-item {
   padding-right: 20px;
 }
 
-.menu-list a {}
 
-.main-index {}
-
-
-
-
-.welcome-section--with-bg {
+.welcome-section--with-img {
   display: flex;
   background-color: var(--cold-dark);
   background-image:
@@ -583,7 +598,7 @@ left: 45%;
   background-repeat: no-repeat;
 }
 
-.welcome--cover-img {
+.welcome-cover-img {
   margin-top: 37px;
   margin-right: auto;
   margin-bottom: 87px;
