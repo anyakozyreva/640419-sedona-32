@@ -258,41 +258,41 @@
           <li class="hotel-catalog-item hotel-catalog-item--catalog-btn ">
             <button class="btn blue-btn btn--download-btn" type="button">Загрузить еще</button>
           </li>
-          <li class="hotel-catalog-item">
-            <ul class="hotel-catalog--pagination-list">
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link pagination-link--current">1</a>
-              </li>
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <!--как оформить "..." ?-->
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="btn--pagination-btn blue-btn">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-          </li>
         </ul>
+        <section class="pagination-section">
+          <ul class="pagination-list">
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link pagination-link--current">1</a>
+            </li>
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <!--как оформить "..." ?-->
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="btn--pagination-btn blue-btn">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <form class="hotel-sorting" action="https://echo.htmlacademy.ru">
+            <label class="hotel-sorting-title" for="hotel-sorting">Гостиниц на странице</label>
+            <select class="id-hotel-control" name="hotel-sorting" id="hotel-sorting">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать</button>
+          </form>
+        </section>
       </section>
-      <form class="hotel-sorting" action="https://echo.htmlacademy.ru">
-        <label class="hotel-sorting-title" for="hotel-sorting">Гостиниц на странице</label>
-        <select class="id-hotel-control" name="hotel-sorting" id="hotel-sorting">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <button class="visually-hidden" type="submit">Отсортировать</button>
-      </form>
     </main>
     <footer>
       <section class="subscription">
