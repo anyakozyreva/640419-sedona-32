@@ -339,6 +339,36 @@ body {
   line-height: 26px;
 }
 
+/*////////////////////////    View-Mode-Btn    ////////////////////////*/
+
+.btn--sorting-price-btn{
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.btn--tile-mode-btn {
+  background-image: url(../images/icons/mode-tile.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat:no-repeat;
+}
+
+.btn--slideshow-mode-btn {
+  background-image: url(../images/icons/mode-slideshow.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+.btn--list-mode-btn {
+  background-image: url(../images/icons/mode-list.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
 /*////////////////////////    Pagination-Btn    ////////////////////////*/
 
 
@@ -380,7 +410,7 @@ body {
   background-size: 18px 17px;
 }
 
-.stars-container--stars-three{
+.stars-container--stars-three {
   width: 60px;
   height: 17px;
   background-color: #FFFFFF;
@@ -389,7 +419,7 @@ body {
   background-size: 18px 17px;
 }
 
-.stars-container--stars-two{
+.stars-container--stars-two {
   width: 40px;
   height: 17px;
   background-color: #FFFFFF;
