@@ -86,7 +86,7 @@ body {
   margin: 0;
 }
 
-.container {
+.page-container {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -203,11 +203,11 @@ body {
 
 .btn--subscription-btn {
   width: 200px;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   border-radius: 0px 10px 10px 0px;
+  padding: 16px;
 }
 
 .subscription-input {
@@ -482,11 +482,11 @@ body {
 /*////////////////////////    Index - Main-Navigation    ////////////////////////*/
 
 .logo {
-  position: absolute;
-  left: calc(50% - 150px/2);
+/*   position: absolute;
+  left: calc(50% - 140px/2);
   top: 0;
   z-index: 1;
-}
+ */}
 
 .main-navigation {
   background-color: #FFFFFF;
@@ -550,7 +550,7 @@ body {
 }
 
 .welcome-section--with-img {
-  background-color: var(--cold-dark);
+  background-color: #83B3D3;
   background-image:
     url("../images/index-divider.svg"), url("../images/index-cover.jpg");
   background-position: left 0 bottom 1px, 0 -10px;
