@@ -86,7 +86,7 @@ body {
   margin: 0;
 }
 
-.container {
+.page-container {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -203,11 +203,11 @@ body {
 
 .btn--subscription-btn {
   width: 200px;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   border-radius: 0px 10px 10px 0px;
+  padding: 16px;
 }
 
 .subscription-input {
@@ -339,6 +339,36 @@ body {
   line-height: 26px;
 }
 
+/*////////////////////////    View-Mode-Btn    ////////////////////////*/
+
+.btn--sorting-price-btn{
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.btn--tile-mode-btn {
+  background-image: url(../images/icons/mode-tile.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat:no-repeat;
+}
+
+.btn--slideshow-mode-btn {
+  background-image: url(../images/icons/mode-slideshow.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+.btn--list-mode-btn {
+  background-image: url(../images/icons/mode-list.svg);
+  background-size: 16px 14px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
 /*////////////////////////    Pagination-Btn    ////////////////////////*/
 
 
@@ -367,6 +397,36 @@ body {
 }
 
 .pagination-link--current {}
+
+
+/*////////////////////////    Raiting-Stars    ////////////////////////*/
+
+.stars-container--stars-four {
+  width: 80px;
+  height: 17px;
+  background-color: #FFFFFF;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.stars-container--stars-three {
+  width: 60px;
+  height: 17px;
+  background-color: #FFFFFF;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+}
+
+.stars-container--stars-two {
+  width: 40px;
+  height: 17px;
+  background-color: #FFFFFF;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+  background-size: 18px 17px;
+}
 
 /*////////////////////////      Icons    ////////////////////////*/
 /*////////////////////////      Header Icons    ////////////////////////*/
@@ -479,13 +539,18 @@ body {
   border: none;
 }
 
+
+
+
+
 /*////////////////////////    Index - Main-Navigation    ////////////////////////*/
 
 .logo {
-  position: absolute;
-  left: calc(50% - 150px/2);
+  /*   position: absolute;
+  left: calc(50% - 140px/2);
   top: 0;
   z-index: 1;
+ */
 }
 
 .main-navigation {
@@ -550,7 +615,7 @@ body {
 }
 
 .welcome-section--with-img {
-  background-color: var(--cold-dark);
+  background-color: #83B3D3;
   background-image:
     url("../images/index-divider.svg"), url("../images/index-cover.jpg");
   background-position: left 0 bottom 1px, 0 -10px;
@@ -691,7 +756,9 @@ body {
 
 .hotel-catalog {}
 
-.hotel-catalog-list {}
+.hotel-catalog-list {
+  display: flex;
+}
 
 .hotel-catalog-item {}
 
@@ -747,9 +814,7 @@ body {
   margin-right: 10px;
 }
 
-.pagination-link{
-
-}
+.pagination-link {}
 
 /*////////////////////////        footer      ////////////////////////*/
 
