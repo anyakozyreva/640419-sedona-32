@@ -453,7 +453,10 @@ body {
   outline-offset: -5px;
 }
 
-.advantages-list {}
+.advantages-list {
+  text-align: center;
+  align-items: center;
+}
 
 
 .advantages-item {
@@ -487,7 +490,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  text-align: center;
+
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -522,7 +525,6 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  text-align: center;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -534,7 +536,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  text-align: center;
+
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -943,12 +945,21 @@ body {
   text-transform: uppercase;
 }
 
-.sorting-price {}
+.sorting-price {
 
-.price-select {}
+}
+
+.price-select {
+
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 
 /* Sorting-Price  -- Bnt                      -- Bnt    */
 .sorting-container-for-btn {
+  margin-left: 500px;
+
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -1073,7 +1084,13 @@ body {
 }
 
 /*  <========right - col   */
-.catalog-container--right-col {}
+.catalog-container--right-col {
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+}
 
 /* Raiting  -- Bnt                                  -- Bnt    */
 .btn--hotel-rating-btn {
