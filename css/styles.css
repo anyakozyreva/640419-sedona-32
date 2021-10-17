@@ -51,6 +51,7 @@
 /* General  */
 html {
   height: 100%;
+  font-family: "PT Sans", sans-serif;
 }
 
 *,
@@ -627,8 +628,8 @@ body {
   margin-left: 70px;
   padding-top: 30px;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .inner-header-container {}
@@ -638,8 +639,8 @@ body {
   margin-top: 5px;
   margin-left: 73px;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .breadcrumbs-item {}
@@ -704,8 +705,8 @@ body {
   height: 150px;
   border: none;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .catalog-filter-title {
@@ -728,26 +729,26 @@ body {
   height: 140px;
   border: none;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .catalog-price-controls {
   display: flex;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .catalog-price-min {
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .catalog-price-max {
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .input-min {
@@ -873,8 +874,8 @@ body {
   justify-content: center;
   border: none;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 
