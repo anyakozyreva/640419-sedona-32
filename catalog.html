@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
- <!---- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <title>HTML Academy: Sedona</title>
 </head>
@@ -13,13 +13,13 @@
       <nav class="main-navigation">
         <ul class="main-navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link--current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="blank.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link--current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <a class="logo-link" href="index.html">
@@ -31,7 +31,7 @@
                 сайту</span></a>
           </li>
           <li class="navigation-item">
-            <a class="user-link user-link--heart-icon" href="blank.html"><span class="circus-green"></span><span
+            <a class="user-link user-link--heart-icon" href="blank.html"><span class="circus-green">12</span><span
                 class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
@@ -41,19 +41,19 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
+      <header class="inner-header--with-img">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <div class="inner-header-container">
           <h2 class="visually-hidden">Фильтры поиска жилья</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-icon" href="blank.html">
+              <a class="breadcrumbs-icon" href="index.html">
                 <span class="visually-hidden">Домой</span>
               </a>
             </li>
             <!--добавлю стрелочку как элемент after после первого ли или как before у Гостиницы-->
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
             </li>
           </ul>
           <form class="catalog-filter-form" method="post" action="https://echo.htmlacademy.ru">
@@ -110,9 +110,9 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="catalog-price-box">
+            <div class="catalog-price-container">
               <fieldset class="catalog-price-field">
-                <legend class="catalog-price-name">Стоимость,<span>&#8381;</span>:</legend>
+                <legend class="catalog-filter-title">Стоимость,<span>&#8381;</span>:</legend>
                 <div class="catalog-price-controls">
                   <label class="catalog-price-min">
                     <input class="input-min" type="number" name="min-price" value="0">от
@@ -137,7 +137,7 @@
           </form>
         </div>
       </header>
-      <section class="sorting-price">
+      <section class="sorting-price-section">
         <h2 class="visually-hidden">Фильтр стоимости гостиниц</h2>
         <form class="sorting-price-form" method="post" action="https://echo.htmlacademy.ru">
           <p class="search-results">Найдено гостиниц: 38</p>
@@ -149,7 +149,7 @@
           <button class="visually-hidden" type="submit">Отсортировать</button>
         </form>
         <!--вставить картинки фоном-->
-        <p class="sorting-price-btn">
+        <p class="sorting-container-for-btn">
           <button class="btn--sorting-price-btn btn--tile-mode-btn" type="button"></button>
           <button class="btn--sorting-price-btn btn--slideshow-mode-btn" type="button"></button>
           <button class="btn--sorting-price-btn btn--list-mode-btn" type="button"></button>
@@ -179,7 +179,7 @@
               <div class="catalog-container--right-col">
                 <!--width: 80px;-->
                 <p class="stars-container--stars-four"></p>
-                <p class="btn btn--hotel-rating-btn">Рейтинг 8,5</p>
+                <p class="btn--hotel-rating-btn">Рейтинг 8,5</p>
               </div>
             </article>
           </li>
@@ -202,7 +202,7 @@
                 <div class="catalog-container--right-col">
                   <!--width: 60px;-->
                   <p class="stars-container--stars-three"></p>
-                  <p class="btn btn--hotel-rating-btn">Рейтинг 8,9</p>
+                  <p class="btn--hotel-rating-btn">Рейтинг 8,9</p>
                 </div>
               </div>
             </article>
@@ -227,7 +227,7 @@
               <div class="catalog-container--right-col">
                 <!--width: 40px;-->
                 <p class="stars-container--stars-two"></p>
-                <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
+                <p class="btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
@@ -251,7 +251,7 @@
               <div class="catalog-container--right-col">
                 <!--width: 40px;-->
                 <p class="stars-container--stars-two"></p>
-                <p class="btn btn--hotel-rating-btn">Рейтинг 9,2</p>
+                <p class="btn--hotel-rating-btn">Рейтинг 9,2</p>
               </div>
             </article>
           </li>
@@ -301,7 +301,7 @@
           <label class="visually-hidden" for="input-email"></label>
           <input class="subscription-input" type="text" name="e-mail" id="input-email" placeholder="Ваш e-mail"
             required>
-          <button class="btn blue-btn btn--subscription-btn" type="submit">Подписаться</button>
+          <button class="btn blue-btn btn--subscription" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-contact">
