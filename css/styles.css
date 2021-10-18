@@ -619,8 +619,6 @@ body {
   margin-bottom: 90px;
 }
 
-
-
 /* Catalog */
 
 .main-inner {}
@@ -654,7 +652,8 @@ body {
   width: 110px;
   margin-left: 70px;
   margin-bottom: 45px;
-  /*outline: 5px solid rgba(255, 99, 78, 0.5);
+
+  outline: 2px solid rgba(0, 41, 224, 0.5);
   outline-offset: -5px; */
 }
 
@@ -677,6 +676,9 @@ body {
   background-image: url(../images/icons/home.svg);
   background-size: 12px 12px;
   background-repeat: no-repeat;
+
+  outline: 5px solid rgba(40, 218, 4, 0.5);
+  outline-offset: -5px;
 }
 
 .breadcrumbs-icon:hover {
@@ -1042,9 +1044,15 @@ body {
   padding-right: 110px;
   padding-bottom: 30px;
   padding-left: 70px;
+
+  outline: 3px solid rgba(235, 8, 243, 0.5);
+  outline-offset: -5px;
 }
 
-.hotel-link {}
+.hotel-link {
+  outline: 3px solid rgba(35, 209, 13, 0.5);
+  outline-offset: -5px;
+}
 
 .hotel-link--img-link {}
 
@@ -1060,7 +1068,10 @@ body {
 
 
 /*   left - col ========>  */
-.catalog-container--left-col {}
+.catalog-container--left-col {
+  outline: 3px solid rgba(230, 7, 144, 0.5);
+  outline-offset: -5px;
+}
 
 .hotel-title {
   font-style: 400;
@@ -1089,6 +1100,9 @@ body {
 .hotel-container {
   display: flex;
   flex-wrap: wrap;
+
+  outline: 3px solid rgba(12, 180, 166, 0.5);
+  outline-offset: -5px;
 }
 
 
@@ -1118,6 +1132,9 @@ body {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
+
+  outline: 3px solid rgba(243, 82, 8, 0.5);
+  outline-offset: -5px;
 
 }
 
