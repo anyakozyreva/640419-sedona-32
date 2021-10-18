@@ -280,8 +280,7 @@ body {
 
 /* разместить лого по центру сверху шапки*/
 .logo {
-  position: absolute;
-  left: calc(50% - 150px/2);
+  margin: 0 auto;
   top: 0;
   z-index: 1;
 }
@@ -740,7 +739,10 @@ body {
   outline-offset: -5px; */
 }
 
-.catalog-filter-list {}
+.catalog-filter-list {
+  outline: 5px solid rgba(255, 251, 0, 0.5);
+  outline-offset: -5px;
+}
 
 .catalog-filter-item {
   margin-bottom: 10px;
