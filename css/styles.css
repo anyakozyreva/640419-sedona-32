@@ -110,6 +110,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-style: 400;
+  font-weight: 700;
   color: #000000;
   background-color: #F2F2F2;
   ;
@@ -131,7 +133,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
 }
 
 .btn:hover {
@@ -226,8 +227,6 @@ body {
 
 .main-navigation-list {
   display: flex;
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   margin-right: auto;
@@ -243,7 +242,6 @@ body {
 
 .navigation-link {
   color: #000000;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
@@ -266,7 +264,6 @@ body {
 
 .navigation-link-current {
   color: #000000;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   outline: 2px solid #756257;
@@ -327,14 +324,14 @@ body {
 
 .user-link--search-icon:focus {
   color: var(--warm-brown);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
 .user-link--heart-icon:focus {
   color: var(--warm-brown);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -399,8 +396,6 @@ body {
 }
 
 .welcome-caption {
-  font-style: 400;
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -411,7 +406,6 @@ body {
 }
 
 .welcome-subtitle {
-  font-style: 400;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
@@ -445,54 +439,44 @@ body {
 
 /* Advantages */
 .advantages-section {
-  /* display: flex;
-  flex-wrap: wrap;
 
-  outline: 5px solid rgba(102, 255, 0, 0.5);
-  outline-offset: -5px; */
+  outline: 10px solid rgba(255, 187, 0, 0.5);
+  outline-offset: -5px;
 }
 
 .advantages-list {
   text-align: center;
 
-  outline: 3px solid rgba(8, 102, 243, 0.5);
+  outline: 12px solid rgba(8, 102, 243, 0.5);
   outline-offset: -5px;
 }
 
 
 .advantages-item:nth-child(1) {
-  display: flex;
-
 
   outline: 10px solid rgba(135, 19, 230, 0.5);
-  outline-offset: -5px; */
+  outline-offset: -5px;
+  */
 }
 
 .advantages {
-  display: flex;
 
   outline: 5px solid rgba(55, 71, 223, 0.973);
   outline-offset: -5px;
 }
 
 .advantage--with-image {
-  display: flex;
-
-
 
   outline: 4px solid rgba(10, 168, 160, 0.973);
   outline-offset: -5px;
 }
 
 .advantage-img {
-  width: 800px;
-  height: 384px;
 
-  /* position: absolute; */
 }
 
 .advantages--with-image-reverse {
-  display: flex;
+
 
   outline: 3px solid rgba(106, 255, 6, 0.973);
   outline-offset: -5px;
@@ -502,57 +486,50 @@ body {
 }
 
 .advantage-title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
 
 
-  outline: 5px solid rgba(247, 29, 0, 0.5);
+  outline: 3px solid rgba(247, 29, 0, 0.5);
   outline-offset: -5px;
 }
 
 .advantage--number-item {}
 
 .advantage-description {
-  font-style: 400;
   font-weight: 400;
   color: #000000;
   text-align: center;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 /* Feature */
 .feature-list {
-  /* display: flex;
-  flex-direction: row; */
+  display: flex;
 }
 
 .feature-item {}
 
 .feature-title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 .feature-descrition {
-  font-style: 400;
   font-weight: 400;
   color: #333333;
 
 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
@@ -591,7 +568,6 @@ body {
 }
 
 .hotel-search-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -600,7 +576,6 @@ body {
 
 .hotel-search-subtitle {
   width: 720px;
-  font-style: 400;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -613,8 +588,6 @@ body {
 /* Hotel-Search  -- Bnt                        -- Bnt   */
 .btn--hotel-search-btn {
   width: 575px;
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
@@ -639,8 +612,6 @@ body {
 /* Catalog-Header */
 .inner-header-title {
   max-width: 528px;
-  font-style: 400;
-  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 
@@ -744,8 +715,6 @@ body {
 }
 
 .catalog-filter-title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 
@@ -986,8 +955,6 @@ body {
 }
 
 .search-results {
-  font-style: 400;
-  font-weight: 700;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
@@ -1089,8 +1056,6 @@ body {
 }
 
 .hotel-title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 24px;
   line-height: 31px;
 }
@@ -1123,7 +1088,6 @@ body {
 
 .hotel-type,
 .hotel-cost {
-  font-style: 400;
   font-weight: 400;
   line-height: 23px;
   color: #333333;
@@ -1159,7 +1123,6 @@ body {
   background-color: #F2F2F2;
   text-transform: uppercase;
   border-radius: 4px;
-  font-style: 400;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -1208,13 +1171,9 @@ body {
   display: inline-block;
   font-size: 20px;
   line-height: 26px;
-  font-style: 400;
-  font-weight: 700;
-
   width: 625px;
   padding: 10px 50px;
   border-radius: 4px;
-
   margin: 30px 0px;
 }
 
@@ -1224,8 +1183,6 @@ body {
 
 /* Pagination  -- Bnt */
 .btn--pagination-btn {
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   width: 55px;
@@ -1264,7 +1221,6 @@ body {
 .hotel-sorting {}
 
 .hotel-sorting-title {
-  font-style: 400;
   font-weight: 400;
   color: #333333;
 
@@ -1320,19 +1276,15 @@ body {
 }
 
 .subscription-title {
-  font-style: 400;
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-
   margin-top: 90px;
 }
 
 .subscription-subtitle {
   width: 500px;
-  font-style: 400;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1387,8 +1339,6 @@ body {
 /* Subscription  -- Bnt */
 .btn--subscription {
   width: 200px;
-  font-style: 400;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   border-radius: 0px 10px 10px 0px;
@@ -1415,7 +1365,6 @@ body {
 .social-item {}
 
 .contact-phone {
-  font-style: 400;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
