@@ -131,8 +131,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
-  line-height: 21px;
-  font-style: 400;
   font-weight: 700;
 }
 
@@ -447,31 +445,40 @@ body {
 
 /* Advantages */
 .advantages-section {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
 
   outline: 5px solid rgba(102, 255, 0, 0.5);
-  outline-offset: -5px;
+  outline-offset: -5px; */
 }
 
 .advantages-list {
   text-align: center;
-
 
   outline: 3px solid rgba(8, 102, 243, 0.5);
   outline-offset: -5px;
 }
 
 
-.advantages-item {}
+.advantages-item:nth-child(1) {
+  display: flex;
+
+
+  outline: 10px solid rgba(135, 19, 230, 0.5);
+  outline-offset: -5px; */
+}
 
 .advantages {
+  display: flex;
 
   outline: 5px solid rgba(55, 71, 223, 0.973);
   outline-offset: -5px;
 }
 
 .advantage--with-image {
+  display: flex;
+
+
 
   outline: 4px solid rgba(10, 168, 160, 0.973);
   outline-offset: -5px;
@@ -485,6 +492,7 @@ body {
 }
 
 .advantages--with-image-reverse {
+  display: flex;
 
   outline: 3px solid rgba(106, 255, 6, 0.973);
   outline-offset: -5px;
@@ -511,8 +519,6 @@ body {
 .advantage-description {
   font-style: 400;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   color: #000000;
   text-align: center;
 
@@ -543,8 +549,6 @@ body {
 .feature-descrition {
   font-style: 400;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
 
 
@@ -648,7 +652,8 @@ body {
 }
 
 /* нужен ли вообще этот контейнер?
- */.inner-header-container {
+ */
+.inner-header-container {
   width: 1057px;
   height: 290px;
 
@@ -662,7 +667,8 @@ body {
   margin-bottom: 45px;
 
   outline: 2px solid rgba(0, 41, 224, 0.5);
-  outline-offset: -5px; */
+  outline-offset: -5px;
+  */
 }
 
 .breadcrumbs-item {}
@@ -929,7 +935,6 @@ body {
 .btn--filter-btn {
   width: 160px;
   font-size: 16px;
-  line-height: 21px;
   padding: 10px;
   border-radius: 4px;
 }
@@ -952,7 +957,6 @@ body {
 .btn--reset-btn {
   display: inline-block;
   max-width: 160px;
-  font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   text-transform: capitalize;
@@ -1121,7 +1125,6 @@ body {
 .hotel-cost {
   font-style: 400;
   font-weight: 400;
-  font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
@@ -1159,7 +1162,6 @@ body {
   font-style: 400;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
   text-align: center;
   color: #333333;
   padding: 10px;
