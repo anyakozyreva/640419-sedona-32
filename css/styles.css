@@ -647,7 +647,14 @@ body {
   outline-offset: -5px; */
 }
 
-.inner-header-container {}
+/* нужен ли вообще этот контейнер?
+ */.inner-header-container {
+  width: 1057px;
+  height: 290px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
 
 .breadcrumbs {
   width: 110px;
@@ -1442,7 +1449,7 @@ body {
 .social-link:hover {}
 
 .social-link:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 10px;
 }
 
@@ -1483,9 +1490,11 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+
+  margin-top: 50px;
 }
 
-/* сделать другой цвет у ссылки наведение (разобраться с svg)
+/* сделать другой цвет у ссылки наведение (разобраться с svg) -- не работает fill etc.
  */
 .htmlacademy-icon:hover {
   fill: #756257;
