@@ -241,7 +241,6 @@ body {
 }
 
 .navigation-link {
-  color: #000000;
   font-size: 20px;
   line-height: 26px;
 }
@@ -263,7 +262,6 @@ body {
 }
 
 .navigation-link-current {
-  color: #000000;
   font-size: 20px;
   line-height: 26px;
   outline: 2px solid #756257;
@@ -439,12 +437,14 @@ body {
 
 /* Advantages */
 .advantages-section {
-
   outline: 10px solid rgba(255, 187, 0, 0.5);
   outline-offset: -5px;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
 
   outline: 12px solid rgba(8, 102, 243, 0.5);
@@ -454,25 +454,28 @@ body {
 
 .advantages-item:nth-child(1) {
 
+
   outline: 10px solid rgba(135, 19, 230, 0.5);
   outline-offset: -5px;
-  */
 }
 
 .advantages {
-
-  outline: 5px solid rgba(55, 71, 223, 0.973);
+  display: flex;
+  width: 1200px;
+  outline: 5px solid rgba(255, 0, 0, 0.973);
   outline-offset: -5px;
 }
 
 .advantage--with-image {
-
+  display: flex;
   outline: 4px solid rgba(10, 168, 160, 0.973);
   outline-offset: -5px;
 }
 
 .advantage-img {
-
+  display: block;
+  width: 800px;
+  height: 384px;
 }
 
 .advantages--with-image-reverse {
@@ -489,8 +492,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
-
 
   outline: 3px solid rgba(247, 29, 0, 0.5);
   outline-offset: -5px;
@@ -500,17 +501,13 @@ body {
 
 .advantage-description {
   font-weight: 400;
-  color: #000000;
-  text-align: center;
 
   outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 /* Feature */
-.feature-list {
-  display: flex;
-}
+.advantages-list--feature-list {}
 
 .feature-item {}
 
@@ -518,7 +515,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
 
   outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -634,6 +630,7 @@ body {
 
 .breadcrumbs {
   width: 110px;
+
   margin-left: 70px;
   margin-bottom: 45px;
 
@@ -642,7 +639,8 @@ body {
   */
 }
 
-.breadcrumbs-item {}
+.breadcrumbs-item {
+}
 
 /* .breadcrumbs-item:hover {
   opacity: 0.6;
@@ -718,6 +716,7 @@ body {
   font-size: 20px;
   line-height: 26px;
 
+
   margin-bottom: 25px;
   /*outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
@@ -729,6 +728,7 @@ body {
 }
 
 .catalog-filter-item {
+  font-weight: 400;
   margin-bottom: 10px;
 
   /*outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -750,21 +750,33 @@ body {
 
 .catalog-price-controls {
   display: flex;
+  font-weight: 400;
+
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
 
 .catalog-price-min {
-
+  text-align: right;
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
 
 .catalog-price-max {
+  text-align: right;
 
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
+
+.input-min[value] {
+  padding-left: 20px;
+}
+
+.input-max[value] {
+  padding-left: 20px;
+}
+
 
 .input-min {
   width: 145px;
@@ -948,10 +960,18 @@ body {
 
 .sorting-price-section {
   display: flex;
+  padding: 40px 0px;
+
+  margin-left: 70px;
+  margin-right: 70px;
+
+  outline: 3px solid rgba(21, 160, 224, 0.5);
+  outline-offset: -5px;
 }
 
 .sorting-price-form {
   display: flex;
+  justify-content: space-between;
 }
 
 .search-results {
@@ -963,6 +983,8 @@ body {
 .sorting-price {}
 
 .price-select {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -1008,7 +1030,10 @@ body {
 }
 
 
-.hotel-catalog {}
+.hotel-catalog-section {
+  margin-left: 70px;
+  margin-right: 70px;
+}
 
 .hotel-catalog-list {}
 
@@ -1027,7 +1052,7 @@ body {
   padding-bottom: 30px;
   padding-left: 70px;
 
-  outline: 3px solid rgba(235, 8, 243, 0.5);
+  outline: 3px solid rgba(129, 231, 115, 0.5);
   outline-offset: -5px;
 }
 
@@ -1106,10 +1131,9 @@ body {
 
 /*  <========right - col   */
 .catalog-container--right-col {
-
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 
   outline: 3px solid rgba(243, 82, 8, 0.5);
   outline-offset: -5px;
@@ -1210,7 +1234,6 @@ body {
 
 .btn--pagination-btn:active {
   background-color: transparent;
-  color: #000000;
 }
 
 /* прописать стиль */
@@ -1354,8 +1377,8 @@ body {
   width: 1200px;
   height: 120px;
   background-color: #FFFFFF;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 70px;
+  padding-right: 70px;
   display: flex;
   justify-content: space-between;
 }
