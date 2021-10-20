@@ -78,7 +78,7 @@ li {
   list-style: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -86,7 +86,7 @@ h5,
 h6 {
   margin: 0;
 }
-
+ */
 img {
   max-width: 100%;
   height: auto;
@@ -106,6 +106,8 @@ img {
 
 body {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -114,7 +116,6 @@ body {
   font-weight: 700;
   color: #000000;
   background-color: #F2F2F2;
-  ;
 }
 
 /*  Page-container  */
@@ -133,6 +134,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
+  line-height: 21px;
 }
 
 .btn:hover {
@@ -217,20 +219,24 @@ body {
 }
 
 .main-navigation {
-  height: 65px;
-  padding-left: 70px;
-  padding-right: 70px;
-  align-items: center;
   display: flex;
-  justify-content: space-between;
+  width: 1056px;
+  margin: 0 auto;
 }
 
-.main-navigation-list {
+.navigation-list {
   display: flex;
-  font-size: 20px;
-  line-height: 26px;
-  margin-right: auto;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+
+  outline: 2px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
+
+/* .navigation-list-current a:not([href]){
+  background-color: #756257;
+} */
 
 .navigation-item {
   padding-right: 30px;
@@ -241,6 +247,7 @@ body {
 }
 
 .navigation-link {
+  font-family: PT Sans;
   font-size: 20px;
   line-height: 26px;
 }
@@ -262,39 +269,38 @@ body {
 }
 
 .navigation-link-current {
-  font-size: 20px;
-  line-height: 26px;
   outline: 2px solid #756257;
 }
 
-.navigation-link {}
+.navigation-user {
+  max-width: 350px;
+  margin-left: auto;
+}
 
-.logo-link {}
+.user-link {
+  padding-left: 20px;
+}
 
-/* разместить лого по центру сверху шапки*/
-.logo {
+
+.logo-link {
+  display: block;
   margin: 0 auto;
+}
+
+.logo {
   top: 0;
   z-index: 1;
 }
 
-.navigation-user {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
 
-.user-link {}
 
-/* Main Navigation  -- Icons */
+/*/////////////////////////     Main Navigation  -- Icons ////////////////////////*/
 .user-link--search-icon {
   background-image: url(../images/index-icons/search.svg);
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0px 0px;
   border: none;
-  width: 18px;
-  padding-left: 20px;
   vertical-align: middle;
 }
 
@@ -304,31 +310,28 @@ body {
   background-repeat: no-repeat;
   background-position: 0px 0px;
   border: none;
-
-  width: 18px;
-  padding-left: 20px;
   vertical-align: middle;
 }
 
-/* нужно поменять цвет иконок при нажатии */
+/*/////////////////////////     нужно поменять цвет иконок при нажатии ////////////////////////*/
 .user-link--search-icon:hover {
-  color: var(--warm-brown);
+  color: #615048;
 }
 
-/* нужно поменять цвет иконок при нажатии */
+/*/////////////////////////     нужно поменять цвет иконок при нажатии ////////////////////////*/
 .user-link--heart-icon:hover {
-  color: var(--warm-brown);
+  color: #615048;
 }
 
 .user-link--search-icon:focus {
-  color: var(--warm-brown);
+  color: #615048;
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
 .user-link--heart-icon:focus {
-  color: var(--warm-brown);
+  color: #615048;
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
@@ -343,7 +346,7 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  position: absolute;
+  position: relative;
   right: 440px;
   top: 15px;
   display: inline-flex;
@@ -352,28 +355,27 @@ body {
   letter-spacing: -0.1em;
 }
 
-/* Main Navigation  -- Btn                    -- Bnt    */
+/*/////////////////////////     Main Navigation  -- Btn                    -- Bnt    ////////////////////////*/
 .btn--header-btn {
-  width: 160px;
   padding: 10px 40px;
   border-radius: 4px;
 }
 
 /* Main-Index */
-.main-page {}
+.sticky-footer {
+  flex-grow: 1;
+}
 
 .welcome-section--with-img {
+  display: flex;
   background-color: #83B3D3;
   background-image:
     url("../images/index-divider.svg"), url("../images/index-cover.jpg");
   background-position: left 0 bottom 0px, 0 -10px;
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat;
-
-  display: flex;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .welcome-cover-img {
@@ -384,36 +386,34 @@ body {
 }
 
 .welcome-container {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
-  height: 282px;
   background-color: #FFFFFF;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .welcome-caption {
+  width: 720px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 63px;
-  margin-bottom: 23px;
-  width: 720px;
 }
 
 .welcome-subtitle {
+  width: 720px;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
-  margin-bottom: 80px;
   text-align: center;
+  margin-top: 20px;
 }
 
-
-/* Advantages */
-/*  Цвета для контейнеров повторяются --  */
+/*/////////////////////////     Advantages ////////////////////////*/
+/*/////////////////////////     Цвета для контейнеров повторяются ???--  ////////////////////////*/
 .advantage-container--blue {
   background-color: #83B3D3;
 }
@@ -426,17 +426,20 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.feature-container--cold {
-  background-color: rgba(131, 179, 211, 0.12);
-}
+/* .feature-container--cold{
+  background: rgba(131, 179, 211, 0.2);
+} */
 
-.feature-container--white {
-  background-color: #FFFFFF;
-}
+/* .feature-container--white {
+  background: #FFFFFF;
 
+} */
 
-/* Advantages */
+/*/////////////////////////     Advantages    ////////////////////////*/
 .advantages-section {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
   outline: 10px solid rgba(255, 187, 0, 0.5);
   outline-offset: -5px;
 }
@@ -444,7 +447,7 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
 
   outline: 12px solid rgba(8, 102, 243, 0.5);
@@ -452,46 +455,45 @@ body {
 }
 
 
-.advantages-item:nth-child(1) {
-
-
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   outline: 10px solid rgba(135, 19, 230, 0.5);
   outline-offset: -5px;
 }
 
 .advantages {
   display: flex;
-  width: 1200px;
-  outline: 5px solid rgba(255, 0, 0, 0.973);
-  outline-offset: -5px;
+  flex-wrap: wrap;
+}
+
+.advantage-img {
+  width: 800px;
 }
 
 .advantage--with-image {
-  display: flex;
+  width: 1200px;
+
   outline: 4px solid rgba(10, 168, 160, 0.973);
   outline-offset: -5px;
 }
 
-.advantage-img {
-  display: block;
-  width: 800px;
-  height: 384px;
-}
-
 .advantages--with-image-reverse {
-
-
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
   outline: 3px solid rgba(106, 255, 6, 0.973);
   outline-offset: -5px;
-
-  /* display: flex;
-  flex-direction: row-reverse; */
 }
 
 .advantage-title {
+  width: 250px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
 
   outline: 3px solid rgba(247, 29, 0, 0.5);
   outline-offset: -5px;
@@ -500,37 +502,52 @@ body {
 .advantage--number-item {}
 
 .advantage-description {
+  width: 250px;
+  max-height: 384px;
   font-weight: 400;
+  color: #333333;
+  text-align: center;
 
   outline: 3px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 /* Feature */
-.advantages-list--feature-list {}
+.advantages-list--feature-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
-.feature-item {}
+.feature-item {
+  display: flex;
+  width: 400px;
+  height: 384px;
+  text-align: center;
+  align-items: center;
+}
 
 .feature-title {
+  width: 250px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30%;
 
-  outline: 3px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .feature-descrition {
+  width: 250px;
   font-weight: 400;
   color: #333333;
-
-
-  outline: 3px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  margin-left: 30%;
 }
 
-/* Feature  -- Icons */
+/* /////////////////////////     Feature  -- Icons    ////////////////////////*/
 .feature-item--home-icon {
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/home.svg);
   background-size: 75px 72px;
   background-repeat: no-repeat;
@@ -538,6 +555,7 @@ body {
 }
 
 .feature-item--eating-icon {
+  background-color: #FFFFFF;
   background-image: url(../images/index-icons/eating.svg);
   background-size: 74px 70px;
   background-repeat: no-repeat;
@@ -545,6 +563,7 @@ body {
 }
 
 .feature-item--souvenir-icon {
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/souvenir.svg);
   background-size: 64px 75px;
   background-repeat: no-repeat;
@@ -553,14 +572,15 @@ body {
 
 /* Hotel-Search */
 .hotel-search-section {
-
+  width: 1200px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .hotel-search-title {
@@ -577,20 +597,16 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  text-align: center;
-  margin-top: 30px;
 }
 
-/* Hotel-Search  -- Bnt                        -- Bnt   */
+/* /////////////////////////     Hotel-Search  -- Bnt                        -- Bnt   */
 .btn--hotel-search-btn {
   width: 575px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
-
   padding: 10px;
   margin-top: 50px;
-  margin-bottom: 90px;
 }
 
 /* Catalog */
@@ -607,40 +623,28 @@ body {
 
 /* Catalog-Header */
 .inner-header-title {
-  max-width: 528px;
+  width: 528px;
   font-size: 60px;
   line-height: 78px;
-
-  margin-left: 70px;
   padding-top: 30px;
-
-  /* outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; */
+  margin-left: 70px;
+  margin-bottom: 0px;
 }
 
-/* нужен ли вообще этот контейнер?
- */
 .inner-header-container {
   width: 1057px;
-  height: 290px;
-
+  margin: 0 auto;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 
 .breadcrumbs {
-  width: 110px;
-
-  margin-left: 70px;
-  margin-bottom: 45px;
-
-  outline: 2px solid rgba(0, 41, 224, 0.5);
-  outline-offset: -5px;
-  */
+  display: flex;
+  width: 120px;
+  margin-bottom: 40px;
 }
 
-.breadcrumbs-item {
-}
+.breadcrumbs-item {}
 
 /* .breadcrumbs-item:hover {
   opacity: 0.6;
@@ -678,7 +682,7 @@ body {
 }
 
 .breadcrumbs-link {
-
+  margin-left: 110px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
@@ -700,14 +704,14 @@ body {
 
 .catalog-filter-form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .catalog-filter-group {
   width: 150px;
-  height: 150px;
   border: none;
-
+  margin: 0;
+  padding: 0;
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
@@ -715,21 +719,20 @@ body {
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
-
-
   margin-bottom: 25px;
   /*outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
 
 .catalog-filter-list {
+  padding-left: 35px;
   outline: 5px solid rgba(255, 251, 0, 0.5);
   outline-offset: -5px;
 }
 
 .catalog-filter-item {
   font-weight: 400;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 
   /*outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
@@ -785,9 +788,6 @@ body {
   background-color: transparent;
   outline: 2px solid #FFFFFF;
   border-radius: 4px 0px 0px 4px;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .input-max {
@@ -797,9 +797,6 @@ body {
   background-color: transparent;
   outline: 2px solid #FFFFFF;
   border-radius: 0px 4px 4px 0px;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .input-min:hover {
@@ -839,7 +836,7 @@ body {
 }
 
 
-/*  контейнер для ползунка  */
+/*  /////////////////////////     контейнер для ползунка  */
 .range-toggle {}
 
 .toggle-min {
@@ -897,8 +894,6 @@ body {
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
-
-
 
 
 .filter-button-container {
@@ -991,7 +986,7 @@ body {
   outline-offset: -5px;
 }
 
-/* Sorting-Price  -- Bnt                      -- Bnt    */
+/* /////////////////////////     Sorting-Price  -- Bnt                      -- Bnt    */
 .sorting-container-for-btn {
   margin-left: 500px;
 
@@ -1007,7 +1002,7 @@ body {
 
 }
 
-/* View-Mode  -- Bnt                          -- Bnt    */
+/* /////////////////////////     View-Mode  -- Bnt                          -- Bnt    */
 .btn--tile-mode-btn {
   background-image: url(../images/icons/mode-tile.svg);
   background-size: 16px 14px;
@@ -1037,7 +1032,7 @@ body {
 
 .hotel-catalog-list {}
 
-/* доделать рамку
+/*/////////////////////////      доделать рамку
  */
 .hotel-catalog-item {
   border-top: 1px solid #E6E6E6;
@@ -1074,7 +1069,7 @@ body {
 }
 
 
-/*   left - col ========>  */
+/* /////////////////////////       left - col ========>  */
 .catalog-container--left-col {
   outline: 3px solid rgba(230, 7, 144, 0.5);
   outline-offset: -5px;
@@ -1118,7 +1113,7 @@ body {
   color: #333333;
 }
 
-/* Hotel  -- Bnt */
+/*  /////////////////////////      Hotel  -- Bnt */
 .btn--hotel-info-btn {
   padding: 10px 30px;
   border-radius: 4px;
@@ -1140,7 +1135,7 @@ body {
 
 }
 
-/* Raiting  -- Bnt                                  -- Bnt    */
+/*  /////////////////////////      Raiting  -- Bnt                                  -- Bnt    */
 .btn--hotel-rating-btn {
   width: 160px;
   height: 37px;
@@ -1154,8 +1149,8 @@ body {
   padding: 10px;
 }
 
-/*  контейнер для звезд   */
-/*    4 звезды   */
+/*  /////////////////////////       контейнер для звезд   */
+/* /////////////////////////        4 звезды   */
 .stars-container--stars-four {
   width: 80px;
   height: 17px;
@@ -1165,7 +1160,7 @@ body {
   background-size: 18px 17px;
 }
 
-/*    3 звезды   */
+/* /////////////////////////        3 звезды   */
 .stars-container--stars-three {
   width: 60px;
   height: 17px;
@@ -1175,7 +1170,7 @@ body {
   background-size: 18px 17px;
 }
 
-/*    2 звезды   */
+/*  /////////////////////////       2 звезды   */
 .stars-container--stars-two {
   width: 40px;
   height: 17px;
@@ -1236,7 +1231,7 @@ body {
   background-color: transparent;
 }
 
-/* прописать стиль */
+/*/////////////////////////      прописать стиль */
 .pagination-link--current {}
 
 .pagination-link {}
@@ -1282,7 +1277,6 @@ body {
 /* Subscription */
 .subscription {
   width: 1200px;
-  height: 411px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1303,7 +1297,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .subscription-subtitle {
@@ -1313,9 +1307,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-
-  margin-top: 20px;
-
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .subscription-input {
@@ -1324,13 +1317,10 @@ body {
   padding-top: 2px;
   margin-right: -5px;
   width: 600px;
-  height: 60px;
+  min-height: 60px;
   border-color: transparent;
   background-color: #FFFFFF;
   border-radius: 10px 0px 0px 10px;
-
-  margin-top: 50px;
-
 }
 
 .subscription-input {}
@@ -1353,13 +1343,13 @@ body {
   outline: 2px solid #000000;
 }
 
-/* прописать цвет ошибки верно
+/*/////////////////////////      прописать цвет ошибки верно
 .subscription-input:invalid {
   outline: 2px solid #FF5757;
 }
 */
 
-/* Subscription  -- Bnt */
+/*/////////////////////////      Subscription  -- Bnt */
 .btn--subscription {
   width: 200px;
   font-size: 20px;
@@ -1374,13 +1364,10 @@ body {
 
 /* Footer */
 .footer-contact {
-  width: 1200px;
-  height: 120px;
-  background-color: #FFFFFF;
-  padding-left: 70px;
-  padding-right: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 1200px;
+  background-color: #FFFFFF;
 }
 
 .social-list {}
@@ -1468,7 +1455,7 @@ body {
   margin-top: 50px;
 }
 
-/* сделать другой цвет у ссылки наведение (разобраться с svg) -- не работает fill etc.
+/* /////////////////////////     сделать другой цвет у ссылки наведение (разобраться с svg) -- не работает fill etc.
  */
 .htmlacademy-icon:hover {
   fill: #756257;
