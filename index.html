@@ -9,11 +9,11 @@
 
 <body>
   <div class="page-container">
-    <header class="main-header">
+    <header class="page-header">
       <nav class="main-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link--current" href="index.html">Главная</a>
+          <li class="navigation-item navigation-item--current">
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="blank.html">О Седоне</a>
@@ -25,14 +25,25 @@
         <a class="logo-link">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="user-link user-link--search-icon" href="blank.html"><span class="visually-hidden">Поиск по
-                сайту</span></a>
+        <ul class="navigation-user">
+          <li class="navigation-item user-item">
+            <a class="user-link" href="blank.html">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <svg class="user-link--search-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+              </svg>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="user-link user-link--heart-icon" href="blank.html"><span class="circus-green">12</span><span
-                class="visually-hidden">Избранное</span></a>
+          <li class="navigation-item user-item">
+            <a class="user-link" href="blank.html">
+              <!-- <span class="circus-green">12</span> -->
+              <span class="visually-hidden">Избранное</span>
+              <svg class="user-link--heart-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="btn brown-btn btn--header-btn" href="blank.html">Хочу сюда!</a>
@@ -40,7 +51,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-page sticky-footer">
+    <main class="main-container">
       <section class="welcome-section--with-img">
         <h1 class="visually-hidden">Туристический сайт города Седона, штат Аризона</h1>
         <img class="welcome-cover-img" src="images/index-welcome.svg" width="460" height="350" alt="Welcome to Sedona!">
@@ -51,64 +62,63 @@
       </div>
       <section class="advantages-section">
         <h2 class="visually-hidden">Преимущества города Седона</h2>
+        <!-- 1 -->
         <ol class="advantages-list">
           <li class="advantages-item">
-            <article class="advantages advantage--with-image">
+            <article class="advantage--with-image ">
               <div class="advantage-container--blue">
                 <h3 class="advantage-title">Настоящий городок</h3>
                 <span class="advantage--number-item">— №1 —</span>
-                <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantage-img" src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона">
-              <ul class="advantages-list--feature-list">
-                <li class="feature-item feature-item--home-icon">
-                  <div class="feature-container--cold">
-                    <h3 class="feature-title">Жильё</h3>
-                    <p class="feature-descrition">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                  </div>
+              <ul class="feature-list">
+                <li class="feature-item feature-item--light-blue feature-item--home-icon">
+                  <h3 class="feature-title">Жильё</h3>
+                  <p class="feature-descrition">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="feature-item feature-item--eating-icon feature-container--white">
-                  <div class="">
-                    <h3 class="feature-title">Еда</h3>
-                    <p class="feature-descrition">Всегда заказывайте топовый фирменный бургер, вы не
-                      разочаруетесь!
-                    </p>
-                  </div>
+                <li class="feature-item feature-item--white feature-item--eating-icon">
+                  <h3 class="feature-title">Еда</h3>
+                  <p class="feature-descrition">Всегда заказывайте топовый фирменный бургер,<br>вы не разочаруетесь!
+                  </p>
                 </li>
-                <li class="feature-item feature-item--souvenir-icon">
-                  <div class="feature-container--cold">
-                    <h3 class="feature-title">Сувениры</h3>
-                    <p class="feature-descrition">Не только китайского, но и настоящего местного производства!</p>
-                  </div>
+                <li class="feature-item feature-item--light-blue feature-item--souvenir-icon">
+                  <h3 class="feature-title">Сувениры</h3>
+                  <p class="feature-descrition">Не только китайского, но и настоящего местного производства!</p>
                 </li>
               </ul>
             </article>
           </li>
+          <!-- 2 -->
           <li class="advantages-item">
-            <article class="advantages advantages--with-image-reverse">
-              <img class="advantage-img" src="images/devil-bridge.jpg" width="800" height="384" alt="Вид на мост Дьявола">
+            <article class="advantages--with-image-reverse">
               <div class="advantage-container--blue">
                 <h3 class="advantage-title">Там есть мост дьявола</h3>
                 <span class="advantage--number-item">— №2 —</span>
-                <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
+              <img class="advantage-img" src="images/devil-bridge.jpg" width="800" height="384"
+                alt="Вид на мост Дьявола">
             </article>
           </li>
-          <li class="advantages-item">
+          <!-- 3 -->
+          <li class="advantages-item advantages-item--grow">
             <article class="advantages-container--light-blue">
               <h3 class="advantage-title">Небольшая площадь</h3>
               <span class="advantage--number-item">— №3 —</span>
               <p class="advantage-description">Все достопримечательности находятся очень близко</p>
             </article>
           </li>
-          <li class="advantages-item">
+          <!-- 4 -->
+          <li class="advantages-item advantages-item--grow">
             <article class="advantages-container--cold">
               <h3 class="advantage-title">Красивая дорога</h3>
               <span class="advantage--number-item">— №4 —</span>
               <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </article>
           </li>
-          <li class="advantages-item">
+          <!-- 5 -->
+          <li class="advantages-item advantages-item--grow">
             <article class="advantages-container--light-blue">
               <h3 class="advantage-title">Мало туристов</h3>
               <span class="advantage--number-item">— №5 —</span>
@@ -130,7 +140,7 @@
         <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="input-email"></label>
-          <input class="subscription-input" type="text" name="e-mail" id="input-email" placeholder="Ваш e-mail"
+          <input class="subscription-input" type="email" name="e-mail" id="input-email" placeholder="Ваш e-mail"
             required>
           <button class="btn blue-btn btn--subscription" type="submit">Подписаться</button>
         </form>
@@ -155,7 +165,11 @@
           </li>
         </ul>
         <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-icon" href="https://htmlacademy.ru/">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <svg class="htmlacademy-icon" width="115" height="33" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8 6.2c.8-1 2-1.7 3.6-1.7 2.7 0 4.6 1.9 4.5 4.9v6.1h-2V9.8c0-1.8-1.1-3.2-2.9-3.2-2 0-3.3 1.5-3.3 3.6v5.3h-2V0h2v6.2H8Zm-8 9.3v-2.6h2.5v2.6H0ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm11 1.9c.6-1.3 1.9-2.1 3.5-2.1 2.5 0 4 1.8 3.9 4.3v6.5h-2V9.1c0-1.6-.9-2.6-2.4-2.6-1.2 0-2.6.9-2.6 3.3v5.6h-2V9.1c0-1.6-.9-2.6-2.4-2.6C32 6.5 31 8 31 10v5.4h-2V4.8h1.9v1.6h.1c.6-1 1.7-1.8 3.1-1.8 1.6 0 2.8.9 3.4 2.1h.1Zm10.2 6c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM25 17.9c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6h-.1c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6s3.6-1.7 3.6-3.6c0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Zm7-4.1c1.7 0 3 .7 3.9 1.8v-1.5h2v10.6h-2v-1.6H55c-.8 1.1-2 1.9-3.8 1.9-3.1 0-5.4-2.3-5.4-5.6s2.3-5.6 5.4-5.6Zm-3.3 5.6c0 2 1.4 3.6 3.6 3.6 2.1 0 3.6-1.7 3.6-3.6 0-2-1.4-3.6-3.6-3.6s-3.6 1.6-3.6 3.6Zm20.8-3.7c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm7.7-3.6c0-3.1 2.2-5.6 5.5-5.6 3.5 0 5.7 2.7 5.5 6.3H75c.1 1.6 1.5 2.9 3.4 2.9 1.4 0 2.5-.6 3-1.6h2.1c-.7 2.3-2.7 3.6-5.2 3.6-3.4 0-5.5-2.6-5.5-5.6Zm8.8-1.1c-.3-1.6-1.6-2.6-3.3-2.6-1.7 0-2.9 1.1-3.2 2.6h6.5Zm16.6-4.5c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm7.6.2 3.6 8.9 3.4-8.9h2.1l-4.7 12.2c-.7 1.8-1.7 2.6-3.5 2.6h-2.5v-2h2.5c1 0 1.4-.3 1.7-1.2l-4.8-11.6h2.2Z" />
+          </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </section>
