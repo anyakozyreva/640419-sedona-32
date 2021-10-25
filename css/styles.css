@@ -421,14 +421,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-
 }
 
 .advantages-item--grow {
   width: 400px;
   flex-grow: 1;
   flex-shrink: 1;
-
 }
 
 .advantage-title {
@@ -487,6 +485,11 @@ body {
 
 .feature-title {
   padding-bottom: 50px;
+}
+
+.feature-descrition {
+  width: 250px;
+  margin: 0 auto;
 }
 
 .feature-item--white,
@@ -1084,7 +1087,6 @@ body {
   font-weight: 400;
   line-height: 23px;
   color: #333333;
-
   margin-bottom: -30px;
 }
 
