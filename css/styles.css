@@ -265,6 +265,8 @@ body {
 
 .navigation-link {
   border-radius: 10px;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .navigation-link:hover,
@@ -289,6 +291,8 @@ body {
 
 .user-link {
   padding: 5px 5px;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .user-link:focus,
@@ -388,170 +392,157 @@ body {
   margin-top: 20px;
 }
 
-/*  List  */
-/*    */
-.advantages-section {
-  padding: 0;
-  margin: 0;
+/* преимущества */
+.advantages-list {
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.advantages-list {
+.features-list {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+}
+
+.advantages-list,
+.features-list {
+  width: 100%;
+  text-align: center;
+}
+
+.features-item {
+  width: 100%;
+}
+
+.advantages-item,
+.feature-item {
+  display: inline-block;
 }
 
 .advantages-item {
-  text-align: center;
-}
-
-.advantage-img {
-  height: 384px;
-  min-width: 800px;
-
-}
-
-.advantage--with-image {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.advantages--with-image-reverse {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-}
-
-.advantages-item--grow {
-  width: 400px;
   flex-grow: 1;
-  flex-shrink: 1;
 }
 
-.advantage-title {
-  padding-top: 26px;
-  padding-bottom: 55px;
-}
-
-.advantage--number-item {}
-
-.advantage-description {
-  font-weight: 400;
-  padding-top: 25px;
-  padding-bottom: 80px;
-  padding-right: 75px;
-  padding-left: 75px;
-}
-
-.advantage-container--blue {
-  width: 100%;
-  min-width: 400px;
-  width: 400px;
-  background-color: #83B3D3;
-  color: #FFFFFF;
-  padding-top: 98px;
-}
-
-.advantage-container--blue p {
-  padding-top: 25px;
-  padding-right: 90px;
-  padding-left: 90px;
-}
-
-.feature-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.feature-list>* {
-  flex: 1 1 400px;
-}
-
-.feature-item {
-  padding-bottom: 40px;
-}
-
-.advantage-container--blue h3,
-.advantage-title,
-.feature-title {
-  text-align: center;
+.advantages-title,
+.features-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-}
-
-.feature-title {
-  padding-bottom: 50px;
-}
-
-.feature-descrition {
-  width: 250px;
+  width: 172px;
+  text-align: center;
   margin: 0 auto;
 }
 
-.feature-item--white,
-.feature-item--light-blue {
-  padding-top: 190px;
+.advantages-descrition,
+.features-descrition {
+  font-weight: 400;
+  font-size: inherit;
+  color: #333333;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.advantages-container--light-blue,
-.advantages-container--cold {
+.features-descrition {
+  width: 50%;
+}
+
+.advantages--number-item {
+  display: inline-block;
+  font-weight: normal;
+  padding: 20px;
+}
+
+.advantages--with-img-reverse,
+.advantages--with-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages--with-img-reverse {
+  display: flex;
+}
+
+.advantages-img,
+.advantages--with-img-reverse img {
+  width: calc(100% / 3 * 2);
+}
+
+/* цветные обертки для контейнеров */
+.advantages-container--blue {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  width: 400px;
+  text-align: center;
   padding-top: 100px;
+  flex-grow: 2;
+  flex-shrink: 2;
 }
 
-.feature-item--white {
-  background-color: #FFFFFF;
+.advantages-container--blue p,
+.advantages-container--cold p,
+.advantages-container--light-blue p {
+  width: 55%;
+  margin: 0 auto;
 }
 
-.feature-item--light-blue,
+.advantages-container--blue p {
+  font-weight: inherit;
+}
+
+.advantages-container--cold,
 .advantages-container--light-blue {
-  background-color: rgba(131, 179, 211, 0.12);
+  max-width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .advantages-container--cold {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantage-descrition,
-.advantage-container--blue,
-.feature-descrition {
-  font-weight: 400;
+.features-item--white p {
+  width: 60%;
 }
 
-.feature-descrition {
+.advantages-container--light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
+.features-item--light-blue,
+.features-item--white {
+  padding-top: 190px;
+  padding-bottom: 90px;
+}
 
-/* /////////////////////////     Feature  -- Icons    ////////////////////////*/
-.feature-item--home-icon {
+.features-item--home-icon {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/home.svg);
   background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: 50% 30%;
+
 }
 
-.feature-item--eating-icon {
+.features-item--eating-icon {
   background-color: #FFFFFF;
   background-image: url(../images/index-icons/eating.svg);
   background-size: 74px 70px;
   background-repeat: no-repeat;
   background-position: 50% 30%;
+
 }
 
-.feature-item--souvenir-icon {
+.features-item--souvenir-icon {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/souvenir.svg);
   background-size: 64px 75px;
   background-repeat: no-repeat;
   background-position: 50% 30%;
+
 }
 
-
-/* Hotel-Search */
+/* Hotel-Search  */
 .hotel-search-section {
   background-color: #FFFFFF;
   display: flex;
@@ -566,6 +557,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 .hotel-search-subtitle {
@@ -716,6 +708,8 @@ body {
   margin-top: 5px;
 }
 
+/* доделать
+ */
 .breadcrumbs-icon::after {
   content: " ";
   display: block;
@@ -981,6 +975,7 @@ body {
   border-radius: 4px;
 }
 
+/* кнопки режимов просмотра каталога гостиниц */
 .btn--tile-mode-btn {
   background-image: url(../images/icons/mode-tile.svg);
 }
@@ -993,8 +988,7 @@ body {
   background-image: url(../images/icons/mode-list.svg);
 }
 
-/* каталог отелей
- */
+/* каталог отелей */
 .hotel-catalog-section {
   padding-right: 70px;
   padding-left: 70px;
@@ -1021,6 +1015,7 @@ body {
 }
 
 .hotel-link--img-link {
+  display: block;
   width: 180px;
   padding-right: 40px;
 }
@@ -1077,6 +1072,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.hotel-container--left-col {}
 
 .hotel-title--container {
   width: 150px;
