@@ -462,6 +462,7 @@ body {
 .advantages--with-img-reverse {
   display: flex;
   flex-direction: row-reverse;
+
 }
 
 .advantages-img,
@@ -500,6 +501,7 @@ body {
 
 .advantages-container--cold {
   background-color: rgba(131, 179, 211, 0.2);
+
 }
 
 .features-item--white p {
@@ -508,6 +510,7 @@ body {
 
 .advantages-container--light-blue {
   background-color: rgba(131, 179, 211, 0.12);
+
 }
 
 .features-item--light-blue,
