@@ -135,7 +135,9 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
   overflow: auto;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -236,11 +238,13 @@ body {
 }
 
 .navigation-item:nth-child(3n) {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 
-.navigation-item--current {
-  padding: 10px;
+.navigation-item--current::before {
+  content: ' ';
+
+
   border-bottom: 2px solid #756257;
 }
 
@@ -252,19 +256,18 @@ body {
 
 .navigation-link,
 .user-link {
-  display: inline-block;
+  display: block;
 }
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
-  align-items: center;
   padding: 6px 6px;
 }
 
 .navigation-link {
-  border-radius: 10px;
+  border-radius: 10px 10px;
   outline: 1px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -392,140 +395,63 @@ body {
   margin-top: 20px;
 }
 
-/* преимущества */
-.advantages-list {
-  font-weight: 400;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.features-list {
-  display: flex;
-}
-
-.advantages-list,
-.features-list {
-  width: 100%;
-  text-align: center;
-}
-
-.features-item {
-  width: 100%;
-}
-
-.advantages-item,
-.feature-item {
-  display: inline-block;
-}
-
-.advantages-item {
-  flex-grow: 1;
-}
-
-.advantages-title,
-.features-title {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  width: 172px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.advantages-descrition,
-.features-descrition {
-  font-weight: 400;
-  font-size: inherit;
-  color: #333333;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-.features-descrition {
-  width: 50%;
-}
-
-.advantages--number-item {
-  display: inline-block;
-  font-weight: normal;
-  padding: 20px;
-}
-
-.advantages--with-img-reverse,
-.advantages--with-img {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.advantages--with-img-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-
-}
-
-.advantages-img,
-.advantages--with-img-reverse img {
-  width: calc(100% / 3 * 2);
-}
-
-/* цветные обертки для контейнеров */
+/*  Преимущества   */
+/* цветные обертки */
 .advantages-container--blue {
   background-color: #83B3D3;
   color: #FFFFFF;
-  width: 400px;
-  text-align: center;
-  padding-top: 100px;
-  flex-grow: 2;
-  flex-shrink: 2;
-}
-
-.advantages-container--blue p,
-.advantages-container--cold p,
-.advantages-container--light-blue p {
-  width: 55%;
-  margin: 0 auto;
-}
-
-.advantages-container--blue p {
-  font-weight: inherit;
-}
-
-.advantages-container--cold,
-.advantages-container--light-blue {
-  max-width: 100%;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  flex-grow: 1;
+  /* padding-top: 100px; */
+  /* width: 400px; */
+  /* max-width: 100%;  */
 }
 
 .advantages-container--cold {
   background-color: rgba(131, 179, 211, 0.2);
-
-}
-
-.features-item--white p {
-  width: 60%;
 }
 
 .advantages-container--light-blue {
   background-color: rgba(131, 179, 211, 0.12);
-
 }
 
-.features-item--light-blue,
-.features-item--white {
-  padding-top: 190px;
-  padding-bottom: 90px;
+.advantages-container--blue,
+.advantages-container--light-blue,
+.advantages-container--cold {
+  width: 400px;
 }
 
+.advantages-container--light-blue,
+.advantages-container--cold {
+  flex-grow: 1;
+}
+
+.advantages-container--blue,
+.advantages-container--light-blue h3,
+.advantages-container--cold h3 {
+  width: 125px;
+  padding-top: 98px;
+}
+
+.advantages-container--light-blue p {
+  width: 230px;
+}
+
+.advantages-container--cold p {
+  width: 240px;
+}
+
+.advantages-container--light-blue p,
+.advantages-container--cold p {
+  padding-bottom: 78px;
+}
+
+/* иконки и цветные обертки */
 .features-item--home-icon {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/home.svg);
   background-size: 75px 72px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-
+  background-position: 50% 60px;
 }
 
 .features-item--eating-icon {
@@ -533,8 +459,7 @@ body {
   background-image: url(../images/index-icons/eating.svg);
   background-size: 74px 70px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
-
+  background-position: 50% 60px;
 }
 
 .features-item--souvenir-icon {
@@ -542,8 +467,100 @@ body {
   background-image: url(../images/index-icons/souvenir.svg);
   background-size: 64px 75px;
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 60px;
+}
 
+.advantages-list,
+.features-list {
+  display: flex;
+  text-align: center;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.features-list,
+.advantages-item,
+.features-item {
+  width: 100%;
+}
+
+.advantages-item {
+  min-width: 400px;
+}
+
+.features-item {
+  padding-top: 175px;
+  padding-bottom: 75px;
+}
+
+.advantages--with-img,
+.advantages--with-img-reverse {
+  display: flex;
+}
+
+.advantages--with-img {
+  flex-wrap: wrap;
+}
+
+.advantages--with-img-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages--with-img h3 {
+  width: 130px;
+}
+
+.advantages--with-img-reverse h3 {
+  width: 172px;
+}
+
+.advantages--with-img p,
+.advantages--with-img-reverse p {
+  width: 220px;
+}
+
+.advantages-title,
+.features-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.features-title {
+  margin-bottom: 20px;
+}
+
+.advantages--number-item {
+  display: block;
+  margin: 20px;
+}
+
+.advantages-description,
+.features-descrition {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+/* Subscription */
+.subscription-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.subscription--with-img {
+  height: 410px;
+  background-image: url(../images/index-footer.jpg);
+  background-color: rgba(131, 179, 211, 0.12);
+  background-size: 100%;
+  color: #F2F2F2;
 }
 
 /* Hotel-Search  */
@@ -553,15 +570,15 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .hotel-search-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hotel-search-subtitle {
@@ -581,24 +598,9 @@ body {
   margin-top: 50px;
 }
 
-/* Subscription */
-.subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.subscription--with-img {
-  height: 410px;
-  background-image: url(../images/index-footer.jpg);
-  background-color: rgba(131, 179, 211, 0.12);
-  background-size: 100%;
-  color: #F2F2F2;
-}
-
 /* в index цвет у p белый, но в catalog-е он черный поэтому обращаюсь к классу с картинкой
  */
+
 .subscription--with-img p {
   color: #F2F2F2;
 }
@@ -607,7 +609,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 90px;
+  margin-bottom: 20px;
 }
 
 .subscription-subtitle {
@@ -616,7 +618,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -628,7 +629,7 @@ body {
   display: block;
   position: relative;
   padding-top: 2px;
-  margin-right: -5px;
+  margin-right: 1px;
   width: 600px;
   height: 60px;
   border-color: transparent;
@@ -636,8 +637,8 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-
 .subscription-input[placeholder] {
+  padding-right: 20px;
   padding-left: 20px;
 }
 
@@ -653,10 +654,10 @@ body {
 .subscription-input:active {
   background: #FFFFFF;
   border: 2px solid #000000;
-  border-radius: 10px 0px 0px 10px;
 }
 
 .btn--subscription {
+  position: relative;
   width: 200px;
   height: 60px;
   font-size: 20px;
@@ -895,8 +896,8 @@ body {
 }
 
 .btn--reset-btn {
-  display: inline-block;
-  max-width: 160px;
+  display: block;
+  width: 100px;
   line-height: 23px;
   font-weight: 400;
   text-transform: capitalize;
@@ -1253,8 +1254,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 70px;
   padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 30px;
   background-color: #FFFFFF;
 }
 
@@ -1283,7 +1285,6 @@ body {
   max-height: 70px;
   padding: 15px;
   margin-top: 35px;
-  margin-bottom: 30px;
 }
 
 .contact-phone:hover,
@@ -1354,12 +1355,109 @@ body {
   fill: black;
 }
 
+.htmlacademy-icon:active,
 .htmlacademy-icon:hover,
 .htmlacademy-icon:focus {
   fill: #756257;
 }
 
 .htmlacademy-icon:active {
-  fill: #756257;
   opacity: 0.3;
+}
+
+
+/* PopUp */
+
+.popup-section {
+  position: absolute;
+  width: 400px;
+  height: 232px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 25px;
+
+}
+
+.hotel-catalog-sublist {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-catalog-subitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.subhotel-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 211px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subhotel-link:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.sub-navigation-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.sub-navigation--hotel-title {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.sub-navigation--hotel-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.hotel-subinner-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  text-align: left;
+}
+
+.btn--sub-navigation-btn {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  background-image: url(../images/icons/delete.svg);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn--sub-navigation-btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.btn--cart-btn {
+  display: block;
+  position: relative;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  border-radius: 0px 0px 20px 20px;
+  right: 26px;
+  top: 10px;
 }
