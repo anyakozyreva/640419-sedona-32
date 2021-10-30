@@ -682,57 +682,68 @@ body {
   line-height: 78px;
   padding-top: 30px;
   margin-left: 70px;
-  margin-bottom: 0px;
 }
 
+/* Фильтры поиска жилья  */
 .breadcrumbs {
+  width: 110px;
   display: flex;
-  margin-bottom: 40px;
-  margin-left: 50px;
+  justify-content: space-between;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 45px;
 }
 
-.breadcrumbs:hover {
-  opacity: 0.3;
+.breadcrumbs a {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
-
-.breadcrumbs:focus {}
-
-.breadcrumbs:active {}
-
 
 .breadcrumbs-item {
-  margin-left: 20px;
+  margin-left: 5px;
+}
+
+.breadcrumbs-item--icon-item {
+  margin-left: 70px;
+}
+
+.breadcrumbs-item--svg-item:hover,
+.breadcrumbs-item--svg-item:focus,
+.breadcrumbs-item--svg-item:active {
+  opacity: 0%;
+}
+
+.breadcrumbs-item--link-item {
 }
 
 .breadcrumbs-icon {
-  display: block;
+  position: relative;
   width: 20px;
   height: 20px;
   background-image: url(../images/icons/home.svg);
-  background-repeat: no-repeat;
-  margin-top: 5px;
-}
-
-/* доделать
- */
-.breadcrumbs-icon::after {
-  content: " ";
-  display: block;
-  background-image: url(../images/icons/nav-link.svg);
-  background-size: 5px 7px;
   background-position: center;
+  background-image: 12px 12px;
   background-repeat: no-repeat;
-  padding: 7px;
-  margin-left: 20px;
-}
-
-.breadcrumbs-icon:hover::after {
-  display: none;
+  border-radius: 4px;
 }
 
 .breadcrumbs-link {
-  font-size: 16px;
-  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.breadcrumbs-link:hover {
+}
+
+.breadcrumbs-icon:focus,
+.breadcrumbs-link:focus{
+  outline: 3px solid #83B3D3;
 }
 
 .catalog-filter-form {
