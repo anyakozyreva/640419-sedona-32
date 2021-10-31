@@ -1591,9 +1591,9 @@ body {
   border-radius: 30px;
 }
 
-/* .modal-close {
+.modal-close {
   display: none;
-} */
+}
 
 .modal-auth {
   width: 715px;
