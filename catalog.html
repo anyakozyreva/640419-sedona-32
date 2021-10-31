@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <title>HTML Academy: Sedona</title>
-  <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon"/>
+  <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon" />
 </head>
 
 <body>
@@ -527,7 +527,7 @@
         </a>
       </section>
     </footer>
-<!-- Модальное окно -->
+    <!-- Модальное окно -->
     <div class="modal-container modal-container modal-close">
       <div class="modal modal-auth">
         <button class="btn--modal-close-btn modal-close-icon">
@@ -546,16 +546,18 @@
             <label for="arrival">
               Дата заезда:
             </label>
-            <input class="auth-form-field field error" type="text" id="arrival" name="arrival" placeholder="27 апреля 2020" required>
+            <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
+              placeholder="27 апреля 2020" required>
           </p>
           <!-- 2 -->
           <p class="auth--field-group">
             <label for="departure">
               Дата выезда:
             </label>
-            <input class="auth-form-field field error" type="text" id="departure" name="departure" placeholder="1 сентября 2021" required>
+            <input class="auth-form-field field error" type="text" id="departure" name="departure"
+              placeholder="1 сентября 2021" required>
           </p>
-          <div>
+          <div class="modal-auth-container">
             <!-- 3 -->
             <p class="auth--control-group">
               <label for="adult">
@@ -567,7 +569,8 @@
                     Уменьшить количество людей
                   </span>
                 </button>
-                <input class="field field-control" type="number" min="1" max="100" value="2" id="adult" name="adult" required>
+                <input class="field field-control" type="number" min="1" max="100" value="2" id="adult" name="adult"
+                  required>
                 <button class="appointment-btn btn--plus-btn" type="button">
                   <span class="visually-hidden">
                     Увеличить количество людей
@@ -589,6 +592,12 @@
                   </span>
                 </button>
               </span>
+              <div class="tooltip auth-tooltip">
+                <p class="tooltip-title">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </p>
+              </div>
               <div class="appointment-number-container">
                 <button class="appointment-btn btn--minus-btn" type="button">
                   <span class="visually-hidden">

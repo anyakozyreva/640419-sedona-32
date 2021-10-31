@@ -145,12 +145,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* .btn--display-none {
-  display: none;
-} */
-
-/*////////////////////////  Состояние цветных кнопок   ////////////////////////*/
-/*////////////////////////  Brown Btn   ////////////////////////*/
+/* Состояние цветных кнопок */
+/* Brown Btn */
 .brown-btn {
   background-color: #756257;
 }
@@ -165,7 +161,7 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-/*////////////////////////  Blue Btn   ////////////////////////*/
+/* Blue Btn */
 .blue-btn {
   background-color: #83B3D3;
 }
@@ -185,7 +181,7 @@ body {
   outline: 3px solid #756257;
 }
 
-/*////////////////////////  Green Btn   ////////////////////////*/
+/* Green Btn */
 .green-btn {
   background-color: #7DB54F;
 }
@@ -200,7 +196,7 @@ body {
   outline: 3px solid #756257;
 }
 
-/*////////////////////////    Transparent Btn   ////////////////////////*/
+/* Transparent Btn */
 .transparent-btn {
   background-color: transparent;
 }
@@ -238,10 +234,6 @@ body {
   margin-right: 20px;
 }
 
-/* .navigation-item:nth-child(3n) {
-  margin-right: 0;
-} */
-
 .user-item {
   display: flex;
   align-items: center;
@@ -260,10 +252,8 @@ body {
   font-size: 20px;
   line-height: 26px;
   padding: 10px 10px;
-}
+  border-radius: 10px;
 
-.navigation-link {
-  border-radius: 10px 10px;
   outline: 1px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
@@ -280,6 +270,10 @@ body {
 .navigation-link:active {
   opacity: 0.3;
   border: none;
+}
+
+.navigation-item--current {
+  border-bottom: 2px solid #756257;
 }
 
 .navigation-user {
@@ -315,22 +309,22 @@ body {
   fill: #756257;
 }
 
+/* зеленый значок */
 .circus-green {
+  position: absolute;
   width: 19px;
   height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #7DB550;
   color: #FFFFFF;
   border-radius: 50%;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  /*   position: absolute;
- */
-  right: 440px;
+  right: 0;
   top: 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: -0.1em;
 }
 
@@ -397,9 +391,6 @@ body {
   background-color: #83B3D3;
   color: #FFFFFF;
   flex-grow: 1;
-  /* padding-top: 100px; */
-  /* width: 400px; */
-  /* max-width: 100%;  */
 }
 
 .advantages-container--cold {
@@ -531,6 +522,7 @@ body {
 
 .advantages--number-item {
   display: block;
+  font-weight: normal;
   margin: 20px;
 }
 
@@ -708,8 +700,6 @@ body {
 .breadcrumbs-item--svg-item:active {
   opacity: 0%;
 }
-
-.breadcrumbs-item--link-item {}
 
 .breadcrumbs-icon {
   position: relative;
@@ -1153,8 +1143,6 @@ body {
   justify-content: space-between;
 }
 
-.hotel-container--left-col {}
-
 .hotel-title--container {
   width: 150px;
   margin-right: 10px;
@@ -1169,6 +1157,7 @@ body {
 
 .btn--hotel-info-btn,
 .btn--fav-hotel-btn {
+  display: block;
   text-align: center;
   font-size: 16px;
   line-height: 21px;
@@ -1178,7 +1167,6 @@ body {
 }
 
 .btn--hotel-info-btn {
-  display: block;
   width: 151px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1332,14 +1320,6 @@ body {
   padding: 12px;
 }
 
-/* .select--id-control {
-
-  height: 48px;
-  color: #333333;
-  border: 2px solid #E6E6E6;
-  border-radius: 4px;
-} */
-
 .select--id-control:hover,
 .select--id-control:focus {
   border: 2px solid #83B3D3;
@@ -1406,17 +1386,17 @@ body {
 
 /* Social  -- Icons */
 .social-link {
+  width: 40px;
+  height: 40px;
   display: block;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  border-radius: 10px;
 }
 
 .social-link:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 10px;
 }
 
 .social-link:active {
@@ -1440,17 +1420,17 @@ body {
 }
 
 .htmlacademy-link {
+  width: 160px;
+  height: 70px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  height: 70px;
+  border-radius: 10px;
   margin-top: 40px;
 }
 
 .htmlacademy-link:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 10px;
 }
 
 .htmlacademy-icon {
@@ -1488,19 +1468,6 @@ body {
 .popover-open {
   display: block;
 }
-
-/* .popover-wrapper--with-arrow {
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 9px;
-  background-image: url(../images/icons/popover.svg);
-  background-position: ;
-  background-size: center;
-  background-repeat: no-repeat;
-  top: 90px;
-  margin: 0;
-} */
 
 .popover-content {
   height: 100%;
@@ -1605,18 +1572,6 @@ body {
 }
 
 /* Модальные окна */
-/* .modal-section {
-  padding-top: 63px;
-  padding-right: 68px;
-  padding-left: 68px;
-  padding-bottom: 70px;
-  width: 715px;
-  height: 561px;
-  background: #FFFFFF;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
-  border-radius: 30px;
-} */
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -1630,26 +1585,48 @@ body {
 .modal {
   position: relative;
   margin: 0 auto;
-  padding: 40px;
+  padding: 63px 70px 70px 70px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
-.modal-close {
-    display: none;;
-}
+/* .modal-close {
+  display: none;
+} */
 
 .modal-auth {
   width: 715px;
   height: 561px;
 }
 
+.tooltip {
+  position: absolute;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+
+.tooltip-title {
+  width: 216px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.auth-tooltip {
+  width: 256px;
+
+}
+
 .btn--modal-close-btn {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 55px;
+  right: 70px;
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
@@ -1667,6 +1644,7 @@ body {
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .modal-close-icon:hover {
@@ -1685,7 +1663,6 @@ body {
 .btn--modal-close-btn:hover,
 .btn--modal-close-btn:active {
   background-color: #E6E6E6;
-  ;
 }
 
 .btn--modal-close-btn:focus {
@@ -1693,6 +1670,10 @@ body {
 }
 
 .auth-form {}
+
+.auth--field-group+.auth--field-group {
+  padding: 20px;
+}
 
 .appointment-list {
   display: flex;
@@ -1746,16 +1727,6 @@ body {
   border-radius: 4px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .auth-form-field:hover,
 .auth-form-field:focus {
   background-color: #E6E6E6;
@@ -1772,9 +1743,7 @@ input[type="number"] {
 
 .error {
   outline: 2px solid #FF5757;
-  ;
 }
-
 
 .btn--appointment-search-btn {
   width: 575px;
@@ -1787,31 +1756,21 @@ input[type="number"] {
 
 .field-control {}
 
-
-.form-search-input {
+.auth-form-field {
   width: 400px;
   height: 50px;
   padding-right: 20px;
 }
 
-.form-search-input[placeholder] {
+.auth-form-field[placeholder] {
   font-weight: 700;
   line-height: 40px;
+  color: #000;
 }
 
-.form-search-input::-webkit-datetime-edit {
-  color: transparent;
-  user-select: none;
-}
 
-.form-search-input[type=date]::before {
-  content: attr(placeholder);
-  position: relative;
-  color: #000000;
-}
-
-.form-search-input::-webkit-calendar-picker-indicator {
-  /* display: none;
+.auth-form-field::-webkit-calendar-picker-indicator {
+  display: none;
   background-image: url(../images/icons/date.svg);
   background-size: 15px 15px;
   background-position: 100%;
