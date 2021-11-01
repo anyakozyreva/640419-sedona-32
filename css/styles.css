@@ -856,6 +856,11 @@ body {
   border: 2px solid #FFFFFF;
 }
 
+/* .range-input:focus {
+  outline: 2px solid #FFFFFF;
+} */
+
+
 .range-input:active {
   background-color: #756257;
   border: 2px solid #FFFFFF;
@@ -1473,20 +1478,6 @@ body {
   height: 100%;
 }
 
-.btn--popover-close-btn {
-  position: absolute;
-  background-image: url(../images/icons/popover.svg);
-  background-size: center;
-  background-repeat: no-repeat;
-  top: 100px;
-  right: -33px;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  border: #F2F2F2;
-}
-
 .popover-sublist {
   display: flex;
   flex-direction: column;
@@ -1582,61 +1573,22 @@ body {
   background: rgba(242, 242, 242, 0.8);
 }
 
+/* .modal-close {
+  display: none;
+} */
+
 .modal {
   position: relative;
-  margin: 0 auto;
-  padding: 63px 70px 70px 70px;
+  margin: auto auto;
+  padding: 75px 70px 70px 58px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
-.modal-close {
-  display: none;
-}
-
 .modal-auth {
   width: 715px;
   height: 561px;
-}
-
-.tooltip {
-  position: absolute;
-  background: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 15px 15px 15px 15px;
-}
-
-.tooltip-title {
-  width: 216px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  text-align: left;
-}
-
-.auth-tooltip {
-  width: 256px;
-
-}
-
-.btn--modal-close-btn {
-  position: absolute;
-  padding: 0;
-  top: 55px;
-  right: 70px;
-  width: 53px;
-  height: 53px;
-  background-color: #F2F2F2;
-  border: none;
-  border-radius: 50%;
-  background-image: url(../images/icons/cross.svg);
-  /* background-size: 13px 13px; */
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
 }
 
 .modal-title {
@@ -1645,6 +1597,24 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+/* Кнопка закрытия */
+.btn--modal-close-btn {
+  position: absolute;
+  padding: 0;
+  top: 66px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../images/icons/cross.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .modal-close-icon:hover {
@@ -1669,83 +1639,204 @@ body {
   border: 3px solid #83B3D3;
 }
 
-.auth-form {}
-
-.auth--field-group+.auth--field-group {
-  padding: 20px;
+.auth-form {
+  margin: 0;
+  padding: 0;
 }
 
-.appointment-list {
+.auth-list {
   display: flex;
   flex-direction: column;
 }
 
-.appointment-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.appointment-list label {
+.auth-list label {
   line-height: 40px;
 }
 
-.form-label {
-  justify-content: center;
+.auth-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.btn--info-btn {
-  width: 22px;
-  height: 22px;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  border: none;
-  justify-content: center;
-  align-items: center;
+.auth-item--wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.info-icon {
-  fill: #FFFFFF;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-label-icon {
-  padding-right: 15px;
-}
-
-.auth-form-field {
+.field {
   width: 420px;
   height: 50px;
-  font: inherit;
-  font-weight: bold;
-  line-height: 40px;
-  padding: 0px 20px;
-  border: none;
-  color: #000000;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
   border-radius: 4px;
 }
 
-.auth-form-field:hover,
-.auth-form-field:focus {
-  background-color: #E6E6E6;
+.field:hover,
+.field:focus {
+  background: #E6E6E6;
 }
 
-.auth-form-field:focus {
-  outline: 3px solid #83B3D3;
+.field:focus {
+  border: 3px solid #83B3D3;
 }
 
-.auth-form-field:active {
+.field:active {
   background: #FFFFFF;
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
 }
+
+.field:error {}
 
 .error {
   outline: 2px solid #FF5757;
 }
 
-.btn--appointment-search-btn {
+/* Взрослые и Дети */
+.auth-list--people-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-item--people-group {
+  margin-top: 40px;
+}
+
+.auth-container--people-group {
+  width: 100%;
+  display: flex;
+}
+
+.auth-container--people-group {
+  align-items: center;
+}
+
+.auth-container--adult-group {
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-container--control-children-group {
+  width: 100%;
+}
+
+.btn--info-btn {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  border: none;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.info-icon {
+  position: absolute;
+  fill: #FFFFFF;
+  top: 6px;
+  right: 10px;
+}
+
+/* Обертка для контейнера с цыфрами */
+.auth-control-btn-wrapper {
+  display: flex;
+  background: #F2F2F2;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 17px;
+}
+
+/* Кнопки "-" и "+" */
+.auth-control-btn {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+/* Иконки"-" и "+" */
+.btn--minus-btn {
+  display: block;
+  background-image: url(../images/icons/minus.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: center;
+  padding: 7px 7px;
+}
+
+.btn--plus-btn {
+  display: block;
+  background-image: url(../images/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: center;
+  padding: 7px 7px;
+}
+
+.btn--minus-btn:hover,
+.btn--plus-btn:hover,
+.btn--minus-btn:focus,
+.btn--plus-btn:focus {
+  opacity: 100%;
+}
+
+.btn--minus-btn:focus,
+.btn--plus-btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.auth-control-btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.auth-control-btn:active {}
+
+/* Поля с цыфрами */
+.auth-container-btn-wrapper {
+  display: flex;
+  color: inherit;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.auth-container-input-wrapper {
+  line-height: 40px;
+  background: #F2F2F2;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  text-align: center;
+  appearance: textfield;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-input--number {
+  width: 50px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.auth-input--number::-webkit-outer-spin-button,
+.auth-input--number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Кнопка Найти */
+.btn--auth-search-btn {
   width: 575px;
   height: 60px;
   font-size: 20px;
@@ -1754,27 +1845,9 @@ body {
   border-radius: 10px;
 }
 
-.field-control {}
 
-.auth-form-field {
-  width: 400px;
-  height: 50px;
-  padding-right: 20px;
+/* .range-input {
+
 }
+ */
 
-.auth-form-field[placeholder] {
-  font-weight: 700;
-  line-height: 40px;
-  color: #000;
-}
-
-
-.auth-form-field::-webkit-calendar-picker-indicator {
-  display: none;
-  background-image: url(../images/icons/date.svg);
-  background-size: 15px 15px;
-  background-position: 100%;
-  background-repeat: no-repeat;
-  opacity: 1;
-  cursor: pointer;
-}
