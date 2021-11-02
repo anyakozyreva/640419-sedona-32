@@ -46,7 +46,7 @@
           </li>
           <li class="navigation-item user-item">
             <a class="user-link" href="blank.html">
-              <!-- <span class="circus-green">12</span> -->
+              <span class="circus-green">12</span>
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -174,13 +174,13 @@
                 Стоимость,<span>&#8381;</span>:
               </legend>
               <div class="range-wrapper-inputs">
+                <input class="range-input input-min" type="number" name="min-price" value="0">
                 <label class="catalog-filter-label">
-                  <input class="range-input input-min" type="number" name="min-price" value="0" placeholder="от">
-
+                  от
                 </label>
+                <input class="range-input input-max" type="number" name="max-price" value="9000">
                 <label class="catalog-filter-label">
-                  <input class="range-input input-max" type="number" name="max-price" value="9000" placeholder="до">
-
+                  до
                 </label>
               </div>
               <div class="range">
@@ -479,7 +479,7 @@
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="input-email"></label>
-          <input class="subscription-input " type="email" name="e-mail" id="input-email" placeholder="Ваш e-mail"
+          <input class="subscription-input error" type="email" name="e-mail" id="input-email" placeholder="Ваш e-mail"
             required>
           <button class="btn blue-btn btn--subscription" type="submit">
             Подписаться
@@ -539,7 +539,7 @@
         <h2 class="modal-title">
           Поиск гостиницы в Седоне
         </h2>
-        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="auth-list">
             <!-- 1 -->
             <li class="auth-item">
@@ -595,15 +595,15 @@
                         Посмотреть дополнительную информацию
                       </span>
                     </button>
-                    <!-- Тултип в 4
-                    <div class="tooltip auth-tooltip">
+                    <!-- Тултип в 4 -->
+                    <div class="tooltip auth-tooltip tooltip-close">
+                      <div class="tooltiptail"></div>
                       <p class="tooltip-title tooltip-close">
                         Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
                         лет
                         размещаются бесплатно.
                       </p>
                     </div>
-                    -->
                     <div class="auth-control-btn-wrapper">
                       <button class="auth-control-btn btn--minus-btn" type="button">
                         <span class="visually-hidden">
