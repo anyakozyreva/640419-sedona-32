@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/styles.css">
   <title>HTML Academy: Sedona</title>
-  <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon"/>
+  <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon" />
 </head>
 
 <body>
   <div class="page-container">
     <header class="page-header">
       <nav class="main-navigation">
+        <!-- Navigation-List -->
         <ul class="navigation-list">
           <li class="navigation-item navigation-item--current">
             <a class="navigation-link" href="index.html">
@@ -29,47 +30,51 @@
             </a>
           </li>
         </ul>
+        <!-- Logo -->
         <a class="logo-link">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
+        <!-- Navigation-User -->
         <ul class="navigation-user">
-          <li class="navigation-item user-item">
+          <li class="user-item user-item--search-icon">
             <a class="user-link" href="blank.html">
               <span class="visually-hidden">
                 Поиск по сайту
               </span>
-              <svg class="user-link--search-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-link--search-icon" width="20" height="20">
                 <path
-                  d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+                  d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
               </svg>
             </a>
           </li>
-          <li class="navigation-item user-item">
+          <li class="user-item user-item--heart-icon">
             <a class="user-link" href="blank.html">
               <span class="circus-green">12</span>
               <span class="visually-hidden">
                 Избранное
               </span>
-              <svg class="user-link--heart-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-link--heart-icon" width="20" height="20">
                 <path
-                  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                  d="M9.9 19a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
             </a>
             <!-- Popover -->
             <div class="popover popover-heart-link popover-open">
               <span class="popovertail">
-                <svg width="20" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="popovertail-svg" width="20" height="10" fill="none">
                   <g filter="url(#a)">
-                    <path d="m10 1 10 9H0l10-9Z" fill="#fff"/>
+                    <path fill="#fff" d="m10 1 10 9H0l10-9Z" />
                   </g>
                   <defs>
-                    <filter id="a" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="-1"/>
-                      <feColorMatrix values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"/>
-                      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5:544"/>
-                      <feBlend in="SourceGraphic" in2="effect1_dropShadow_5:544" result="shape"/>
+                    <filter id="a" width="20" height="10" x="0" y="0" color-interpolation-filters="sRGB"
+                      filterUnits="userSpaceOnUse">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                      <feOffset dy="-1" />
+                      <feColorMatrix values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0" />
+                      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5:544" />
+                      <feBlend in="SourceGraphic" in2="effect1_dropShadow_5:544" result="shape" />
                     </filter>
                   </defs>
                 </svg>
@@ -114,16 +119,16 @@
                       </span>
                     </button>
                   </li>
-                  <li>
-                    <button class="btn brown-btn btn--popover-btn" type="button">
-                      Все избранные
-                    </button>
-                  </li>
                 </ul>
+                <p>
+                  <button class="btn brown-btn btn--popover-btn" type="button">
+                    Все избранные
+                  </button>
+                </p>
               </div>
             </div>
           </li>
-          <li class="navigation-item">
+          <li class="user-item">
             <a class="btn brown-btn btn--header-btn" href="blank.html">
               Хочу сюда!
             </a>
@@ -143,7 +148,7 @@
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="welcome-subtitle">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
       <!-- 1 -->
@@ -168,15 +173,26 @@
               <ul class="features-list">
                 <li class="features-item features-item--light-blue features-item--home-icon">
                   <h3 class="features-title">
-                    Жильё</h3>
+                    Жильё
+                  </h3>
                   <p class="features-descrition">
-                    Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+                    Рекомендуем пожить
+                    <br>
+                    в настоящем мотеле,
+                    <br>
+                    всё как в кино!
+                  </p>
                 </li>
                 <li class="features-item features-item--white features-item--eating-icon">
                   <h3 class="features-title">
-                    Еда</h3>
+                    Еда
+                  </h3>
                   <p class="features-descrition">
-                    Всегда заказывайте топовый фирменный бургер,<br>вы не разочаруетесь!
+                    Всегда заказывайте
+                    <br>
+                    топовый фирменный бургер,
+                    <br>
+                    вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="features-item features-item--light-blue features-item--souvenir-icon">
@@ -184,7 +200,9 @@
                     Сувениры
                   </h3>
                   <p class="features-descrition">
-                    Не только китайского,<br>но и настоящего местного производства!
+                    Не только китайского,
+                    <br>
+                    но и настоящего местного производства!
                   </p>
                 </li>
               </ul>
@@ -247,9 +265,13 @@
       </section>
       <section class="hotel-search-section">
         <h2 class="hotel-search-title">
-          Заинтересовались?</h2>
+          Заинтересовались?
+        </h2>
+        <!-- выправить вторую строчку в Css -- убрать Br? -->
         <p class="hotel-search-subtitle">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,
+          <br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="btn brown-btn btn--hotel-search-btn" type="button">
           Поиск гостиницы в Седоне
@@ -266,8 +288,8 @@
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="input-email"></label>
-          <input class="subscription-input error" type="email" name="e-mail" id="input-email" placeholder="Ваш e-mail"
-            required>
+          <input class="subscription-input field error" type="email" name="e-mail" id="input-email"
+            placeholder="Ваш e-mail" required>
           <button class="btn blue-btn btn--subscription" type="submit">
             Подписаться
           </button>
@@ -313,6 +335,159 @@
       </section>
     </footer>
 
+    <!-- Модальное окно -->
+    <div class="modal-container modal-close">
+      <div class="modal modal-auth">
+        <button class="btn--modal-close-btn modal-close-icon">
+          <span class="visually-hidden">
+            Закрыть окно
+          </span>
+        </button>
+        <h2 class="modal-title">
+          Поиск гостиницы в Седоне
+        </h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="auth-list">
+            <!-- 1 -->
+            <li class="auth-item">
+              <label for="arrival">
+                Дата заезда:
+              </label>
+              <div class="auth-form-wrapper">
+                <span class="auth-container--date-icon">
+                  <svg class="auth-form--date-icon" width="15" height="15" viewBox="0 0 15 15">
+                    <path d="M6 10V9l-1 1h1Z"/>
+                    <path
+                      d="M14 2h-2V0h-1v2H4V0H3v2H1L0 3v11l1 1h13l1-1V3l-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"
+                      fill="#000" />
+                    <path
+                      d="M8 10V9l-1 1h1Zm2 0V9l-1 1h1Zm-4 1-1 1h1v-1Zm-2-1V9l-1 1h1Zm0 1-1 1h1v-1Zm4 0-1 1h1v-1Zm2 0-1 1h1v-1Zm2-1V9l-1 1h1Zm0 1-1 1h1v-1Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">
+                    Календарь
+                  </span>
+                </span>
+                <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
+                  placeholder="Укажите дату" required>
+                <!-- Тултип в 1 -->
+                <div class="auth-tooltip--wrapper auth-tooltip-close">
+                  <p class="auth-tooltip-error">
+                    Мы не можем отправить вас в прошлое.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="auth-item auth-item--wrap">
+              <label for="departure">
+                Дата выезда:
+              </label>
+              <div class="auth-form-wrapper">
+                <span class="auth-container--date-icon">
+                  <svg class="auth-form--date-icon" width="15" height="15" viewBox="0 0 15 15">
+                    <path d="M6 10V9l-1 1h1Z"/>
+                    <path
+                      d="M14 2h-2V0h-1v2H4V0H3v2H1L0 3v11l1 1h13l1-1V3l-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"
+                      fill="#000" />
+                    <path
+                      d="M8 10V9l-1 1h1Zm2 0V9l-1 1h1Zm-4 1-1 1h1v-1Zm-2-1V9l-1 1h1Zm0 1-1 1h1v-1Zm4 0-1 1h1v-1Zm2 0-1 1h1v-1Zm2-1V9l-1 1h1Zm0 1-1 1h1v-1Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">
+                    Календарь
+                  </span>
+                </span>
+                <input class="auth-form-field field error" type="text" id="departure" name="departure"
+                  placeholder="Укажите дату" required>
+                <!-- Тултип в 2 -->
+                <div class="auth-tooltip--wrapper auth-tooltip-close">
+                  <p class="auth-tooltip-success">
+                    На эти даты есть свободные номера. Пока есть.
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <ul class="auth-list--people-list">
+                <li class="auth-item--people-group">
+                  <div class="auth-container--people-group auth-container--adult-group">
+                    <label for="adult">
+                      Взрослые:
+                    </label>
+                    <div class="auth-control-btn-wrapper">
+                      <button class="auth-control-btn btn--minus-btn" type="button">
+                        <span class="visually-hidden">
+                          Уменьшить количество людей
+                        </span>
+                      </button>
+                      <div class="auth-container-input-wrapper">
+                        <input class="auth-input--number" type="number" min="1" max="100" value="2" id="adult"
+                          name="adult" required>
+                      </div>
+                      <button class="auth-control-btn btn--plus-btn" type="button">
+                        <span class="visually-hidden">
+                          Увеличить количество людей
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <!-- 4 -->
+                <li class="auth-item--people-group">
+                  <div class="auth-container--people-group auth-container--control-children-group">
+                    <label for="children">
+                      Дети:
+                    </label>
+                    <span class="form-label form-label-icon"></span>
+                    <button class="btn--info-btn" type="button">
+                      <svg class="info-icon" width="2" height="9" viewBox="0 0 2 9" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                      </svg>
+                      <span class="visually-hidden">
+                        Посмотреть дополнительную информацию
+                      </span>
+                    </button>
+                    <!-- Тултип в 4 -->
+                    <div class="tooltip auth-tooltip tooltip-close">
+                      <div class="tooltiptail"></div>
+                      <p class="tooltip-title tooltip-close">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
+                        лет
+                        размещаются бесплатно.
+                      </p>
+                    </div>
+                    <div class="auth-control-btn-wrapper">
+                      <button class="auth-control-btn btn--minus-btn" type="button">
+                        <span class="visually-hidden">
+                          Уменьшить количество людей
+                        </span>
+                      </button>
+                      <div class="auth-container-input-wrapper">
+                        <input class="auth-input--number" type="number" min="1" max="100" value="1" id="children"
+                          name="children" required>
+                      </div>
+                      <button class="auth-control-btn btn--plus-btn" type="button">
+                        <span class="visually-hidden">
+                          Увеличить количество людей
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Кнопка -->
+          <p>
+            <button class="btn blue-btn btn--auth-search-btn">
+              Найти
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
