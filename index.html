@@ -120,11 +120,9 @@
                     </button>
                   </li>
                 </ul>
-                <p>
                   <button class="btn brown-btn btn--popover-btn" type="button">
                     Все избранные
                   </button>
-                </p>
               </div>
             </div>
           </li>
@@ -167,7 +165,8 @@
                   — №1 —
                 </span>
                 <p class="advantages-description">
-                  Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
               </div>
               <img src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона">
               <ul class="features-list">
@@ -338,7 +337,7 @@
     <!-- Модальное окно -->
     <div class="modal-container modal-close">
       <div class="modal modal-auth">
-        <button class="btn--modal-close-btn modal-close-icon">
+        <button class="btn--modal-close-btn modal-close-icon" type="button">
           <span class="visually-hidden">
             Закрыть окно
           </span>
@@ -354,20 +353,11 @@
                 Дата заезда:
               </label>
               <div class="auth-form-wrapper">
-                <span class="auth-container--date-icon">
-                  <svg class="auth-form--date-icon" width="15" height="15" viewBox="0 0 15 15">
-                    <path d="M6 10V9l-1 1h1Z"/>
-                    <path
-                      d="M14 2h-2V0h-1v2H4V0H3v2H1L0 3v11l1 1h13l1-1V3l-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"
-                      fill="#000" />
-                    <path
-                      d="M8 10V9l-1 1h1Zm2 0V9l-1 1h1Zm-4 1-1 1h1v-1Zm-2-1V9l-1 1h1Zm0 1-1 1h1v-1Zm4 0-1 1h1v-1Zm2 0-1 1h1v-1Zm2-1V9l-1 1h1Zm0 1-1 1h1v-1Z"
-                      fill="#000" />
-                  </svg>
+                <button class="btn--date-btn" type="button">
                   <span class="visually-hidden">
                     Календарь
                   </span>
-                </span>
+                </button>
                 <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
                   placeholder="Укажите дату" required>
                 <!-- Тултип в 1 -->
@@ -384,20 +374,11 @@
                 Дата выезда:
               </label>
               <div class="auth-form-wrapper">
-                <span class="auth-container--date-icon">
-                  <svg class="auth-form--date-icon" width="15" height="15" viewBox="0 0 15 15">
-                    <path d="M6 10V9l-1 1h1Z"/>
-                    <path
-                      d="M14 2h-2V0h-1v2H4V0H3v2H1L0 3v11l1 1h13l1-1V3l-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"
-                      fill="#000" />
-                    <path
-                      d="M8 10V9l-1 1h1Zm2 0V9l-1 1h1Zm-4 1-1 1h1v-1Zm-2-1V9l-1 1h1Zm0 1-1 1h1v-1Zm4 0-1 1h1v-1Zm2 0-1 1h1v-1Zm2-1V9l-1 1h1Zm0 1-1 1h1v-1Z"
-                      fill="#000" />
-                  </svg>
+                <button class="btn--date-btn" type="button">
                   <span class="visually-hidden">
                     Календарь
                   </span>
-                </span>
+                </button>
                 <input class="auth-form-field field error" type="text" id="departure" name="departure"
                   placeholder="Укажите дату" required>
                 <!-- Тултип в 2 -->

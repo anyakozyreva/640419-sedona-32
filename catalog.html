@@ -65,8 +65,8 @@
       </nav>
     </header>
     <main class="main-container">
-      <header class="inner-header--with-img">
-        <h1 class="inner-header-title">
+      <section class="main-filter--with-img">
+        <h1 class="main-filter-title">
           Гостиницы Седоны
         </h1>
         <h2 class="visually-hidden">
@@ -128,7 +128,8 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                  <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel"
+                    checked>
                   <span class="control-mark"></span>
                   <span class="control-label">
                     Гостиница
@@ -199,265 +200,267 @@
             </button>
           </div>
         </form>
-      </header>
-      <section class="sorting-price-section">
-        <h2 class="visually-hidden">
-          Фильтр стоимости гостиниц
-        </h2>
-        <form class="sorting-price-form" method="post" action="https://echo.htmlacademy.ru">
-          <p class="search-results">
-            Найдено гостиниц: 38
-          </p>
-          <label for="sorting-price"></label>
-          <div class="select">
-            <select class="price-select" name="sorting-price" id="sorting-price">
-              <option value="cheap">
-                Сначала дешевые
-              </option>
-              <option value="expensive">
-                Сначала дорогие
-              </option>
-            </select>
-          </div>
-          <button class="visually-hidden" type="submit">
-            Отсортировать
-          </button>
-        </form>
-        <p class="sorting-container-for-btn">
-          <button class="btn--sorting-price-btn btn--tile-mode-btn" type="button"></button>
-          <button class="btn--sorting-price-btn btn--slideshow-mode-btn" type="button"></button>
-          <button class="btn--sorting-price-btn btn--list-mode-btn" type="button"></button>
-        </p>
       </section>
-      <section class="hotel-catalog-section">
-        <h2 class="visually-hidden">
-          Каталог гостиниц
-        </h2>
-        <ul class="hotel-catalog-list">
-          <li class="hotel-catalog-item">
-            <article class="hotel-header">
-              <a class="hotel-link--current" href="blank.html">
-                <img class="hotel-link--img-link" src="images/catalog/amara-hotel.jpg" width="180" height="120"
-                  alt="Гостиница Amara">
-              </a>
-              <div class="hotel-container">
-                <div class="hotel-container--left-col">
-                  <a class="hotel-title--main-title" href="blank.html">
-                    Amara Resort & Spa
-                  </a>
-                  <div class="hotel-container--inner-container">
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        Гостиница
-                      </span>
-                      <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
-                        Подробнее
-                      </a>
-                    </div>
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        От 4000<span>&#8381;</span>
-                      </span>
-                      <button class="btn blue-btn btn--fav-hotel-btn" type="button">
-                        В Избранное
-                      </button>
-                    </div>
-                  </div>
-                </div>
+        <section class="main-catalog-section">
+          <header class="sorting-price-section">
+            <h2 class="visually-hidden">
+              Фильтр стоимости гостиниц
+            </h2>
+            <form class="sorting-price-form" method="post" action="https://echo.htmlacademy.ru">
+              <p class="search-results">
+                Найдено гостиниц: 38
+              </p>
+              <label for="sorting-price">
+                <span class="visually-hidden">
+                  Выбрать страницу
+                </span>
+              </label>
+              <div class="select">
+                <select class="price-select" name="sorting-price" id="sorting-price">
+                  <option value="cheap">
+                    Сначала дешевые
+                  </option>
+                  <option value="expensive">
+                    Сначала дорогие
+                  </option>
+                </select>
               </div>
-              <div class="hotel-container--right-col">
-                <p class="stars-container--stars-four"></p>
-                <p class="btn--hotel-rating-btn">
-                  Рейтинг 8,5
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="hotel-catalog-item">
-            <article class="hotel-header">
-              <a href="blank.html">
-                <img class="hotel-link--img-link" src="images/catalog/desert-hotel.jpg" width="180" height="120"
-                  alt="Мотель Desert Quail Inn">
-              </a>
-              <div class="hotel-container">
-                <div class="hotel-container--left-col">
-                  <a class="hotel-title--main-title" href="blank.html">
-                    Desert Quail Inn
-                  </a>
-                  <div class="hotel-container--inner-container">
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        Мотель
-                      </span>
-                      <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
-                        Подробнее
-                      </a>
-                    </div>
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        От 3000<span>&#8381;</span>
-                      </span>
-                      <button class="btn blue-btn btn--fav-hotel-btn" type="button">
-                        В Избранное
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hotel-container--right-col">
-                <p class="stars-container--stars-three"></p>
-                <p class="btn--hotel-rating-btn">
-                  Рейтинг 8,9
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="hotel-catalog-item">
-            <article class="hotel-header">
-              <a class="hotel-link" href="blank.html">
-                <img class="hotel-link--img-link" src="images/catalog/villas-hotel.jpg" width="180" height="120"
-                  alt="Апартаменты Villas at Poco Diablo">
-              </a>
-              <div class="hotel-container">
-                <div class="hotel-container--left-col">
-                  <a class="hotel-title--main-title" href="blank.html">
-                    Villas at Poco Diablo
-                  </a>
-                  <div class="hotel-container--inner-container">
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        Апартаменты
-                      </span>
-                      <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
-                        Подробнее
-                      </a>
-                    </div>
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        От 2000<span>&#8381;</span>
-                      </span>
-                      <button class="btn green-btn btn--fav-hotel-btn" type="button">
-                        В Избранном
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hotel-container--right-col">
-                <p class="stars-container--stars-two"></p>
-                <p class="btn--hotel-rating-btn">
-                  Рейтинг 9,2
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="hotel-catalog-item">
-            <article class="hotel-header">
-              <a class="hotel-link" href="blank.html">
-                <img class="hotel-link--img-link" src="images/catalog/green-hotel.jpg" width="180" height="120"
-                  alt="Гостиница GreenTree Inn">
-              </a>
-              <div class="hotel-container">
-                <div class="hotel-container--left-col">
-                  <a class="hotel-title--main-title" href="blank.html">
-                    GreenTree Inn
-                  </a>
-                  <div class="hotel-container--inner-container">
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        Гостиница
-                      </span>
-                      <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
-                        Подробнее
-                      </a>
-                    </div>
-                    <div class="hotel-title--container">
-                      <span class="hotel-title">
-                        От 3000<span>&#8381;</span>
-                      </span>
-                      <button class="btn blue-btn btn--fav-hotel-btn" type="button">
-                        В Избранное
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hotel-container--right-col">
-                <p class="stars-container--stars-two"></p>
-                <p class="btn--hotel-rating-btn">
-                  Рейтинг 9,2</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <p class="hotel-catalog-item hotel-catalog-item--btn-container">
-          <button class="btn blue-btn btn--download-btn" type="button">
-            Загрузить еще
-          </button>
-        </p>
-      </section>
-      <section class="pagination-section">
-        <h2 class="visually-hidden">Список страниц каталога</h2>
-        <ul class="pagination-list">
-          <li class="btn--pagination-btn blue-btn pagination-bnt--current">
-            <a class="pagination-link">
-              1
-            </a>
-          </li>
-          <li class="btn--pagination-btn blue-btn">
-            <a class="pagination-link" href="#">
-              2
-            </a>
-          </li>
-          <li class="btn--pagination-btn blue-btn">
-            <a class="pagination-link" href="#">
-              3
-            </a>
-          </li>
-          <li class="btn--pagination-btn blue-btn">
-            <a class="pagination-link" href="#">
-              4
-            </a>
-          </li>
-          <li class="btn--pagination-btn blue-btn">
-            <a class="pagination-link" href="#">
-              ...
-            </a>
-          </li>
-          <li class="btn--pagination-btn blue-btn">
-            <a class="pagination-link" href="#">
-              10
-            </a>
-          </li>
-        </ul>
-        <form class="hotel-sorting" action="https://echo.htmlacademy.ru">
-          <div class="pagination--right-container">
-            <p class="hotel-sorting-title">
-              Гостиниц на странице:
+              <button class="visually-hidden" type="submit">
+                Отсортировать
+              </button>
+            </form>
+            <p class="sorting-container-for-btn">
+              <button class="btn--sorting-price-btn btn--tile-mode-btn" type="button"></button>
+              <button class="btn--sorting-price-btn btn--slideshow-mode-btn" type="button"></button>
+              <button class="btn--sorting-price-btn btn--list-mode-btn btn--sorting-price-btn--current" type="button"></button>
             </p>
-            <label for="hotel-sorting"></label>
-            <div class="select--id-select">
-              <select class="select--id-control" name="hotel-sorting" id="hotel-sorting">
-                <option value="1">
+          </header>
+          <section class="hotel-section">
+            <h2 class="visually-hidden">
+              Каталог гостиниц
+            </h2>
+            <ul class="hotel-catalog-list">
+              <li class="hotel-catalog-item">
+                <article class="hotel-header">
+                  <a class="hotel-link--current" href="blank.html">
+                    <img class="hotel-link--img-link" src="images/catalog/amara-hotel.jpg" width="180" height="120"
+                      alt="Гостиница Amara">
+                  </a>
+                  <div class="hotel-container">
+                    <a class="hotel-link-hotel-title" href="blank.html">
+                      <h3 class="hotel-main-title">
+                        Amara Resort & Spa
+                      </h3>
+                    </a>
+                    <span class="hotel-title">
+                      Гостиница
+                    </span>
+                    <span class="hotel-title">
+                      От 4000<span>&#8381;</span>
+                    </span>
+                    <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
+                      Подробнее
+                    </a>
+                    <button class="btn blue-btn btn--fav-hotel-btn" type="button">
+                      В Избранное
+                    </button>
+                  </div>
+                  <div class="hotel-container--right-col">
+                    <p class="stars-container--stars-four">
+                      <span class="visually-hidden">
+                        4 звезды
+                      </span>
+                    </p>
+                    <p class="btn--hotel-rating-btn">
+                      Рейтинг 8,5
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="hotel-catalog-item">
+                <article class="hotel-header">
+                  <a href="blank.html">
+                    <img class="hotel-link--img-link" src="images/catalog/desert-hotel.jpg" width="180" height="120"
+                      alt="Мотель Desert Quail Inn">
+                  </a>
+                  <div class="hotel-container">
+                    <a class="hotel-link-hotel-title" href="blank.html">
+                      <h3 class="hotel-main-title">
+                        Desert Quail Inn
+                      </h3>
+                    </a>
+                    <span class="hotel-title">
+                      Мотель
+                    </span>
+                    <span class="hotel-title">
+                      От 3000<span>&#8381;</span>
+                    </span>
+                    <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
+                      Подробнее
+                    </a>
+                    <button class="btn blue-btn btn--fav-hotel-btn" type="button">
+                      В Избранное
+                    </button>
+                  </div>
+                  <div class="hotel-container--right-col">
+                    <p class="stars-container--stars-three">
+                      <span class="visually-hidden">
+                        3 звезды
+                      </span>
+                    </p>
+                    <p class="btn--hotel-rating-btn">
+                      Рейтинг 8,9
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="hotel-catalog-item">
+                <article class="hotel-header">
+                  <a class="hotel-link" href="blank.html">
+                    <img class="hotel-link--img-link" src="images/catalog/villas-hotel.jpg" width="180" height="120"
+                      alt="Апартаменты Villas at Poco Diablo">
+                  </a>
+                  <div class="hotel-container">
+                    <a class="hotel-link-hotel-title" href="blank.html">
+                      <h3 class="hotel-main-title">
+                        Villas at Poco Diablo
+                      </h3>
+                    </a>
+                    <span class="hotel-title">
+                      Апартаменты
+                    </span>
+                    <span class="hotel-title">
+                      От 2000<span>&#8381;</span>
+                    </span>
+                    <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
+                      Подробнее
+                    </a>
+                    <button class="btn green-btn btn--fav-hotel-btn" type="button">
+                      В Избранном
+                    </button>
+                  </div>
+                  <div class="hotel-container--right-col">
+                    <p class="stars-container--stars-two">
+                      <span class="visually-hidden">
+                        2 звезды
+                      </span>
+                    </p>
+                    <p class="btn--hotel-rating-btn">
+                      Рейтинг 9,2
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="hotel-catalog-item">
+                <article class="hotel-header">
+                  <a class="hotel-link" href="blank.html">
+                    <img class="hotel-link--img-link" src="images/catalog/green-hotel.jpg" width="180" height="120"
+                      alt="Гостиница GreenTree Inn">
+                  </a>
+                  <div class="hotel-container">
+                    <a class="hotel-link-hotel-title" href="blank.html">
+                      <h3 class="hotel-main-title">
+                        GreenTree Inn
+                      </h3>
+                    </a>
+                    <span class="hotel-title">
+                      Гостиница
+                    </span>
+                    <span class="hotel-title">
+                      От 3000<span>&#8381;</span>
+                    </span>
+                    <a class="btn brown-btn btn--hotel-info-btn" href="blank.html">
+                      Подробнее
+                    </a>
+                    <button class="btn blue-btn btn--fav-hotel-btn" type="button">
+                      В Избранное
+                    </button>
+                  </div>
+                  <div class="hotel-container--right-col">
+                    <p class="stars-container--stars-two">
+                      <span class="visually-hidden">
+                        2 звезды
+                      </span>
+                    </p>
+                    <p class="btn--hotel-rating-btn">
+                      Рейтинг 9,2</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <p class="hotel-catalog-item hotel-catalog-item--btn-container">
+              <button class="btn blue-btn btn--download-btn" type="button">
+                Загрузить еще
+              </button>
+            </p>
+          </section>
+          <footer class="pagination-section">
+            <h2 class="visually-hidden">Список страниц каталога</h2>
+            <ul class="pagination-list">
+              <li class="btn--pagination-btn blue-btn pagination-bnt--current">
+                <a class="pagination-link">
                   1
-                </option>
-                <option value="2">
+                </a>
+              </li>
+              <li class="btn--pagination-btn blue-btn">
+                <a class="pagination-link" href="#">
                   2
-                </option>
-                <option value="3">
+                </a>
+              </li>
+              <li class="btn--pagination-btn blue-btn">
+                <a class="pagination-link" href="#">
                   3
-                </option>
-                <option value="4">
+                </a>
+              </li>
+              <li class="btn--pagination-btn blue-btn">
+                <a class="pagination-link" href="#">
                   4
-                </option>
-              </select>
-            </div>
-            <button class="visually-hidden" type="submit">
-              Отсортировать
-            </button>
-          </div>
-        </form>
-      </section>
+                </a>
+              </li>
+              <li class="btn--pagination-btn blue-btn">
+                <a class="pagination-link" href="#">
+                  ...
+                </a>
+              </li>
+              <li class="btn--pagination-btn blue-btn">
+                <a class="pagination-link" href="#">
+                  10
+                </a>
+              </li>
+            </ul>
+            <form class="hotel-sorting" action="https://echo.htmlacademy.ru">
+              <div class="pagination--right-container">
+                <p class="hotel-sorting-title">
+                  Гостиниц на странице:
+                </p>
+                <label for="hotel-sorting">
+                  <span class="visually-hidden">
+                    Выбрать страницу
+                  </span>
+                </label>
+                <div class="select--id-select">
+                  <select class="select--id-control" name="hotel-sorting" id="hotel-sorting">
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                    <option value="3">
+                      3
+                    </option>
+                    <option value="4">
+                      4
+                    </option>
+                  </select>
+                </div>
+                <button class="visually-hidden" type="submit">
+                  Отсортировать
+                </button>
+              </div>
+            </form>
+          </footer>
+        </section>
     </main>
     <footer>
       <section class="subscription-section footer-inner--subscription-section">
