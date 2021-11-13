@@ -696,10 +696,11 @@ input {
   min-height: 408px;
   background-image: url(../images/catalog-bg.jpg);
   background-color: #83B3D3;
-  background-size: 100%;
+  background-size: 100% 100%;
   color: #FFFFFF;
   padding-right: 70px;
   padding-left: 70px;
+  padding-bottom: 20px;
   margin-bottom: 44px;
 }
 
@@ -779,6 +780,14 @@ input {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.catalog-filter-group {
+  max-width: 150px;
+}
+
+.catalog-price-field {
+  max-width: 287px;
 }
 
 .catalog-filter-title {
@@ -995,6 +1004,7 @@ input {
 
 /* Кнопки */
 .filter-button-container {
+  max-width: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1092,6 +1102,7 @@ input {
   width: 160px;
   min-width: 160px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1141,6 +1152,7 @@ input {
 .hotel-catalog-list {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -1229,7 +1241,7 @@ input {
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
-  height: 37px;
+  min-height: 37px;
 }
 
 .btn--hotel-info-btn {
@@ -1255,7 +1267,7 @@ input {
 
 .btn--hotel-rating-btn {
   min-width: 161px;
-  height: 40px;
+  min-height: 40px;
   background-color: #F2F2F2;
   text-transform: uppercase;
   border-radius: 4px;
@@ -1263,7 +1275,7 @@ input {
   font-size: 16px;
   text-align: center;
   color: #333333;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 /*  /////////////////////////       контейнер для звезд      ///////////////////////*/
