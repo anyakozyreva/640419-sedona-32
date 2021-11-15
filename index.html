@@ -20,7 +20,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="blank.html">
+            <a class="navigation-link" href="#">
               О Седоне
             </a>
           </li>
@@ -37,7 +37,7 @@
         <!-- Navigation-User -->
         <ul class="navigation-user">
           <li class="user-item user-item--search-icon">
-            <a class="user-link" href="blank.html">
+            <a class="user-link" href="#">
               <span class="visually-hidden">
                 Поиск по сайту
               </span>
@@ -48,18 +48,21 @@
             </a>
           </li>
           <li class="user-item user-item--heart-icon">
-            <a class="user-link" href="blank.html">
-              <span class="circus-green">12</span>
+            <a class="user-link" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span class="circus-green">12</span>
               <svg class="user-link--heart-icon" width="20" height="20">
                 <path
                   d="M9.9 19a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
             </a>
-            <!-- Popover -->
-            <div class="popover popover-heart-link popover-open">
+            <!-- Включить popover -- добавить класс popover-open-->
+            <aside class="popover popover-heart-link">
+              <h2 class="visually-hidden">
+                Избранные гостиницы
+              </h2>
               <span class="popovertail"></span>
               <div class="popover-content">
                 <ul class="popover-sublist">
@@ -68,9 +71,9 @@
                       <img class="popover-img" src="images/catalog/desert-hotel.jpg" width="48" height="48"
                         alt="Мотель Desert Quail Inn">
                       <div class="popover-container">
-                        <h2 class="popover-title">
+                        <h3 class="popover-title">
                           Desert Quail Inn
-                        </h2>
+                        </h3>
                         <p class="popover-subtitle">
                           Мотель
                         </p>
@@ -87,9 +90,9 @@
                       <img class="popover-img" src="images/catalog/Villas-hotel.jpg" width="48" height="48"
                         alt="Апартаменты Villas at Poco Diablo">
                       <div class="popover-container">
-                        <h2 class="popover-title">
+                        <h3 class="popover-title">
                           Villas at Poco Diablo
-                        </h2>
+                        </h3>
                         <p class="popover-subtitle">
                           Апартаменты
                         </p>
@@ -106,10 +109,10 @@
                     Все избранные
                   </button>
               </div>
-            </div>
+            </aside>
           </li>
           <li class="user-item">
-            <a class="btn brown-btn btn--header-btn" href="blank.html">
+            <a class="btn brown-btn btn--header-btn" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -150,7 +153,7 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона">
+              <img src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона.">
               <ul class="features-list">
                 <li class="features-item features-item--light-blue features-item--home-icon">
                   <h3 class="features-title">
@@ -203,7 +206,7 @@
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img src="images/devil-bridge.jpg" width="800" height="384" alt="Вид на мост Дьявола">
+              <img src="images/devil-bridge.jpg" width="800" height="384" alt="Вид на мост Дьявола.">
             </article>
           </li>
           <!-- 3 -->
@@ -248,7 +251,6 @@
         <h2 class="hotel-search-title">
           Заинтересовались?
         </h2>
-        <!-- выправить вторую строчку в Css -- убрать Br? -->
         <p class="hotel-search-subtitle">
           Укажите предполагаемые даты поездки,
           <br>
@@ -269,6 +271,7 @@
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="input-email"></label>
+          <!-- Включить ошибку -добавить класс error -->
           <input class="subscription-input field error" type="email" name="e-mail" id="input-email"
             placeholder="Ваш e-mail" required>
           <button class="btn blue-btn btn--subscription" type="submit">
@@ -316,9 +319,9 @@
       </section>
     </footer>
 
-    <!-- Модальное окно -->
+    <!-- Модальное окно закомментируйте класс modal-close чтобы открыть-->
     <div class="modal-container modal-close">
-      <div class="modal modal-auth">
+      <section class="modal modal-auth">
         <button class="btn--modal-close-btn modal-close-icon" type="button">
           <span class="visually-hidden">
             Закрыть окно
@@ -447,7 +450,7 @@
             </button>
           </p>
         </form>
-      </div>
+      </section>
     </div>
 
   </div>
