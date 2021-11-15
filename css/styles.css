@@ -199,21 +199,21 @@ input.field::-webkit-input-placeholder {
 }
 
 input.field::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 input.field::-moz-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* Firefox 19+ */
 input.field:-moz-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* Firefox 18- */
 input.field:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* ========Скрываю placeholder при фокусе======== */
