@@ -3,6 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
+  font-weight: normal;
   src: url(../fonts/ptsans-400.woff2) format("woff2"),
     url(../fonts/ptsans-400.woff2) format("woff");
   font-display: swap;
@@ -12,6 +13,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
+  font-weight: bold;
   src: url(../fonts/ptsans-700.woff2) format("woff2"),
     url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
@@ -111,6 +113,7 @@ body {
   overflow: auto;
   cursor: pointer;
   outline-offset: 0px;
+  transition-duration: 0.3s;
 }
 
 .btn:active {
@@ -176,6 +179,7 @@ body {
 /* ========Поля ввода======== */
 .field {
   background-color: #F2F2F2;
+  transition-duration: 0.3s;
 }
 
 .field:hover,
@@ -366,6 +370,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.2s;
 }
 
 .navigation-link {
@@ -952,6 +957,7 @@ input {
   background-color: transparent;
   border: 2px solid #FFFFFF;
   padding: 12px 42px 10px 19px;
+  transition-duration: 0.3s;
 }
 
 .range-input:hover {
@@ -1607,6 +1613,7 @@ input {
   word-spacing: 1px;
   margin-left: 13px;
   border-radius: 10px;
+  transition-duration: 0.3s;
 }
 
 .contact-phone:hover,
@@ -1858,9 +1865,9 @@ input {
   background: rgba(242, 242, 242, 0.8);
 }
 
-.modal-close {
+/* .modal-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1901,6 +1908,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .modal-close-icon:hover {
@@ -2057,6 +2065,7 @@ input {
   margin-right: 19px;
   margin-left: 12px;
   outline: none;
+  transition-duration: 0.1s;
 }
 
 .info-icon {
@@ -2092,6 +2101,7 @@ input {
   border-radius: 4px;
   background-color: transparent;
   opacity: 0.3;
+  transition-property: 0.1s;
 }
 
 /* Иконки"-" и "+" */
