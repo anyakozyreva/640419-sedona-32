@@ -447,6 +447,7 @@ input {
 .user-link:active .user-link--heart-icon {
   opacity: 0.3;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .user-link:active .circus-green {
@@ -1583,6 +1584,7 @@ input {
   padding-left: 60px;
 }
 
+/* ========Социальные сети======== */
 .social-list {
   max-width: 250px;
   display: flex;
@@ -1592,10 +1594,8 @@ input {
 }
 
 .social-item {
-  width: 40px;
-  height: 40px;
+  display: flex;
   align-items: center;
-  justify-content: center;
   margin-right: 5px;
 }
 
@@ -1603,6 +1603,54 @@ input {
   margin-right: 0px;
 }
 
+.social-link {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.social-link:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.social-link:active {
+  opacity: 0.3;
+  outline: none;
+
+}
+
+.social-link--twitter {
+  width: 25px;
+  height: 25px;
+  fill: #83B3D3;
+  margin: 10px 10px;
+}
+
+.social-link--facebook {
+  width: 11px;
+  height: 20px;
+  fill: #83B3D3;
+  margin: 10px 10px;
+}
+
+.social-link--youtube {
+  width: 23px;
+  height: 20px;
+  fill: #83B3D3;
+  margin: 13px 10px;
+}
+
+.social-link:hover .social-link--twitter,
+.social-link:focus .social-link--twitter,
+.social-link:hover .social-link--facebook,
+.social-link:focus .social-link--facebook,
+.social-link:hover .social-link--youtube,
+.social-link:focus .social-link--youtube {
+  fill:#68A2CA;
+}
+
+/* ========Номер телефона======== */
 .contact-phone {
   max-width: 400px;
   display: inline-block;
@@ -1630,41 +1678,7 @@ input {
   opacity: 0.3;
 }
 
-/* Social  -- Icons */
-.social-link {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-position: center;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-}
-
-.social-link:focus-visible {
-  outline: 3px solid #83B3D3;
-}
-
-.social-link:active {
-  opacity: 0.3;
-  outline: none;
-}
-
-.social-link--twitter {
-  background-image: url(../images/footer-icons/tw-icon.svg);
-  background-size: 22px 22px;
-}
-
-.social-link--facebook {
-  background-image: url(../images/footer-icons/fb-icon.svg);
-  background-size: 11px 20px;
-}
-
-.social-link--youtube {
-  background-image: url(../images/footer-icons/youtube-icon.svg);
-  background-size: 21px 17px;
-}
-
+/* ========Логотип HTMLacademy======== */
 .htmlacademy-link {
   display: flex;
   justify-self: end;
@@ -1681,6 +1695,7 @@ input {
 
 .htmlacademy-icon {
   fill: black;
+  transition-duration: 0.3s;
 }
 
 .htmlacademy-link:active .htmlacademy-icon,
@@ -1865,9 +1880,9 @@ input {
   background: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-close {
+.modal-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
