@@ -58,7 +58,7 @@
                   d="M9.9 19a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
             </a>
-            <!-- Включить popover -- добавить класс popover-open-->
+            <!-- Чтобы включить popover нужно добавить класс popover-open -->
             <aside class="popover popover-heart-link">
               <h2 class="visually-hidden">
                 Избранные гостиницы
@@ -105,9 +105,9 @@
                     </button>
                   </li>
                 </ul>
-                  <button class="btn brown-btn btn--popover-btn" type="button">
-                    Все избранные
-                  </button>
+                <button class="btn brown-btn btn--popover-btn" type="button">
+                  Все избранные
+                </button>
               </div>
             </aside>
           </li>
@@ -120,7 +120,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="welcome-section--with-img">
+      <section class="welcome-section">
         <h1 class="visually-hidden">
           Туристический сайт города Седона, штат Аризона
         </h1>
@@ -319,7 +319,7 @@
       </section>
     </footer>
 
-    <!-- Модальное окно закомментируйте класс modal-close чтобы открыть-->
+    <!-- Модальное окно -- закомментируйте класс modal-close чтобы открыть-->
     <div class="modal-container modal-close">
       <section class="modal modal-auth">
         <button class="btn--modal-close-btn modal-close-icon" type="button">
@@ -332,7 +332,6 @@
         </h2>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
           <ul class="auth-list">
-            <!-- 1 -->
             <li class="auth-item">
               <label for="arrival">
                 Дата заезда:
@@ -345,7 +344,6 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
                   placeholder="Укажите дату" required>
-                <!-- Тултип в 1 -->
                 <div class="auth-tooltip--wrapper auth-tooltip-close">
                   <p class="auth-tooltip-error">
                     Мы не можем отправить вас в прошлое.
@@ -353,7 +351,6 @@
                 </div>
               </div>
             </li>
-            <!-- 2 -->
             <li class="auth-item auth-item--wrap">
               <label for="departure">
                 Дата выезда:
@@ -366,14 +363,12 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="departure" name="departure"
                   placeholder="Укажите дату" required>
-                <!-- Тултип в 2 -->
                 <div class="auth-tooltip--wrapper auth-tooltip-close">
                   <p class="auth-tooltip-success">
                     На эти даты есть свободные номера. Пока есть.
                   </p>
                 </div>
               </div>
-              <!-- 3 -->
               <ul class="auth-list--people-list">
                 <li class="auth-item--people-group">
                   <div class="auth-container--people-group auth-container--adult-group">
@@ -398,7 +393,6 @@
                     </div>
                   </div>
                 </li>
-                <!-- 4 -->
                 <li class="auth-item--people-group">
                   <div class="auth-container--people-group auth-container--control-children-group">
                     <label for="children">
@@ -413,12 +407,10 @@
                         Посмотреть дополнительную информацию
                       </span>
                     </button>
-                    <!-- Тултип в 4 -->
                     <div class="tooltip auth-tooltip tooltip-close">
                       <div class="tooltiptail"></div>
                       <p class="tooltip-title tooltip-close">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6
-                        лет
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                         размещаются бесплатно.
                       </p>
                     </div>
@@ -443,7 +435,6 @@
               </ul>
             </li>
           </ul>
-          <!-- Кнопка -->
           <p>
             <button class="btn blue-btn btn--auth-search-btn">
               Найти

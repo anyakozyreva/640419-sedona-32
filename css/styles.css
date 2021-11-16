@@ -449,8 +449,6 @@ input {
   z-index: 1;
 }
 
-/* ========Logo======== */
-/* зеленый кружок над сердцем */
 .circus-green {
   display: block;
   position: absolute;
@@ -471,14 +469,13 @@ input {
   transform: translate(2px, -33px);
 }
 
-/* ========Кнопка Хочу сюда!======== */
 .btn--header-btn {
   display: block;
   padding: 8px 35px;
   border-radius: 4px;
 }
 
-.welcome-section--with-img {
+.welcome-section {
   display: flex;
   background-color: #68A2CA;
   background-image:
@@ -524,119 +521,7 @@ input {
   text-align: center;
 }
 
-/* Advantages List */
-/* Цветные обертки */
-.advantages-section {
-  margin-bottom: 0px;
-}
-
-.advantages-container--blue {
-  background-color: #83B3D3;
-  color: #FFFFFF;
-}
-
-.advantages-container--cold {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-container--light-blue {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-/* Features List */
-/* Иконки и Цветные обертки */
-.features-item--home-icon {
-  background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/index-icons/home.svg);
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: 50% 89px;
-}
-
-.features-item--eating-icon {
-  background-color: #FFFFFF;
-  background-image: url(../images/index-icons/eating.svg);
-  background-size: 74px 70px;
-  background-repeat: no-repeat;
-  background-position: 50% 91px;
-}
-
-.features-item--souvenir-icon {
-  background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/index-icons/souvenir.svg);
-  background-size: 64px 75px;
-  background-repeat: no-repeat;
-  background-position: 50% 86px;
-}
-
-/* Advantages List */
-/* Размеры контейнеров */
-.advantages-container--blue {
-  flex-grow: 1;
-  padding-top: 98px;
-}
-
-.advantages--with-img h3 {
-  width: 173px;
-}
-
-.advantages--with-img p {
-  width: 220px;
-  margin-top: 6px;
-}
-
-.advantages--with-img span {
-  margin-top: 28px;
-  margin-bottom: 27px;
-}
-
-.advantages--with-img-reverse h3 {
-  width: 172px;
-}
-
-.advantages--with-img-reverse p {
-  width: 215px;
-  margin-top: 4px;
-}
-
-.advantages--with-img-reverse span {
-  margin-top: 29px;
-  margin-bottom: 28px;
-}
-
-.advantages-container--blue,
-.advantages-container--light-blue,
-.advantages-container--cold {
-  width: 400px;
-}
-
-.advantages-container--light-blue,
-.advantages-container--cold {
-  padding-top: 96px;
-  flex-grow: 1;
-}
-
-.advantages-container--light-blue h3,
-.advantages-container--cold h3 {
-  width: 136px;
-  min-height: 60px;
-}
-
-.advantages-container--light-blue p,
-.advantages-container--cold p {
-  min-height: 152px;
-  color: #333333;
-}
-
-.advantages-container--light-blue p {
-  width: 230px;
-}
-
-.advantages-container--cold p {
-  width: 240px;
-}
-
-/*  */
+/* ========Advantages-list  Features-list======== */
 .advantages-list,
 .features-list {
   display: flex;
@@ -705,6 +590,116 @@ input {
   min-width: 240px;
   margin-bottom: 91px;
   color: #333333;
+}
+
+/* ========Advantages List - Цветные обертки======== */
+.advantages-section {
+  margin-bottom: 0px;
+}
+
+.advantages-container--blue {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-container--cold {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-container--light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* ========Features List - Иконки и Цветные обертки======== */
+.features-item--home-icon {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/index-icons/home.svg);
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: 50% 89px;
+}
+
+.features-item--eating-icon {
+  background-color: #FFFFFF;
+  background-image: url(../images/index-icons/eating.svg);
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+  background-position: 50% 91px;
+}
+
+.features-item--souvenir-icon {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/index-icons/souvenir.svg);
+  background-size: 64px 75px;
+  background-repeat: no-repeat;
+  background-position: 50% 86px;
+}
+
+/* Advantages List */
+/* Размеры контейнеров */
+.advantages-container--blue {
+  flex-grow: 1;
+  padding-top: 98px;
+}
+
+.advantages--with-img h3 {
+  width: 173px;
+}
+
+.advantages--with-img p {
+  width: 220px;
+  margin-top: 6px;
+}
+
+.advantages--with-img span {
+  margin-top: 28px;
+  margin-bottom: 27px;
+}
+
+.advantages--with-img-reverse h3 {
+  width: 172px;
+}
+
+.advantages--with-img-reverse p {
+  width: 220px;
+  margin-top: 4px;
+}
+
+.advantages--with-img-reverse span {
+  margin-top: 29px;
+  margin-bottom: 28px;
+}
+
+.advantages-container--blue,
+.advantages-container--light-blue,
+.advantages-container--cold {
+  width: 400px;
+}
+
+.advantages-container--light-blue,
+.advantages-container--cold {
+  padding-top: 96px;
+  flex-grow: 1;
+}
+
+.advantages-container--light-blue h3,
+.advantages-container--cold h3 {
+  width: 136px;
+  min-height: 60px;
+}
+
+.advantages-container--light-blue p,
+.advantages-container--cold p {
+  min-height: 152px;
+  color: #333333;
+}
+
+.advantages-container--light-blue p {
+  width: 230px;
+}
+
+.advantages-container--cold p {
+  width: 240px;
 }
 
 /* Hotel-Search  */
@@ -1260,11 +1255,13 @@ input {
   align-items: center;
   grid-column: span 2;
   border-radius: 10px;
-  margin-top: -4px;
-  padding-right: 9px;
-  padding-left: 9px;
+  margin-top: -8px;
   margin-left: -9px;
   margin-right: -9px;
+  padding-top: 3px;
+  padding-right: 9px;
+  padding-bottom: 3px;
+  padding-left: 9px;
 }
 
 .hotel-link-hotel-title:hover,
@@ -1285,8 +1282,7 @@ input {
   grid-template-columns: max-content max-content;
   grid-auto-rows: min-content;
   grid-template-rows: min-content 1fr min-content;
-  gap: 0 9px;
-  column-gap: 0 9px;
+  column-gap: 9px;
   padding-left: 38px;
   align-items: start;
 }
