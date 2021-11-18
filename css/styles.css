@@ -1969,7 +1969,6 @@ input {
   right: 70px;
   width: 53px;
   height: 53px;
-  padding: 0;
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
@@ -1981,15 +1980,15 @@ input {
 }
 
 .modal-close-icon:hover {
-  border: none;
+  outline: none;
 }
 
 .modal-close-icon:focus {
-  border: none;
+  outline: none;
 }
 
 .modal-close-icon:active {
-  background-color: e;
+  background-color: #e5e5e5;
   opacity: 0.3;
 }
 
@@ -1999,7 +1998,7 @@ input {
 }
 
 .btn--modal-close-btn:focus {
-  border: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 /* ========Формы Дата выезда  /  Дата заезда======== */
