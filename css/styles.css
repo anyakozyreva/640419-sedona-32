@@ -703,7 +703,7 @@ input {
   align-items: center;
   background-color: #FFFFFF;
   padding-top: 60px;
-  padding-bottom: 77px;
+  padding-bottom: 79px;
 }
 
 .welcome-caption {
@@ -926,7 +926,7 @@ input {
   text-align: center;
   align-items: center;
   padding-top: 90px;
-  padding-bottom: 65px;
+  padding-bottom: 68px;
 }
 
 .hotel-search-title {
@@ -935,7 +935,7 @@ input {
   text-transform: uppercase;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-left: 0;
 }
 
@@ -948,7 +948,7 @@ input {
   color: #333333;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   margin-left: 0;
   padding: 0;
   word-spacing: 1px;
@@ -1758,15 +1758,6 @@ input {
   text-align: center;
 }
 
-.footer-inner--subscription-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 5px;
-  margin-bottom: 115px;
-}
-
 .subscription--with-img {
   width: 100%;
   min-height: 410px;
@@ -1792,10 +1783,6 @@ input {
   padding: 0;
 }
 
-.footer-inner--subscription-section .subscription-title {
-  margin-bottom: 29px;
-}
-
 .subscription-description {
   width: 480px;
   font-weight: 400;
@@ -1805,6 +1792,28 @@ input {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 60px;
+  margin-left: 0;
+  padding: 0;
+}
+
+/* ========Footer======== */
+/* ========Inner-Subscription======== */
+.footer-inner--subscription-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 115px;
+}
+
+.footer-inner--subscription-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 88px;
+  margin-right: 0;
+  margin-bottom: 29px;
   margin-left: 0;
   padding: 0;
 }
