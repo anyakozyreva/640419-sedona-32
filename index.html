@@ -63,7 +63,6 @@
               <h2 class="visually-hidden">
                 Избранные гостиницы
               </h2>
-              <span class="popovertail"></span>
               <div class="popover-content">
                 <ul class="popover-sublist">
                   <li class="popover-item">
@@ -121,7 +120,7 @@
     </header>
     <main class="main-container">
       <section class="welcome-section">
-        <h1 class="visually-hidden">
+        <h1 class="main-title visually-hidden">
           Туристический сайт города Седона, штат Аризона
         </h1>
         <img class="welcome-cover-img" src="images/index-welcome.svg" width="460" height="350" alt="Welcome to Sedona!">
@@ -153,7 +152,7 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона.">
+              <img class="advantages-img" src="images/real-town.jpg" width="800" height="384" alt="Вид на город Седона.">
               <ul class="features-list">
                 <li class="features-item features-item--light-blue features-item--home-icon">
                   <h3 class="features-title">
@@ -206,7 +205,7 @@
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img src="images/devil-bridge.jpg" width="800" height="384" alt="Вид на мост Дьявола.">
+              <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="384" alt="Вид на мост Дьявола.">
             </article>
           </li>
           <!-- 3 -->
@@ -270,7 +269,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="input-email"></label>
+          <label class="visually-hidden" for="e-mail"></label>
           <!-- Включить ошибку - добавить класс error -->
           <input class="subscription-input field error" type="email" name="e-mail" id="input-email"
             placeholder="Ваш e-mail" required>
@@ -306,7 +305,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <svg class="social-icon--youtube" width="20" height="16">
+              <svg class="social-icon--youtube" width="20" height="15">
                 <path fill-rule="evenodd" d="m18 0 2 2v10a3 3 0 0 1-2 2H2a3 3 0 0 1-2-2V2a3 3 0 0 1 2-2h16Zm-5 7-5 3V4l5 3Z" clip-rule="evenodd"/>
               </svg>
               <span class="visually-hidden">
@@ -353,6 +352,7 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
                   placeholder="Укажите дату" required>
+                   <!-- Чтобы выключить Tooltip добавьте класс auth-tooltip-close-->
                 <div class="auth-tooltip--wrapper auth-tooltip-close">
                   <p class="auth-tooltip-error">
                     Мы не можем отправить вас в прошлое.
@@ -372,6 +372,7 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="departure" name="departure"
                   placeholder="Укажите дату" required>
+                  <!-- Чтобы выключить Tooltip добавьте класс auth-tooltip-close-->
                 <div class="auth-tooltip--wrapper auth-tooltip-close">
                   <p class="auth-tooltip-success">
                     На эти даты есть свободные номера. Пока есть.
@@ -416,8 +417,8 @@
                         Посмотреть дополнительную информацию
                       </span>
                     </button>
+                    <!-- Чтобы выключить Tooltip добавьте класс tooltip-close-->
                     <div class="tooltip auth-tooltip tooltip-close">
-                      <div class="tooltiptail"></div>
                       <p class="tooltip-title tooltip-close">
                         Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                         размещаются бесплатно.
@@ -445,7 +446,7 @@
             </li>
           </ul>
           <p>
-            <button class="btn blue-btn btn--auth-search-btn">
+            <button class="btn blue-btn btn--auth-search-btn" type="button">
               Найти
             </button>
           </p>

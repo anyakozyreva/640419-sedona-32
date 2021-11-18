@@ -65,7 +65,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="main-filter--with-img">
+      <section class="main-catalog-filter">
         <h1 class="main-filter-title">
           Гостиницы Седоны
         </h1>
@@ -93,7 +93,7 @@
             </legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="pool" class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">
@@ -102,7 +102,7 @@
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="parking" class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">
@@ -111,7 +111,7 @@
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="wi-fi" class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">
@@ -127,7 +127,7 @@
             </legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="type-of-housing" class="control">
                   <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel"
                     checked>
                   <span class="control-mark"></span>
@@ -137,7 +137,7 @@
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="type-of-housing" class="control">
                   <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
                   <span class="control-mark"></span>
                   <span class="control-label">
@@ -146,7 +146,7 @@
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="type-of-housing" class="control">
                   <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
                   <span class="control-mark"></span>
                   <span class="control-label">
@@ -163,13 +163,13 @@
             <div class="inputs-wrapper">
               <div class="range-input-wrapper">
                 <input class="range-input input-min" type="number" name="min-price" value="0">
-                <label class="catalog-filter-label">
+                <label for="min-price" class="catalog-filter-label">
                   от
                 </label>
               </div>
               <div class="range-input-wrapper">
                 <input class="range-input input-max" type="number" name="max-price" value="9000">
-                <label class="catalog-filter-label">
+                <label for="max-price" class="catalog-filter-label">
                   до
                 </label>
               </div>
@@ -177,12 +177,12 @@
             <div class="range">
               <div class="range-scale">
                 <div class="range-bar" style="left: 0px; width: 225px">
-                  <button class="range-toggle toggle-min">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">
                       Изменить минимальную цену
                     </span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">
                       Изменить максимальную цену
                     </span>
@@ -254,8 +254,8 @@
             <ul class="hotel-catalog-list">
               <li class="hotel-catalog-item">
                 <article class="hotel-header">
-                  <a href="#">
-                    <img class="hotel-link--img-link" src="images/catalog/amara-hotel.jpg" width="180" height="120"
+                  <a class="hotel-link--img-link" href="#">
+                    <img src="images/catalog/amara-hotel.jpg" width="180" height="120"
                       alt="Гостиница Amara.">
                   </a>
                   <div class="hotel-container">
@@ -291,8 +291,8 @@
               </li>
               <li class="hotel-catalog-item">
                 <article class="hotel-header">
-                  <a href="#">
-                    <img class="hotel-link--img-link" src="images/catalog/desert-hotel.jpg" width="180" height="120"
+                  <a class="hotel-link--img-link" href="#">
+                    <img src="images/catalog/desert-hotel.jpg" width="180" height="120"
                       alt="Мотель Desert Quail Inn.">
                   </a>
                   <div class="hotel-container">
@@ -328,8 +328,8 @@
               </li>
               <li class="hotel-catalog-item">
                 <article class="hotel-header">
-                  <a class="hotel-link" href="#">
-                    <img class="hotel-link--img-link" src="images/catalog/villas-hotel.jpg" width="180" height="120"
+                  <a class="hotel-link--img-link" href="#">
+                    <img src="images/catalog/villas-hotel.jpg" width="180" height="120"
                       alt="Апартаменты Villas at Poco Diablo.">
                   </a>
                   <div class="hotel-container">
@@ -365,8 +365,8 @@
               </li>
               <li class="hotel-catalog-item">
                 <article class="hotel-header">
-                  <a class="hotel-link" href="#">
-                    <img class="hotel-link--img-link" src="images/catalog/green-hotel.jpg" width="180" height="120"
+                  <a class="hotel-link--img-link" href="#">
+                    <img src="images/catalog/green-hotel.jpg" width="180" height="120"
                       alt="Гостиница GreenTree Inn.">
                   </a>
                   <div class="hotel-container">
@@ -395,7 +395,8 @@
                       </span>
                     </p>
                     <p class="btn--hotel-rating-btn">
-                      Рейтинг: 9,2</p>
+                      Рейтинг: 9,2
+                    </p>
                   </div>
                 </article>
               </li>
@@ -475,7 +476,7 @@
         </section>
     </main>
     <footer>
-      <section class="subscription-section footer-inner--subscription-section">
+      <section class="footer-inner--subscription-section">
         <h2 class="subscription-title">
           Подпишитесь на рассылку
         </h2>
@@ -483,7 +484,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="input-email"></label>
+          <label class="visually-hidden" for="e-mail"></label>
           <!-- Включить ошибку - включить класс error -->
           <input class="subscription-input field error" type="email" name="e-mail" id="input-email"
             placeholder="Ваш e-mail" required>
@@ -519,7 +520,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <svg  class="social-icon--youtube" width="20" height="16">
+              <svg  class="social-icon--youtube" width="20" height="15">
                 <path fill-rule="evenodd" d="m18 0 2 2v10a3 3 0 0 1-2 2H2a3 3 0 0 1-2-2V2a3 3 0 0 1 2-2h16Zm-5 7-5 3V4l5 3Z" clip-rule="evenodd"/>
               </svg>
               <span class="visually-hidden">
