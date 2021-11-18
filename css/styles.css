@@ -1802,13 +1802,21 @@ input {
   color: rgba(0, 0, 0, 1);
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   margin-left: 0;
   padding: 0;
 }
 
-.footer-inner--subscription-section .subscription-description {
-  margin-bottom: 48px;
+.footer-inner--subscription-description {
+  width: 480px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 45px;
+  margin-left: 0;
 }
 
 .subscription-form {
