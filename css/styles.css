@@ -2135,13 +2135,15 @@ input {
   fill: #ffffff;
 }
 
-.btn--info-btn:focus {
+.btn--info-btn:hover,
+.btn--info-btn:focus,
+.btn--info-btn:active {
   background-color: #68a2ca;
 }
 
 /* ========Обертка для контейнера с цыфрами======== */
 .auth-control-btn-wrapper {
-  width: 133px;
+  width: 135px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -2191,6 +2193,7 @@ input {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
+.auth-control-btn:hover,
 .auth-control-btn:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
