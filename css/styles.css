@@ -2265,7 +2265,6 @@ input {
   display: none;
 }
 
-
 /* ========Тултипы под Дата Заезда и Дата Выезда======== */
 .auth-tooltip--wrapper {
   position: absolute;
@@ -2295,7 +2294,6 @@ input {
   top: 100%;
   left: 50%;
   transform: translate(-2%, 5px);
-  /* display: none; */
   padding: 21px 20px 21px 20px;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
