@@ -1941,9 +1941,9 @@ input {
 }
 
 /* ========Включить модельное окно======== */
-.modal-close {
+/* .modal-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -2128,7 +2128,7 @@ input {
   max-width: 24px;
   height: 24px;
   max-height: 24px;
-  margin: 8px 19px 0 12px;
+  margin: 0 19px 0 12px;
   background-color: rgba(131, 179, 211, 1);
   border-radius: 50%;
   border: none;
@@ -2261,10 +2261,10 @@ input {
 /* ========Tooltip Дети:======== */
 /* ========Выключить Tooltip======== */
 
-/* .tooltip-close {
+.tooltip-close {
   display: none;
 }
- */
+
 
 /* ========Тултипы под Дата Заезда и Дата Выезда======== */
 .auth-tooltip--wrapper {
@@ -2276,9 +2276,9 @@ input {
   line-height: 40px;
 }
 
-/* .auth-tooltip-close {
+.auth-tooltip-close {
   display: none;
-} */
+}
 
 .auth-tooltip-error {
   margin: 0;
@@ -2295,7 +2295,7 @@ input {
   top: 100%;
   left: 50%;
   transform: translate(-2%, 5px);
-  display: block;
+  /* display: none; */
   padding: 21px 20px 21px 20px;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
