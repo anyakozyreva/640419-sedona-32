@@ -264,7 +264,8 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-input {
+/* ========Убираю рамку у input в модальном окне======== */
+input.auth-input--number {
   outline: none;
 }
 
@@ -907,7 +908,7 @@ input {
   text-align: center;
   align-items: center;
   padding-top: 90px;
-  padding-bottom: 68px;
+  padding-bottom: 91px;
   background-color: #ffffff;
 }
 
@@ -1717,7 +1718,7 @@ input {
   background-size: cover;
 }
 
-.subscription-section--footer {
+.subscription-section--catalog {
   margin-bottom: 115px;
   padding-top: 5px;
 }
@@ -1728,13 +1729,13 @@ input {
   text-transform: uppercase;
 }
 
-.subscription-title--footer {
+.subscription-title--catalog {
   margin: 88px 0 29px 0;
   padding: 0;
 }
 
 .subscription-title--index {
-  margin: 114px 0 30px 0;
+  margin: 93px 0 30px 0;
   padding: 0;
 }
 
@@ -1751,7 +1752,7 @@ input {
   padding: 0;
 }
 
-.subscription-description--footer {
+.subscription-description--catalog {
   margin: 0 0 48px 0;
   color: #000000;
 }
@@ -1790,9 +1791,16 @@ input {
   grid-template-columns: 1fr max-content 1fr;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 70px 30px 60px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.footer-contact--index {
+  padding: 25px 70px 30px 60px;
+}
+
+.footer-contact--catalog {
+  padding: 45px 70px 30px 60px;
 }
 
 /* ========Социальные сети======== */
