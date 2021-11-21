@@ -222,7 +222,24 @@ input.field:not(:placeholder-shown):invalid {
   outline: 2px solid #ff5757;
 }
 
-/* ========Убираю стандартные стрелки прокрутки у Input======== */
+/* ========Отключенные поля======== */
+input.field[type="text"]:disabled {
+  background-color: rgb(167, 157, 157);
+}
+
+input.field[type="email"]:disabled {
+  background-color: rgb(194, 183, 183);
+}
+
+input.field[type="number"]:disabled {
+  background-color: rgb(211, 188, 188);
+}
+
+input.field[type="submit"]:disabled {
+  background-color: rgb(211, 188, 188);
+}
+
+/* ========Убираю стандартные стрелки прокрутки у input======== */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -247,7 +264,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* ========Убираю рамки вокруг поля Input======== */
 input {
   outline: none;
 }
@@ -282,6 +298,12 @@ input {
   outline: 2px solid #e6e6e6;
   color: #333333;
   opacity: 0.3;
+}
+
+/* ========Отключенный select======== */
+.price-select:disabled,
+.select.price-select:disabled {
+  background-color: #e5e5e5;
 }
 
 /* ========Main-Index======== */
@@ -1928,9 +1950,9 @@ input {
 }
 
 /* ========Включить модельное окно======== */
-/* .modal-close {
+.modal-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
