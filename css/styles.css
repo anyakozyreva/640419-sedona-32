@@ -57,15 +57,15 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
-  color: #000000;
-  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
 }
 
 /* ========Page-container======== */
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -76,7 +76,7 @@ body {
   line-height: 21px;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   border-color: transparent;
   outline-offset: 0;
@@ -95,13 +95,13 @@ body {
 /* ========Состояние цветных кнопок======== */
 /* ========Brown Btn======== */
 .brown-btn {
-  background-color: #756257;
+  background-color: rgba(117, 98, 87, 1);
 }
 
 .brown-btn:hover,
 .brown-btn:focus,
 .brown-btn:active {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
 }
 
 .brown-btn:focus-visible {
@@ -116,31 +116,31 @@ body {
 .blue-btn:hover,
 .blue-btn:focus,
 .blue-btn:active {
-  background-color: #68a2ca;
+  background-color: rgba(104, 162, 202, 1);
 }
 
 .blue-btn:hover,
 .blue-btn:active {
-  outline: 1px solid #756257;
+  outline: 1px solid rgba(117, 98, 87, 1);
 }
 
 .blue-btn:focus-visible {
-  outline: 3px solid #756257;
+  outline: 3px solid rgba(117, 98, 87, 1);
 }
 
 /* ========Green Btn======== */
 .green-btn {
-  background-color: #7db54f;
+  background-color: rgba(125, 181, 79, 1);
 }
 
 .green-btn:hover,
 .green-btn:focus,
 .green-btn:active {
-  background-color: #6c9e42;
+  background-color: rgba(108, 158, 66, 1);
 }
 
 .green-btn:focus-visible {
-  outline: 3px solid #756257;
+  outline: 3px solid rgba(117, 98, 87, 1);
 }
 
 /* ========Transparent Btn======== */
@@ -150,12 +150,12 @@ body {
 
 /* ========Поля ввода======== */
 .field {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .field:hover,
 .field:focus {
-  background-color: #e6e6e6;
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .field:focus-visible {
@@ -163,8 +163,8 @@ body {
 }
 
 .field:active {
-  background-color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid rgba(255, 255, 255, 1);
 }
 
 /* ========Меняю прозрачность placeholder======== */
@@ -209,17 +209,27 @@ input.field:focus:-ms-input-placeholder {
 
 /* ========Меняю цвет рамки при активном placeholder-e======== */
 input.field:not(:placeholder-shown) {
-  background-color: #ffffff;
-  outline: 2px solid #000000;
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid rgba(0, 0, 0, 1);
 }
 
-/* ========Ошибка для placeholder======== */
+/* ========Статус ошибка для placeholder======== */
 .error {
-  outline: 2px solid #ff5757;
+  outline: 2px solid rgba(255, 87, 87, 1);
 }
 
 input.field:not(:placeholder-shown):invalid {
-  outline: 2px solid #ff5757;
+  outline: 2px solid rgba(255, 87, 87, 1);
+}
+
+/* ========Статус успех для placeholder======== */
+.success {
+  outline: 2px solid rgba(125, 181, 80, 1);
+}
+
+/* ========Статус предупреждение для placeholder======== */
+.warning {
+  outline: 2px solid rgba(253, 146, 46, 1);
 }
 
 /* ========Отключенные поля======== */
@@ -264,22 +274,17 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* ========Убираю рамку у input в модальном окне======== */
-input.auth-input--number {
-  outline: none;
-}
-
 /* ========Select======== */
 .price-select,
 .select--id-control {
   font: inherit;
   line-height: 23px;
   font-weight: normal;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
   border-radius: 4px;
   border: none;
-  outline: 2px solid #e5e5e5;
-  background-color: #ffffff;
+  outline: 2px solid rgba(229, 229, 229, 1);
+  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/icons/arrow.svg);
   background-position: right 15px center;
   background-repeat: no-repeat;
@@ -296,15 +301,15 @@ input.auth-input--number {
 
 .price-select:active,
 .select--id-control:active {
-  outline: 2px solid #e6e6e6;
-  color: #333333;
+  outline: 2px solid rgba(229, 229, 229, 1);
+  color: rgba(51, 51, 51, 1);
   opacity: 0.3;
 }
 
 /* ========Отключенный select======== */
 .price-select:disabled,
 .select.price-select:disabled {
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 1);
 }
 
 /* ========Main-Index======== */
@@ -318,8 +323,8 @@ input.auth-input--number {
 .page-header {
   height: 65px;
   min-height: 65px;
-  color: #000000;
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* ========Logo======== */
@@ -381,7 +386,7 @@ input.auth-input--number {
 
 .navigation-link:hover,
 .navigation-link:active {
-  color: #756257;
+  color: rgba(117, 98, 87, 1);
 }
 
 .navigation-link:focus-visible {
@@ -394,7 +399,7 @@ input.auth-input--number {
 }
 
 .navigation-item--current {
-  border-bottom: 2px solid #756257;
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
 }
 
 .navigation-user {
@@ -433,14 +438,14 @@ input.auth-input--number {
   width: 20px;
   height: 20px;
   margin: 5px 5px;
-  fill: #000000;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .user-link:hover .user-link--search-icon,
 .user-link:focus .user-link--search-icon,
 .user-link:hover .user-link--heart-icon,
 .user-link:focus .user-link--heart-icon {
-  fill: #756257;
+  fill: rgba(117, 98, 87, 1);
 }
 
 .user-link:active .user-link--search-icon,
@@ -473,8 +478,8 @@ input.auth-input--number {
   letter-spacing: -0.1em;
   font-weight: normal;
   text-align: center;
-  color: #ffffff;
-  background-color: #7db550;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(125, 181, 80, 1);
   border-radius: 50%;
 }
 
@@ -511,8 +516,8 @@ input.auth-input--number {
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(229, 229, 229, 1);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(177, 132, 132, 0.15);
 }
@@ -608,7 +613,7 @@ input.auth-input--number {
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .popover-container {
@@ -655,20 +660,18 @@ input.auth-input--number {
   top: 50%;
   left: 0%;
   transform: translate(-4%, 17px);
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 17px 0 17px 0;
   border-radius: 0 0 20px 20px;
 }
 
 .welcome-section {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 85px;
-  background-color: #68a2ca;
+  padding: 50px 0 85px 0;
+  background-color: rgba(104, 162, 202, 1);
   background-image: url("../images/index-divider.svg"), url("../images/index-cover.jpg");
   background-position: 0 bottom, 0 0;
   background-size: 100% 57px, 100% 485px;
@@ -687,9 +690,8 @@ input.auth-input--number {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
-  padding-bottom: 74px;
-  background-color: #ffffff;
+  padding: 64px 0 74px 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .welcome-caption {
@@ -708,7 +710,7 @@ input.auth-input--number {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 /* ========Advantages-list  Features-list======== */
@@ -770,8 +772,7 @@ input.auth-input--number {
 
 .advantages--number-item {
   display: inline-block;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin: 25px 0 30px 0;
   font-weight: normal;
 }
 
@@ -783,7 +784,7 @@ input.auth-input--number {
 .features-descrition {
   min-width: 240px;
   margin-bottom: 91px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 /* ========Advantages List - Цветные обертки======== */
@@ -798,7 +799,7 @@ input.auth-input--number {
 .advantages-container--blue {
   padding-bottom: 20px;
   background-color: rgba(131, 179, 211, 1);
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .advantages-container--cold {
@@ -819,7 +820,7 @@ input.auth-input--number {
 }
 
 .features-item--eating-icon {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/index-icons/eating.svg);
   background-size: 74px 70px;
   background-repeat: no-repeat;
@@ -865,8 +866,7 @@ input.auth-input--number {
 }
 
 .advantages--with-img-reverse span {
-  margin-top: 29px;
-  margin-bottom: 28px;
+  margin: 29px 0 28px 0;
 }
 
 .advantages-container--blue,
@@ -890,7 +890,7 @@ input.auth-input--number {
 .advantages-container--light-blue p,
 .advantages-container--cold p {
   min-height: 152px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .advantages-container--light-blue p {
@@ -907,9 +907,8 @@ input.auth-input--number {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 91px;
-  background-color: #ffffff;
+  padding: 90px 0 91px 0;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .hotel-search-title {
@@ -927,7 +926,7 @@ input.auth-input--number {
   font-weight: normal;
   line-height: 26px;
   text-align: center;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
   word-spacing: 1px;
 }
 
@@ -946,7 +945,7 @@ input.auth-input--number {
   padding-left: 70px;
   padding-bottom: 20px;
   margin-bottom: 44px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-image: url(../images/catalog-bg.jpg);
   background-color: rgba(131, 179, 211, 1);
   background-size: cover;
@@ -1027,7 +1026,7 @@ input.auth-input--number {
   grid-template-columns: max-content 1fr max-content max-content;
   justify-content: space-between;
   column-gap: 70px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: transparent;
 }
 
@@ -1082,7 +1081,7 @@ input.auth-input--number {
   left: 0;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
 
@@ -1159,9 +1158,9 @@ input.auth-input--number {
   width: 100%;
   padding: 12px 42px 10px 19px;
   font: inherit;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid rgba(255, 255, 255, 1);
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -1198,8 +1197,8 @@ input.auth-input--number {
 
 .input-min:active,
 .input-max:active {
-  outline: 2px solid #ffffff;
-  background-color: #756257;
+  outline: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(117, 98, 87, 1);
 }
 
 .catalog-filter-label {
@@ -1226,7 +1225,7 @@ input.auth-input--number {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* ========Контейнер для ползунка======== */
@@ -1234,7 +1233,7 @@ input.auth-input--number {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   border: none;
   outline: none;
   border-radius: 5px;
@@ -1243,7 +1242,7 @@ input.auth-input--number {
 
 .range-toggle:hover,
 .range-toggle:focus {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -1253,7 +1252,7 @@ input.auth-input--number {
 }
 
 .range-toggle:active {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
   border: 2px solid rgba(131, 179, 211, 1);
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -1291,13 +1290,13 @@ input.auth-input--number {
 }
 
 .btn--filter-btn:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid rgba(255, 255, 255, 1);
 }
 
 .btn--filter-btn:hover,
 .btn--filter-btn:focus,
 .btn--filter-btn:active {
-  background-color: #68a2ca;
+  background-color: rgba(104, 162, 202, 1);
 }
 
 .btn--reset-btn {
@@ -1373,8 +1372,8 @@ input.auth-input--number {
 .btn--sorting-price-btn {
   width: 48px;
   height: 48px;
-  background-color: #ffffff;
-  outline: 2px solid #e6e6e6;
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid rgba(229, 229, 229, 1);
   border: none;
   background-size: 16px 16px, cover;
   background-position: center;
@@ -1388,11 +1387,11 @@ input.auth-input--number {
 }
 
 .btn--sorting-price-btn:active {
-  outline: 2px solid #000000;
+  outline: 2px solid rgba(0, 0, 0, 1);
 }
 
 .btn--sorting-price-btn--current {
-  outline: 2px solid #000000;
+  outline: 2px solid rgba(0, 0, 0, 1);
 }
 
 .btn--tile-mode-btn {
@@ -1409,7 +1408,7 @@ input.auth-input--number {
 
 /* ========Каталог отелей======== */
 .hotel-section {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   padding-top: 43px;
 }
 
@@ -1427,7 +1426,7 @@ input.auth-input--number {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid rgba(229, 229, 229, 1);
 }
 
 .hotel-header {
@@ -1484,7 +1483,7 @@ input.auth-input--number {
 
 .hotel-link-hotel-title:hover,
 .hotel-link-hotel-title:focus {
-  color: #756257;
+  color: rgba(117, 98, 87, 1);
 }
 
 .hotel-link-hotel-title:focus {
@@ -1517,7 +1516,7 @@ input.auth-input--number {
   align-items: center;
   font-weight: normal;
   line-height: 23px;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .btn--hotel-info-btn,
@@ -1560,8 +1559,8 @@ input.auth-input--number {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
-  background-color: #f2f2f2;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
 }
 
@@ -1571,7 +1570,7 @@ input.auth-input--number {
   width: 86px;
   height: 17px;
   margin: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   background-size: 18px 17px;
@@ -1582,7 +1581,7 @@ input.auth-input--number {
   width: 66px;
   height: 17px;
   margin: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   background-size: 18px 17px;
@@ -1593,7 +1592,7 @@ input.auth-input--number {
   width: 40px;
   height: 17px;
   margin: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url(../images/icons/star.svg);
   background-repeat: space;
   background-size: 18px 17px;
@@ -1604,7 +1603,7 @@ input.auth-input--number {
   justify-content: center;
   align-items: center;
   margin: -5px 0 30px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
 
 .btn--download-btn {
@@ -1654,7 +1653,7 @@ input.auth-input--number {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(131, 179, 211, 1);
   border-radius: 4px;
   border: none;
@@ -1668,8 +1667,8 @@ input.auth-input--number {
 
 .pagination-bnt--current,
 .btn--pagination-btn:active {
-  color: #000000;
-  background: #f2f2f2;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(242, 242, 242, 1);
 }
 
 .hotel-sorting {
@@ -1684,7 +1683,7 @@ input.auth-input--number {
 .hotel-sorting-title {
   margin-right: 50px;
   font-weight: normal;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .select--id-select {
@@ -1712,9 +1711,9 @@ input.auth-input--number {
   width: 100%;
   min-height: 410px;
   padding-bottom: 20px;
-  color: #f2f2f2;
+  color: rgba(242, 242, 242, 1);
   background-image: url(../images/index-footer.jpg);
-  background-color: #68a2ca;
+  background-color: rgba(104, 162, 202, 1);
   background-size: cover;
 }
 
@@ -1744,7 +1743,7 @@ input.auth-input--number {
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #f2f2f2;
+  color: rgba(242, 242, 242, 1);
 }
 
 .subscription-description--index {
@@ -1754,7 +1753,7 @@ input.auth-input--number {
 
 .subscription-description--catalog {
   margin: 0 0 48px 0;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
 }
 
 .subscription-form {
@@ -1768,7 +1767,7 @@ input.auth-input--number {
   font-weight: normal;
   border-radius: 10px 0 0 10px;
   border-color: transparent;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .subscription-input[placeholder] {
@@ -1792,7 +1791,7 @@ input.auth-input--number {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .footer-contact--index {
@@ -1875,7 +1874,7 @@ input.auth-input--number {
 .social-link:focus .social-icon--facebook,
 .social-link:hover .social-icon--youtube,
 .social-link:focus .social-icon--youtube {
-  fill: #68a2ca;
+  fill: rgba(104, 162, 202, 1);
 }
 
 /* ========Номер телефона======== */
@@ -1901,7 +1900,7 @@ input.auth-input--number {
 .contact-phone:hover,
 .contact-phone:focus,
 .contact-phone:active {
-  color: #756257;
+  color: rgba(117, 98, 87, 1);
 }
 
 .contact-phone:focus-visible {
@@ -1938,7 +1937,7 @@ input.auth-input--number {
 .htmlacademy-link:active .htmlacademy-icon,
 .htmlacademy-link:hover .htmlacademy-icon,
 .htmlacademy-link:focus .htmlacademy-icon {
-  fill: #756257;
+  fill: rgba(117, 98, 87, 1);
 }
 
 .htmlacademy-link:active .htmlacademy-icon {
@@ -1958,6 +1957,11 @@ input.auth-input--number {
 }
 
 /* ========Включить модельное окно======== */
+.modal-open {
+  display: block;
+}
+
+/* ========Выключить модельное окно======== */
 .modal-close {
   display: none;
 }
@@ -1968,7 +1972,7 @@ input.auth-input--number {
   left: 50%;
   transform: translate(-50%, -41%);
   padding: 59px 70px 70px 70px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
@@ -1995,7 +1999,7 @@ input.auth-input--number {
   right: 70px;
   width: 53px;
   height: 53px;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 50%;
   background-image: url(../images/icons/cross.svg);
@@ -2014,13 +2018,13 @@ input.auth-input--number {
 }
 
 .modal-close-icon:active {
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 1);
   opacity: 0.3;
 }
 
 .btn--modal-close-btn:hover,
 .btn--modal-close-btn:active {
-  background-color: #e6e6e6;
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .btn--modal-close-btn:focus {
@@ -2066,19 +2070,18 @@ input.auth-input--number {
 .auth-form-field {
   width: 100%;
   height: 100%;
-  padding-right: 58px;
-  padding-left: 20px;
-  background: #f2f2f2;
+  background: rgba(242, 242, 242, 1);
   border-radius: 4px;
   border: none;
   outline: none;
 }
 
 .auth-form-field[placeholder] {
+  padding-right: 58px;
+  padding-left: 20px;
   font: inherit;
-  color: #000000;
   line-height: 40px;
-  opacity: 100%;
+  color: rgba(0, 0, 0, 1);
 }
 
 .auth-list {
@@ -2150,6 +2153,7 @@ input.auth-input--number {
   border-radius: 50%;
   border: none;
   outline: none;
+  cursor: pointer;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -2162,13 +2166,13 @@ input.auth-input--number {
   right: 45%;
   width: 2px;
   height: 9px;
-  fill: #ffffff;
+  fill: rgba(255, 255, 255, 1);
 }
 
 .btn--info-btn:hover,
 .btn--info-btn:focus,
 .btn--info-btn:active {
-  background-color: #68a2ca;
+  background-color: rgba(104, 162, 202, 1);
 }
 
 /* ========Обертка для контейнера с цыфрами======== */
@@ -2178,7 +2182,7 @@ input.auth-input--number {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
 }
 
@@ -2190,6 +2194,7 @@ input.auth-input--number {
   border: none;
   background-color: transparent;
   opacity: 0.3;
+  cursor: pointer;
   -webkit-transition-property: 0.3s;
   -moz-transition-property: 0.3s;
   -ms-transition-property: 0.3s;
@@ -2241,11 +2246,14 @@ input.auth-input--number {
 
 .auth-input--number {
   width: 60px;
+  padding: 0 10px 0 10px;
   font: inherit;
   text-align: center;
   background-color: transparent;
   border: none;
+  outline: none;
   appearance: textfield;
+  cursor: pointer;
 }
 
 .auth-input--number::-webkit-outer-spin-button,
@@ -2295,11 +2303,11 @@ input.auth-input--number {
 
 .auth-tooltip-error {
   margin: 0;
-  color: #ff5757;
+  color: rgba(255, 87, 87, 1);
 }
 
 .auth-tooltip-success {
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
   margin: 0;
 }
 
@@ -2309,7 +2317,7 @@ input.auth-input--number {
   left: 50%;
   transform: translate(-2%, 5px);
   padding: 21px 20px 21px 20px;
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
@@ -2323,7 +2331,7 @@ input.auth-input--number {
   display: block;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #333333 transparent;
+  border-color: transparent transparent rgba(51, 51, 51, 1) transparent;
   content: ' ';
 }
 
@@ -2340,5 +2348,5 @@ input.auth-input--number {
   font-weight: normal;
   line-height: 20px;
   text-align: left;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
