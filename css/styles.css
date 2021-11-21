@@ -222,7 +222,24 @@ input.field:not(:placeholder-shown):invalid {
   outline: 2px solid #ff5757;
 }
 
-/* ========Убираю стандартные стрелки прокрутки у Input======== */
+/* ========Отключенные поля======== */
+input.field[type="text"]:disabled {
+  background-color: rgb(167, 157, 157);
+}
+
+input.field[type="email"]:disabled {
+  background-color: rgb(194, 183, 183);
+}
+
+input.field[type="number"]:disabled {
+  background-color: rgb(211, 188, 188);
+}
+
+input.field[type="submit"]:disabled {
+  background-color: rgb(211, 188, 188);
+}
+
+/* ========Убираю стандартные стрелки прокрутки у input======== */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -247,8 +264,8 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* ========Убираю рамки вокруг поля Input======== */
-input {
+/* ========Убираю рамку у input в модальном окне======== */
+input.auth-input--number {
   outline: none;
 }
 
@@ -282,6 +299,12 @@ input {
   outline: 2px solid #e6e6e6;
   color: #333333;
   opacity: 0.3;
+}
+
+/* ========Отключенный select======== */
+.price-select:disabled,
+.select.price-select:disabled {
+  background-color: #e5e5e5;
 }
 
 /* ========Main-Index======== */
@@ -323,10 +346,7 @@ input {
   width: 450px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 20px 0 0 0;
   padding: 0;
   align-items: stretch;
   list-style-type: none;
@@ -334,10 +354,7 @@ input {
 
 .navigation-item {
   position: relative;
-  margin-top: -2px;
-  margin-right: 34px;
-  margin-bottom: 5px;
-  margin-left: 0;
+  margin: -2px 34px 5px 0;
 }
 
 .navigation-link,
@@ -474,6 +491,11 @@ input {
   display: block;
 }
 
+/* ========Выключить popover======== */
+.popover-close {
+  display: none;
+}
+
 .popover {
   position: absolute;
   top: 75%;
@@ -484,7 +506,6 @@ input {
   max-width: 400px;
   height: 232px;
   min-height: 232px;
-  display: none;
   box-sizing: border-box;
   padding-top: 14px;
   padding-right: 15px;
@@ -541,10 +562,7 @@ input {
   max-width: 300px;
   min-width: 240px;
   margin-right: auto;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
   color: inherit;
   text-decoration: none;
   border-radius: 10px;
@@ -560,8 +578,8 @@ input {
 }
 
 .popover-link:focus-visible {
-  opacity: 100%;
   outline: 3px solid rgba(131, 179, 211, 1);
+  opacity: 100%;
 }
 
 .popover-link:active {
@@ -890,7 +908,7 @@ input {
   text-align: center;
   align-items: center;
   padding-top: 90px;
-  padding-bottom: 68px;
+  padding-bottom: 91px;
   background-color: #ffffff;
 }
 
@@ -903,10 +921,7 @@ input {
 
 .hotel-search-subtitle {
   width: 585px;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 58px;
-  margin-left: 0;
+  margin: 0 0 58px 0;
   padding: 0;
   font-size: 22px;
   font-weight: normal;
@@ -960,9 +975,29 @@ input {
 }
 
 .breadcrumbs-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3px;
+  padding-left: 3px;
   text-decoration: none;
   color: inherit;
   background-color: transparent;
+  border-radius: 4px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 3px solid rgba(131, 179, 211, 1);
+  opacity: 100%;
+}
+
+.breadcrumbs-link:active {
+  outline: none;
+  opacity: 30%;
 }
 
 .breadcrumbs-icon {
@@ -984,28 +1019,6 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   content: ' ';
-}
-
-.breadcrumbs-link {
-  align-items: center;
-  justify-content: center;
-  padding-right: 3px;
-  padding-left: 3px;
-  border-radius: 4px;
-}
-
-.breadcrumbs-link:hover {
-  opacity: 60%;
-}
-
-.breadcrumbs-link:focus-visible {
-  outline: 3px solid rgba(131, 179, 211, 1);
-  opacity: 100%;
-}
-
-.breadcrumbs-link:active {
-  outline: none;
-  opacity: 30%;
 }
 
 /* ========Фильтры поиска жилья======== */
@@ -1171,7 +1184,7 @@ input {
 }
 
 .input-max {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .input-min:focus,
@@ -1256,7 +1269,7 @@ input {
   right: -10px;
 }
 
-/* ========Кнопки Применить и СБросить======== */
+/* ========Кнопки Применить и Сбросить======== */
 .filter-button-container {
   max-width: 160px;
   display: flex;
@@ -1344,10 +1357,7 @@ input {
 
 .price-select {
   width: 100%;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 15px;
-  padding-bottom: 11px;
+  padding: 10px 40px 15px 11px;
 }
 
 /* ========Кнопки режимов просмотра каталога гостиниц======== */
@@ -1631,7 +1641,7 @@ input {
 }
 
 .pagination-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .btn--pagination-btn {
@@ -1708,7 +1718,7 @@ input {
   background-size: cover;
 }
 
-.subscription-section--footer {
+.subscription-section--catalog {
   margin-bottom: 115px;
   padding-top: 5px;
 }
@@ -1719,13 +1729,13 @@ input {
   text-transform: uppercase;
 }
 
-.subscription-title--footer {
+.subscription-title--catalog {
   margin: 88px 0 29px 0;
   padding: 0;
 }
 
 .subscription-title--index {
-  margin: 90px 0 40px 0;
+  margin: 93px 0 30px 0;
   padding: 0;
 }
 
@@ -1738,11 +1748,11 @@ input {
 }
 
 .subscription-description--index {
-  margin: 0 0 60px 0;
+  margin: 0 0 46px 0;
   padding: 0;
 }
 
-.subscription-description--footer {
+.subscription-description--catalog {
   margin: 0 0 48px 0;
   color: #000000;
 }
@@ -1781,9 +1791,16 @@ input {
   grid-template-columns: 1fr max-content 1fr;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 70px 30px 60px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.footer-contact--index {
+  padding: 25px 70px 30px 60px;
+}
+
+.footer-contact--catalog {
+  padding: 45px 70px 30px 60px;
 }
 
 /* ========Социальные сети======== */
@@ -2128,7 +2145,7 @@ input {
   max-width: 24px;
   height: 24px;
   max-height: 24px;
-  margin: 8px 19px 0 12px;
+  margin: 0 19px 0 12px;
   background-color: rgba(131, 179, 211, 1);
   border-radius: 50%;
   border: none;
@@ -2148,13 +2165,15 @@ input {
   fill: #ffffff;
 }
 
-.btn--info-btn:focus {
+.btn--info-btn:hover,
+.btn--info-btn:focus,
+.btn--info-btn:active {
   background-color: #68a2ca;
 }
 
 /* ========Обертка для контейнера с цыфрами======== */
 .auth-control-btn-wrapper {
-  width: 133px;
+  width: 135px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -2204,6 +2223,7 @@ input {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
+.auth-control-btn:hover,
 .auth-control-btn:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
@@ -2217,13 +2237,6 @@ input {
 .auth-container-btn-wrapper {
   display: flex;
   color: inherit;
-}
-
-.auth-container-input-wrapper {
-  font: inherit;
-  text-align: center;
-  background-color: transparent;
-  border: none;
 }
 
 .auth-input--number {
@@ -2261,10 +2274,9 @@ input {
 /* ========Tooltip Дети:======== */
 /* ========Выключить Tooltip======== */
 
-/* .tooltip-close {
+.tooltip-close {
   display: none;
 }
- */
 
 /* ========Тултипы под Дата Заезда и Дата Выезда======== */
 .auth-tooltip--wrapper {
@@ -2276,9 +2288,10 @@ input {
   line-height: 40px;
 }
 
-/* .auth-tooltip-close {
+/* ========Закрыть Тултипы в модальном окне======== */
+.auth-tooltip-close {
   display: none;
-} */
+}
 
 .auth-tooltip-error {
   margin: 0;
@@ -2295,7 +2308,6 @@ input {
   top: 100%;
   left: 50%;
   transform: translate(-2%, 5px);
-  display: block;
   padding: 21px 20px 21px 20px;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
