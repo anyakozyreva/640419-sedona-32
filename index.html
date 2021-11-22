@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/styles.css">
   <title>HTML Academy: Sedona</title>
-  <link type="image/x-icon" href="images/favicon.svg" rel="shortcut icon" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 </head>
 
 <body>
   <div class="page-container">
     <header class="page-header">
       <nav class="main-navigation">
-        <!-- Navigation-List -->
+        <!-- navigation-list -->
         <ul class="navigation-list">
           <li class="navigation-item navigation-item--current">
             <a class="navigation-link" href="index.html">
@@ -30,11 +33,11 @@
             </a>
           </li>
         </ul>
-        <!-- Logo -->
+        <!-- logo -->
         <a class="logo-link">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
-        <!-- Navigation-User -->
+        <!-- navigation-user -->
         <ul class="navigation-user">
           <li class="user-item user-item--search-icon">
             <a class="user-link" href="#">
@@ -58,7 +61,7 @@
                   d="M9.9 19a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
             </a>
-            <!-- Чтобы включить popover нужно заменить класс popover-close а на popover-open -->
+            <!-- чтобы включить popover нужно заменить класс popover-close а на popover-open -->
             <aside class="popover popover-close">
               <h2 class="visually-hidden">
                 Избранные гостиницы
@@ -121,7 +124,7 @@
     <main class="main-container">
       <section class="welcome-section">
         <h1 class="visually-hidden">
-          Туристический сайт города Седона, штат Аризона
+          Туристический сайт города Седона, штат Аризона.
         </h1>
         <img class="welcome-cover-img" src="images/index-welcome.svg" width="460" height="350" alt="Welcome to Sedona!">
       </section>
@@ -133,12 +136,13 @@
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
-      <!-- 1 -->
       <section class="advantages-section">
         <h2 class="visually-hidden">
-          Преимущества Седоны
+          Преимущества Седоны.
         </h2>
+        <!-- advantages-list -->
         <ol class="advantages-list">
+          <!-- 1 -->
           <li class="advantages-item">
             <article class="advantages--with-img">
               <div class="advantages-container--blue">
@@ -154,6 +158,7 @@
               </div>
               <img class="advantages-img" src="images/real-town.jpg" width="800" height="384"
                 alt="Вид на город Седона.">
+              <!-- features-list -->
               <ul class="features-list">
                 <li class="features-item features-item--light-blue features-item--home-icon">
                   <h3 class="features-title">
@@ -272,7 +277,7 @@
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="e-mail"></label>
-          <!-- Чтобы активировать состояние Ошибка нужно добавить класс error -->
+          <!-- чтобы активировать состояние ошибки нужно добавить класс error -->
           <input class="subscription-input field" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail"
             required>
           <button class="btn blue-btn btn--subscription" type="submit">
@@ -280,9 +285,9 @@
           </button>
         </form>
       </section>
-          <section class="footer-contact footer-contact--index">
+      <section class="footer-contact footer-contact--index">
         <h2 class="visually-hidden">
-          Наши контакты:
+          Наши контакты.
         </h2>
         <ul class="social-list">
           <li class="social-item">
@@ -332,7 +337,7 @@
       </section>
     </footer>
 
-    <!-- Закомментируйте класс modal-close чтобы открыть модальное окно-->
+    <!-- чтобы включить модельное окно нужно заменить класс modal-close а на modal-open-->
     <div class="modal-container modal-close">
       <section class="modal modal-auth">
         <button class="btn--modal-close-btn modal-close-icon" type="button">
@@ -357,7 +362,7 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
                   placeholder="Укажите дату" required>
-                <!-- Чтобы отключить tooltip добавьте класс auth-tooltip-close-->
+                <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close-->
                 <div class="auth-tooltip--wrapper">
                   <p class="auth-tooltip-error">
                     Мы не можем отправить вас в прошлое.
@@ -377,7 +382,7 @@
                 </button>
                 <input class="auth-form-field field error" type="text" id="departure" name="departure"
                   placeholder="Укажите дату" required>
-                <!-- Чтобы отключить tooltip добавьте класс auth-tooltip-close-->
+                <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close-->
                 <div class="auth-tooltip--wrapper">
                   <p class="auth-tooltip-success">
                     На эти даты есть свободные номера. Пока есть.
@@ -396,8 +401,8 @@
                           Уменьшить количество людей
                         </span>
                       </button>
-                        <input class="auth-input--number" type="number" min="1" max="100" value="2" id="adult"
-                          name="adult" required>
+                      <input class="auth-input--number" type="number" min="1" max="100" value="2" id="adult"
+                        name="adult" required>
                       <button class="auth-control-btn btn--plus-btn" type="button">
                         <span class="visually-hidden">
                           Увеличить количество людей
@@ -420,7 +425,7 @@
                         Посмотреть дополнительную информацию
                       </span>
                     </button>
-                    <!-- Чтобы отключить tooltip добавьте класс auth-tooltip-close-->
+                    <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close-->
                     <div class="tooltip auth-tooltip">
                       <p class="tooltip-title">
                         Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
@@ -433,8 +438,8 @@
                           Уменьшить количество людей
                         </span>
                       </button>
-                        <input class="auth-input--number" type="number" min="1" max="100" value="1" id="children"
-                          name="children" required>
+                      <input class="auth-input--number" type="number" min="1" max="100" value="1" id="children"
+                        name="children" required>
                       <button class="auth-control-btn btn--plus-btn" type="button">
                         <span class="visually-hidden">
                           Увеличить количество людей
