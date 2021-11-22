@@ -1,4 +1,4 @@
-/* ========PT Sans======== */
+/* ======== PT Sans ======== */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -10,14 +10,14 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
+  font-style: bold;
   font-weight: bold;
   src: url(../fonts/ptsans-700.woff2) format("woff2"),
     url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
-/* ========General======== */
+/* ======== general ======== */
 html {
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -61,7 +61,7 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
-/* ========Page-container======== */
+/* ======== page-container ======== */
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -69,7 +69,7 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-/* ========Button======== */
+/* ======== кнопки ======== */
 .btn {
   font-family: inherit;
   font-size: 16px;
@@ -92,8 +92,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* ========Состояние цветных кнопок======== */
-/* ========Brown Btn======== */
+/* ======== brown ======== */
 .brown-btn {
   background-color: rgba(117, 98, 87, 1);
 }
@@ -108,7 +107,7 @@ body {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-/* ========Blue Btn======== */
+/* ======== blue ======== */
 .blue-btn {
   background-color: rgba(131, 179, 211, 1);
 }
@@ -128,7 +127,7 @@ body {
   outline: 3px solid rgba(117, 98, 87, 1);
 }
 
-/* ========Green Btn======== */
+/* ======== green ======== */
 .green-btn {
   background-color: rgba(125, 181, 79, 1);
 }
@@ -143,12 +142,12 @@ body {
   outline: 3px solid rgba(117, 98, 87, 1);
 }
 
-/* ========Transparent Btn======== */
+/* ======== transparent ======== */
 .transparent-btn {
   background-color: transparent;
 }
 
-/* ========Поля ввода======== */
+/* ======== поля ввода данных ======== */
 .field {
   background-color: rgba(242, 242, 242, 1);
 }
@@ -167,114 +166,89 @@ body {
   outline: 2px solid rgba(255, 255, 255, 1);
 }
 
-/* ========Меняю прозрачность placeholder======== */
-input.field::-webkit-input-placeholder {
+/* ======== меняю прозрачность placeholder-а ======== */
+.field::-webkit-input-placeholder {
   opacity: 0.6;
 }
 
-input.field::-webkit-input-placeholder {
+.field::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-input.field::-moz-placeholder {
+.field::-moz-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
 /* Firefox 19+ */
-input.field:-moz-placeholder {
+.field:-moz-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
 /* Firefox 18- */
-input.field:-ms-input-placeholder {
+.field:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* ========Скрываю placeholder при фокусе======== */
-input.field:focus::-webkit-input-placeholder {
+/* ======== скрываю placeholder при фокусе ======== */
+.field:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input.field:focus::-moz-placeholder {
+.field:focus::-moz-placeholder {
   color: transparent;
 }
 
-input.field:focus:-moz-placeholder {
+.field:focus:-moz-placeholder {
   color: transparent;
 }
 
-input.field:focus:-ms-input-placeholder {
+.field:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* ========Меняю цвет рамки при активном placeholder-e======== */
-input.field:not(:placeholder-shown) {
+/* ======== меняю цвет рамки при активном placeholder-e ======== */
+.field:not(:placeholder-shown) {
   background-color: rgba(255, 255, 255, 1);
   outline: 2px solid rgba(0, 0, 0, 1);
 }
 
-/* ========Статус ошибка для placeholder======== */
+/* ======== placeholder-ошибка ======== */
 .error {
   outline: 2px solid rgba(255, 87, 87, 1);
 }
 
-input.field:not(:placeholder-shown):invalid {
+.field:not(:placeholder-shown):invalid {
   outline: 2px solid rgba(255, 87, 87, 1);
 }
 
-/* ========Статус успех для placeholder======== */
+/* ======== placeholder-успех ======== */
 .success {
   outline: 2px solid rgba(125, 181, 80, 1);
 }
 
-/* ========Статус предупреждение для placeholder======== */
+/* ======== placeholder-предупреждение ======== */
 .warning {
   outline: 2px solid rgba(253, 146, 46, 1);
 }
 
-/* ========Отключенные поля======== */
-input.field[type="text"]:disabled {
+/* ======== отключенные disabled поля ======== */
+.field[type="text"]:disabled {
   background-color: rgb(167, 157, 157);
 }
 
-input.field[type="email"]:disabled {
+.field[type="email"]:disabled {
   background-color: rgb(194, 183, 183);
 }
 
-input.field[type="number"]:disabled {
+.field[type="number"]:disabled {
   background-color: rgb(211, 188, 188);
 }
 
-input.field[type="submit"]:disabled {
+.field[type="submit"]:disabled {
   background-color: rgb(211, 188, 188);
 }
 
-/* ========Убираю стандартные стрелки прокрутки у input======== */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input[type="number"]:hover,
-input[type="number"]:focus {
-  -moz-appearance: number-input;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* ========Select======== */
+/* ======== select ======== */
 .price-select,
 .select--id-control {
   font: inherit;
@@ -306,20 +280,18 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Отключенный select======== */
+/* ======== отключенный disabled select ======== */
 .price-select:disabled,
 .select.price-select:disabled {
   background-color: rgba(229, 229, 229, 1);
 }
 
-/* ========Main-Index======== */
-/* ========Sticky-footer======== */
+/* ======== pages ======== */
+/* ======== main - sticky-footer ======== */
 .main-container {
   flex-grow: 1;
 }
 
-/* ========Pages======== */
-/* ========Index======== */
 .page-header {
   height: 65px;
   min-height: 65px;
@@ -327,18 +299,37 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(255, 255, 255, 1);
 }
 
-/* ========Logo======== */
+/* ======== logo ======== */
 .logo {
   top: 0;
   z-index: 1;
-  display: block;
   width: 140px;
   height: 70px;
+  display: block;
   margin-bottom: -5px;
   text-decoration: none;
 }
 
-/* ========Main Navigation======== */
+.logo-link,
+.logo {
+  border: none;
+  outline: none;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.logo-link:hover,
+.logo-link:active {
+  filter: none;
+}
+
+.logo-link:focus-visible {
+  filter: drop-shadow(2px 4px 6px rgba(97, 80, 72, 1));
+}
+
+/* ======== main navigation ======== */
 .main-navigation {
   position: relative;
   display: grid;
@@ -347,6 +338,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-right: 71px;
 }
 
+/* ======== navigation-list ======== */
 .navigation-list {
   width: 450px;
   display: flex;
@@ -402,6 +394,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-bottom: 2px solid rgba(117, 98, 87, 1);
 }
 
+/* ======== navigation-user ======== */
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -463,6 +456,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* ======== значок 12 ======== */
 .circus-green {
   position: absolute;
   top: 100%;
@@ -490,13 +484,13 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-/* ========Popover======== */
-/* ========Включить popover======== */
+/* ======== popover ======== */
+/* ======== включить popover ======== */
 .popover-open {
   display: block;
 }
 
-/* ========Выключить popover======== */
+/* ======== выключить popover ======== */
 .popover-close {
   display: none;
 }
@@ -668,6 +662,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0 0 20px 20px;
 }
 
+/* ======== главная страница ======== */
 .welcome-section {
   display: flex;
   padding: 50px 0 85px 0;
@@ -690,7 +685,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0 74px 0;
+  padding: 63px 0 76px 0;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -713,10 +708,11 @@ input[type="number"]::-webkit-outer-spin-button {
   color: rgba(51, 51, 51, 1);
 }
 
-/* ========Advantages-list  Features-list======== */
+/* ======== advantages-list | features-list ======== */
 .advantages-list,
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -726,12 +722,8 @@ input[type="number"]::-webkit-outer-spin-button {
   list-style-type: none;
 }
 
-.advantages-list {
-  flex-wrap: wrap;
-}
-
-.features-list,
 .advantages-item,
+.features-list,
 .features-item {
   width: 100%;
 }
@@ -741,6 +733,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .features-item {
+  flex-grow: 1;
+  min-width: 400px;
+  max-width: calc(100% / 3);
   padding-top: 183px;
 }
 
@@ -787,7 +782,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: rgba(51, 51, 51, 1);
 }
 
-/* ========Advantages List - Цветные обертки======== */
+/* ======== advantages-list - цветные обертки ======== */
 .advantages-section {
   margin-bottom: 0;
 }
@@ -810,7 +805,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-/* ========Features List - Иконки и Цветные обертки======== */
+/* ======== features list - иконки и цветные обертки ======== */
 .features-item--home-icon {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../images/index-icons/home.svg);
@@ -835,8 +830,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 50% 86px;
 }
 
-/* ========Advantages List======== */
-/* ========Размеры контейнеров======== */
+/* ======== advantages list - контейнеры ======== */
 .advantages-container--blue {
   flex-grow: 1;
   padding-top: 98px;
@@ -901,7 +895,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 240px;
 }
 
-/* ========Hotel-Search======== */
+/* ======== поиск гостиниц в седоне ======== */
 .hotel-search-section {
   display: flex;
   flex-direction: column;
@@ -938,7 +932,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 10px;
 }
 
-/* ========Catalog======== */
+/* ======== страница каталога ======== */
 .main-catalog-filter {
   min-height: 408px;
   padding-right: 70px;
@@ -958,7 +952,7 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 78px;
 }
 
-/* ========Breadcrumbs======== */
+/* ======== breadcrumbs ======== */
 .breadcrumbs {
   position: relative;
   display: flex;
@@ -975,8 +969,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .breadcrumbs-link {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding-right: 3px;
   padding-left: 3px;
   text-decoration: none;
@@ -1020,7 +1012,7 @@ input[type="number"]::-webkit-outer-spin-button {
   content: ' ';
 }
 
-/* ========Фильтры поиска жилья======== */
+/* ======== фильтры поиска жилья ======== */
 .catalog-filter-form {
   display: grid;
   grid-template-columns: max-content 1fr max-content max-content;
@@ -1047,7 +1039,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .catalog-filter-title {
   margin-bottom: 30px;
-  padding: 0px;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
 }
@@ -1068,7 +1060,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 14px;
 }
 
-/* ========Чекбоксы======== */
+/* ======== чекбоксы и радиокнопки ======== */
 .control {
   position: relative;
   display: block;
@@ -1085,6 +1077,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
+/* ======== чекбоксы ======== */
 .control-input[type="checkbox"]:checked+.control-mark::before,
 .control-input[type="checkbox"]:checked+.control-mark::after {
   position: absolute;
@@ -1096,10 +1089,25 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  content: '';
+  content: ' ';
 }
 
-/* ========Радиокнопки======== */
+/* ======== cостояние чекбоксов ======== */
+.control-input--checkbox:hover+.control-mark,
+.control-input--checkbox:focus+.control-mark {
+  opacity: 0.6;
+}
+
+.control-input--checkbox:focus+.control-mark {
+  outline: 3px solid rgb(117, 156, 182, 100);
+  opacity: 100%;
+}
+
+.control-input--checkbox:active+.control-mark {
+  opacity: 0.3;
+}
+
+/* ======== радиокнопки ======== */
 .control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
@@ -1115,25 +1123,22 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: 10px 10px;
   background-position: center;
   background-repeat: no-repeat;
-  content: '';
+  content: ' ';
 }
 
-/* ========Состояния чекбоксов и радиокнопок======== */
-.control-input:hover+.control-mark,
-.control-input:focus+.control-mark {
-  opacity: 0.6;
+/* ======== cостояние радиокнопок ======== */
+.control-input--radio:hover+.control-mark,
+.control-input--radio:focus+.control-mark,
+.control-input--radio:active+.control-mark {
+  opacity: 100%;
 }
 
-.control-input:focus+.control-mark {
+.control-input--radio:focus+.control-mark {
   outline: 3px solid rgb(117, 156, 182, 100);
   opacity: 100%;
 }
 
-.control-input:active+.control-mark {
-  opacity: 0.3;
-}
-
-/* ========Фильтр Стоимость======== */
+/* ======== фильтр стоимости жилья ======== */
 .inputs-wrapper {
   display: flex;
   margin-top: 7px;
@@ -1178,6 +1183,30 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.range-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.range-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.range-input[type="number"]:hover,
+.range-input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.range-input[type="number"]::-webkit-inner-spin-button,
+.range-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .input-min {
   border-radius: 4px 0 0 4px;
 }
@@ -1209,7 +1238,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 30%;
 }
 
-/* ========Range Toggle======== */
+/* ======== ползунок для выставления цены ======== */
 .range {
   width: 100%;
 }
@@ -1228,7 +1257,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(255, 255, 255, 1);
 }
 
-/* ========Контейнер для ползунка======== */
+/* ======== контейнер для ползунка ======== */
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -1243,7 +1272,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .range-toggle:hover,
 .range-toggle:focus {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
@@ -1254,7 +1283,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .range-toggle:active {
   background: rgba(255, 255, 255, 1);
   border: 2px solid rgba(131, 179, 211, 1);
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -1268,7 +1297,7 @@ input[type="number"]::-webkit-outer-spin-button {
   right: -10px;
 }
 
-/* ========Кнопки Применить и Сбросить======== */
+/* ======== кнопки для фильтров поиска жилья ======== */
 .filter-button-container {
   max-width: 160px;
   display: flex;
@@ -1321,7 +1350,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Каталог гостиниц======== */
+/* ======== каталог гостиниц ======== */
 .main-catalog-section {
   padding-right: 70px;
   padding-left: 70px;
@@ -1359,7 +1388,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 10px 40px 15px 11px;
 }
 
-/* ========Кнопки режимов просмотра каталога гостиниц======== */
+/* ======== кнопки режимов просмотра для каталога гостиниц ======== */
 .sorting-container-for-btn {
   width: 160px;
   min-width: 160px;
@@ -1406,7 +1435,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-image: url(../images/icons/mode-list.svg);
 }
 
-/* ========Каталог отелей======== */
+/* ======== список отелей ======== */
 .hotel-section {
   background-color: rgba(255, 255, 255, 1);
   padding-top: 43px;
@@ -1433,7 +1462,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
 }
 
-/* ========Картинка с ссылкой======== */
+/* ======== изображение отелей ======== */
 .hotel-link--img-link {
   width: 180px;
   height: 120px;
@@ -1452,7 +1481,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Название гостиницы с ссылкой======== */
+/* ======== название отелей ======== */
 .hotel-main-title {
   max-width: 400px;
   margin: 0;
@@ -1464,7 +1493,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hotel-link-hotel-title {
   width: intrinsic;
-  /* Safari/WebKit uses a non-standard name */
+  /* Safari/WebKit */
   width: -moz-max-content;
   /* Firefox/Gecko */
   width: -webkit-max-content;
@@ -1550,6 +1579,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: auto;
 }
 
+/* ======== рейтинг отелей ======== */
 .btn--hotel-rating-btn {
   min-width: 161px;
   min-height: 40px;
@@ -1564,8 +1594,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-/* ========Контейнер для звезд======== */
-/* ========4 звезды======== */
+/* ======== 4 звезды ======== */
 .stars-container--stars-four {
   width: 86px;
   height: 17px;
@@ -1576,7 +1605,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: 18px 17px;
 }
 
-/* ========3 звезды======== */
+/* ======== 3 звезды ======== */
 .stars-container--stars-three {
   width: 66px;
   height: 17px;
@@ -1587,7 +1616,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: 18px 17px;
 }
 
-/* ========2 звезды======== */
+/* ======== 2 звезды ======== */
 .stars-container--stars-two {
   width: 40px;
   height: 17px;
@@ -1619,7 +1648,7 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: none;
 }
 
-/* ========Пагинация======== */
+/* ======== пагинация ======== */
 .pagination-section {
   display: flex;
   justify-content: space-between;
@@ -1698,13 +1727,18 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 12px 40px 12px 17px;
 }
 
-/* ========Footer======== */
-/* ========Subscription======== */
+/* ======== footer ======== */
+/* ======== подписка ======== */
 .subscription-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.subscription-section--catalog {
+  margin-bottom: 115px;
+  padding-top: 5px;
 }
 
 .subscription-index {
@@ -1715,11 +1749,6 @@ input[type="number"]::-webkit-outer-spin-button {
   background-image: url(../images/index-footer.jpg);
   background-color: rgba(104, 162, 202, 1);
   background-size: cover;
-}
-
-.subscription-section--catalog {
-  margin-bottom: 115px;
-  padding-top: 5px;
 }
 
 .subscription-title {
@@ -1783,7 +1812,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0 10px 10px 0;
 }
 
-/* ========Footer Contact======== */
+/* ======== контакты ======== */
 .footer-contact {
   min-height: 120px;
   display: grid;
@@ -1802,7 +1831,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 45px 70px 30px 60px;
 }
 
-/* ========Социальные сети======== */
+/* ======== социальные сети ======== */
 .social-list {
   max-width: 250px;
   display: flex;
@@ -1877,7 +1906,7 @@ input[type="number"]::-webkit-outer-spin-button {
   fill: rgba(104, 162, 202, 1);
 }
 
-/* ========Номер телефона======== */
+/* ======== номер телефона ======== */
 .contact-phone {
   max-width: 400px;
   display: inline-block;
@@ -1911,7 +1940,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Логотип HTMLacademy======== */
+/* ======== логотип HTMLacademy ======== */
 .htmlacademy-link {
   display: flex;
   justify-content: center;
@@ -1945,7 +1974,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Модальные окна======== */
+/* ======== модальное окно ======== */
 .modal-container {
   position: fixed;
   top: 0;
@@ -1956,12 +1985,12 @@ input[type="number"]::-webkit-outer-spin-button {
   background: rgba(242, 242, 242, 0.8);
 }
 
-/* ========Включить модельное окно======== */
+/* ======== включить модельное окно ======== */
 .modal-open {
   display: block;
 }
 
-/* ========Выключить модельное окно======== */
+/* ======== выключить модельное окно ======== */
 .modal-close {
   display: none;
 }
@@ -1992,7 +2021,7 @@ input[type="number"]::-webkit-outer-spin-button {
   word-spacing: -1.5px;
 }
 
-/* ========Кнопка закрытия======== */
+/* ======== кнопка закрытия ======== */
 .btn--modal-close-btn {
   position: absolute;
   top: 54px;
@@ -2031,7 +2060,7 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-/* ========Формы Дата выезда  /  Дата заезда======== */
+/* ======== формы дата выезда | дата заезда ======== */
 .auth-form {
   margin-bottom: -30px;
   padding-top: 32px;
@@ -2052,7 +2081,32 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
 }
 
-/* ========Кнопка календаря======== */
+/* ======== убираю стандартные стрелки прокрутки у input ======== */
+.auth-input--number[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.auth-input--number::-webkit-outer-spin-button,
+.auth-input--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.auth-input--number[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.auth-input--number[type="number"]:hover,
+.auth-input--number[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.auth-input--number[type="number"]::-webkit-inner-spin-button,
+.auth-input--number[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ======== кнопка календаря ======== */
 .btn--date-btn {
   position: absolute;
   top: 19px;
@@ -2066,7 +2120,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-/* ========Поля Дата Заезда / Дата Выезда======== */
+/* ======== placeholder дата выезда | дата заезда ======== */
 .auth-form-field {
   width: 100%;
   height: 100%;
@@ -2110,7 +2164,7 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-wrap: wrap;
 }
 
-/* ========Взрослые и Дети======== */
+/* ======== взрослые и дети ======== */
 .auth-list--people-list {
   width: 100%;
   display: flex;
@@ -2140,7 +2194,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
 }
 
-/* ========Синий значок i======== */
+/* ======== значок i ======== */
 .btn--info-btn {
   position: relative;
   display: block;
@@ -2175,7 +2229,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(104, 162, 202, 1);
 }
 
-/* ========Обертка для контейнера с цыфрами======== */
+/* ======== обертка для контейнера с цыфрами ======== */
 .auth-control-btn-wrapper {
   width: 135px;
   height: 50px;
@@ -2186,7 +2240,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-/* ========Кнопки "-" и "+"======== */
+/* ======== кнопки "-" и "+" ======== */
 .auth-control-btn {
   width: 20px;
   height: 20px;
@@ -2201,7 +2255,6 @@ input[type="number"]::-webkit-outer-spin-button {
   transition-property: 0.1s;
 }
 
-/* ========Иконки"-" и "+"======== */
 .btn--minus-btn {
   display: block;
   padding: 7px 7px;
@@ -2238,7 +2291,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.2;
 }
 
-/* ========Поля с цыфрами======== */
+/* ======== поля ввода цыфр ======== */
 .auth-container-btn-wrapper {
   display: flex;
   color: inherit;
@@ -2262,7 +2315,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* ========Кнопка Найти======== */
+/* ======== кнопка найти ======== */
 .btn--auth-search-btn {
   width: 575px;
   max-width: 575px;
@@ -2279,36 +2332,10 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: none;
 }
 
-/* ========Tooltip Дети:======== */
-/* ========Выключить Tooltip======== */
-
-.tooltip-close {
-  display: none;
-}
-
-/* ========Тултипы под Дата Заезда и Дата Выезда======== */
-.auth-tooltip--wrapper {
-  position: absolute;
-  top: 44px;
-  left: 155px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 40px;
-}
-
-/* ========Закрыть Тултипы в модальном окне======== */
+/* ======== tooltip-ы ======== */
+/* ======== выключить tooltip-ы ======== */
 .auth-tooltip-close {
   display: none;
-}
-
-.auth-tooltip-error {
-  margin: 0;
-  color: rgba(255, 87, 87, 1);
-}
-
-.auth-tooltip-success {
-  color: rgba(51, 51, 51, 1);
-  margin: 0;
 }
 
 .tooltip {
@@ -2350,3 +2377,27 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
+
+/* ======== tooltip дата заезда | дата выезда ======== */
+.auth-tooltip--wrapper {
+  position: absolute;
+  top: 44px;
+  left: 155px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+/* ======== состояние для tooltip дата заезда ======== */
+.auth-tooltip-error {
+  margin: 0;
+  color: rgba(255, 87, 87, 1);
+}
+
+/* ======== состояние для tooltip дата выезда ======== */
+.auth-tooltip-success {
+  color: rgba(51, 51, 51, 1);
+  margin: 0;
+}
+
+
