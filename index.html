@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/styles.css">
+
   <title>HTML Academy: Sedona</title>
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" href="/src/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/images/apple-touch-icon.png">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         </ul>
         <!-- logo -->
         <a class="logo-link">
-          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
+          <img class="logo" src="//images/logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
         <!-- navigation-user -->
         <ul class="navigation-user">
@@ -70,7 +70,7 @@
                 <ul class="popover-sublist">
                   <li class="popover-item">
                     <a class="popover-link" href="#">
-                      <img class="popover-img" src="images/catalog/desert-hotel.jpg" width="48" height="48"
+                      <img class="popover-img" src="//images/catalog/desert-hotel.jpg" width="48" height="48"
                         alt="Мотель Desert Quail Inn">
                       <div class="popover-container">
                         <h3 class="popover-title">
@@ -89,8 +89,8 @@
                   </li>
                   <li class="popover-item">
                     <a class="popover-link" href="#">
-                      <img class="popover-img" src="images/catalog/Villas-hotel.jpg" width="48" height="48"
-                        alt="Апартаменты Villas at Poco Diablo">
+                      <img class="popover-img" src="/src/images/catalog/villas-hotel.jpg" width="48" height="48"
+                           alt="Апартаменты Villas at Poco Diablo">
                       <div class="popover-container">
                         <h3 class="popover-title">
                           Villas at Poco Diablo
@@ -126,7 +126,7 @@
         <h1 class="visually-hidden">
           Туристический сайт города Седона, штат Аризона.
         </h1>
-        <img class="welcome-cover-img" src="images/index-welcome.svg" width="460" height="350" alt="Welcome to Sedona!">
+        <img class="welcome-cover-img" src="/src/images/index-welcome.svg" width="460" height="350" alt="Welcome to Sedona!">
       </section>
       <section class="welcome-container">
         <h2 class="welcome-caption">
@@ -156,8 +156,8 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img class="advantages-img" src="images/real-town.jpg" width="800" height="384"
-                alt="Вид на город Седона.">
+              <img class="advantages-img" src="/src/images/real-town.jpg" width="800" height="384"
+                   alt="Вид на город Седона.">
               <!-- features-list -->
               <ul class="features-list">
                 <li class="features-item features-item--light-blue features-item--home-icon">
@@ -211,8 +211,8 @@
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="384"
-                alt="Вид на мост Дьявола.">
+              <img class="advantages-img" src="/src/images/devil-bridge.jpg" width="800" height="384"
+                   alt="Вид на мост Дьявола.">
             </article>
           </li>
           <!-- 3 -->
@@ -262,7 +262,7 @@
           <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="btn brown-btn btn--hotel-search-btn" type="button">
+        <button id='search-button' class="btn brown-btn btn--hotel-search-btn" type="button">
           Поиск гостиницы в Седоне
         </button>
       </section>
@@ -338,7 +338,7 @@
     </footer>
 
     <!-- чтобы включить модельное окно нужно заменить класс modal-close а на modal-open-->
-    <div class="modal-container modal-close">
+    <div id='search-modal' class="modal-container modal-close">
       <section class="modal modal-auth">
         <button class="btn--modal-close-btn modal-close-icon" type="button">
           <span class="visually-hidden">
@@ -395,14 +395,14 @@
                     <label for="adult">
                       Взрослые:
                     </label>
-                    <div class="auth-control-btn-wrapper">
+                    <div id='adult-wrapper' class="auth-control-btn-wrapper">
                       <button class="auth-control-btn btn--minus-btn" type="button">
                         <span class="visually-hidden">
                           Уменьшить количество людей
                         </span>
                       </button>
                       <input class="auth-input--number" type="number" min="1" max="100" value="2" id="adult"
-                        name="adult" required>
+                        name="adult" step="10" required>
                       <button class="auth-control-btn btn--plus-btn" type="button">
                         <span class="visually-hidden">
                           Увеличить количество людей
@@ -432,7 +432,7 @@
                         размещаются бесплатно.
                       </p>
                     </div>
-                    <div class="auth-control-btn-wrapper">
+                    <div id='children-wrapper' class="auth-control-btn-wrapper" data-input-wrapper>
                       <button class="auth-control-btn btn--minus-btn" type="button">
                         <span class="visually-hidden">
                           Уменьшить количество людей
