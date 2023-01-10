@@ -51,7 +51,7 @@
             </a>
           </li>
           <li class="user-item user-item--heart-icon">
-            <a class="user-link" href="#">
+            <a class="user-link fav-link" href="#" data-heart-icon>
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -62,7 +62,7 @@
               </svg>
             </a>
             <!-- чтобы включить popover нужно заменить класс popover-close а на popover-open -->
-            <aside class="popover popover-close">
+            <aside class="popover popover-open" data-popover>
               <h2 class="visually-hidden">
                 Избранные гостиницы
               </h2>
@@ -360,8 +360,8 @@
                     Календарь
                   </span>
                 </button>
-                <input class="auth-form-field field error" type="text" id="arrival" name="arrival"
-                  placeholder="Укажите дату" required>
+                <input class="auth-form-field field error" type="date" id="arrival" name="arrival"
+                  placeholder="Укажите дату" required min="10-10-2020">
                 <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close-->
                 <div class="auth-tooltip--wrapper">
                   <p class="auth-tooltip-error">
@@ -395,15 +395,15 @@
                     <label for="adult">
                       Взрослые:
                     </label>
-                    <div id='adult-wrapper' class="auth-control-btn-wrapper">
-                      <button class="auth-control-btn btn--minus-btn" type="button">
+                    <div id='adult-wrapper' class="auth-control-btn-wrapper" data-input-wrapper>
+                      <button class="auth-control-btn btn--minus-btn" type="button" data-minus-btn>
                         <span class="visually-hidden">
                           Уменьшить количество людей
                         </span>
                       </button>
                       <input class="auth-input--number" type="number" min="1" max="100" value="2" id="adult"
-                        name="adult" step="10" required>
-                      <button class="auth-control-btn btn--plus-btn" type="button">
+                        name="adult" step="10" required data-input-number>
+                      <button class="auth-control-btn btn--plus-btn" type="button" data-plus-btn>
                         <span class="visually-hidden">
                           Увеличить количество людей
                         </span>
@@ -417,7 +417,9 @@
                       Дети:
                     </label>
                     <span class="form-label form-label-icon"></span>
-                    <button class="btn--info-btn" type="button">
+                      <div class="tooltip-container">
+
+                      <button class="btn--info-btn" type="button" aria-labelledby="notifications-label">
                       <svg class="info-icon" width="2" height="9" viewBox="0 0 2 9" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
                       </svg>
@@ -425,22 +427,26 @@
                         Посмотреть дополнительную информацию
                       </span>
                     </button>
-                    <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close-->
-                    <div class="tooltip auth-tooltip">
-                      <p class="tooltip-title">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                        размещаются бесплатно.
-                      </p>
-                    </div>
+
+                      <!-- чтобы отключить tooltip добавьте класс auth-tooltip-close -->
+                      <div class="tooltip auth-tooltip" role="tooltip"
+                           id="notifications-label">
+                          <p class="tooltip-title">
+                              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                              размещаются бесплатно.
+                          </p>
+                      </div>
+
+                      </div>
                     <div id='children-wrapper' class="auth-control-btn-wrapper" data-input-wrapper>
-                      <button class="auth-control-btn btn--minus-btn" type="button">
+                      <button class="auth-control-btn btn--minus-btn" type="button" data-minus-btn>
                         <span class="visually-hidden">
                           Уменьшить количество людей
                         </span>
                       </button>
-                      <input class="auth-input--number" type="number" min="1" max="100" value="1" id="children"
-                        name="children" required>
-                      <button class="auth-control-btn btn--plus-btn" type="button">
+                      <input class="auth-input--number" type="number" min="0" max="100" value="1" id="children"
+                        name="children" required data-input-number>
+                      <button class="auth-control-btn btn--plus-btn" type="button" data-plus-btn>
                         <span class="visually-hidden">
                           Увеличить количество людей
                         </span>
@@ -461,6 +467,27 @@
     </div>
 
   </div>
+
+  <!-- Сообщение с ошибкой загрузки изображения -->
+  <div id="error" class="modal-container modal-close">
+      <section class="error">
+          <div class="error__inner">
+              <h2 class="error__title">Ошибка загрузки</h2>
+              <button type="button" class="error__button">Попробуй-ка еще разочек</button>
+          </div>
+      </section>
+  </div>
+
+  <!-- Сообщение об успешной загрузке изображения -->
+  <div id="success" class="modal-container modal-close">
+      <section class="success modal">
+          <div class="success__inner">
+              <h2 class="success__title">Загрузка успешна</h2>
+              <button type="button" class="success__button">Круто!</button>
+          </div>
+      </section>
+  </div>
+
 </body>
 
 </html>

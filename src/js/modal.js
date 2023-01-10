@@ -44,22 +44,23 @@ const childrenWrapper = document.getElementById('children-wrapper');
 // });
 const MIN_STEP = 1;
 
-const inputWrappers = modal.querySelectorAll('.auth-control-btn-wrapper');
+const inputWrappers = modal.querySelectorAll('[data-input-wrapper]');
 inputWrappers.forEach((currentWrapper) => {
-    const plusButton = currentWrapper.querySelector('.btn--plus-btn');
-    const minusButton = currentWrapper.querySelector('.btn--minus-btn');
-    const input = currentWrapper.querySelector('.auth-input--number');
+    const plusButton = currentWrapper.querySelector('[data-plus-btn]');
+    const minusButton = currentWrapper.querySelector('[data-minus-btn]');
+    const input = currentWrapper.querySelector('[data-input-number]');
     const step = input.step === '' ? MIN_STEP : Number(input.step);
-
     plusButton.addEventListener('click', () => {
+        const sum = Number(input.value) + step;
         if (Number(input.value) < Number(input.max)) {
-            input.value = Number(input.value) + step;
+            input.value = sum <= Number(input.max) ? sum : input.max;
         }
     });
 
     minusButton.addEventListener('click', () => {
+        const delta = Number(input.value) - step;
         if (Number(input.value) > Number(input.min)) {
-            input.value = Number(input.value) - step;
+            input.value = delta >= Number(input.min) ? delta : input.min;
         }
     });
 });
